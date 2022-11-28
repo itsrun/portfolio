@@ -1,0 +1,43 @@
+{
+    "interest": [
+        {
+            "name": "web performance",
+            "vertical": "end",
+            "angle": 120,
+            "x": "calc(-100% - max(2.4rem, 12vw))",
+            "y": "-4rem",
+            "description": "measure and optimize the performance and QoE of web applications",
+            "placement": "bottom"
+        },
+        {
+            "name": "ui/ux technologies",
+            "reverse": true,
+            "vertical": "end",
+            "angle": -110,
+            "x": "max(6.4rem, 12vw)",
+            "y": "-1.2rem",
+            "description": "for creating more accessible and attractive software/products",
+            "placement": "bottom"
+        },
+        {
+            "name": "end-user development",
+            "reverse": true,
+            "angle": -60,
+            "x": "max(4.8rem, 7.2vw)",
+            "y": "16.2rem",
+            "description": "empowering non-programmers to create customized software with ease",
+            "placement": "top"
+        },
+        {
+            "name": "edge computing",
+            "angle": 60,
+            "x": "calc(-100% - max(6.4rem, 8vw))",
+            "y": "14.6rem",
+            "description": "to support next-gen latency-sensitive apps, e.g., cloud gaming and metaverse",
+            "placement": "top"
+        }
+    ],
+    "commands": {
+        "who -r -u": {}
+    }
+}

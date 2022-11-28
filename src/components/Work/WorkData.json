@@ -1,0 +1,217 @@
+[
+    {
+        "title": "Locating CDN Edge Servers with HTTP Responses",
+        "award": "1st place, SIGCOMM Student Research Competition",
+        "description": "We proposed an HTTP-based geolocation technique that utilizes subtle geographic hints in HTTP responses to determine the physical locations of CDN PoPs at the city-level granularity",
+        "author": [
+            {
+                "name": "Run Huang",
+                "self": true
+            },
+            {
+                "name": "Mengying Zhou"
+            },
+            {
+                "name": "Tiancheng Guo"
+            },
+            {
+                "name": "Yang Chen"
+            }
+        ],
+        "place": "ACM SIGCOMM 2022 Demos and Posters",
+        "links": [
+            {
+                "name": "Paper",
+                "href": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051"
+            },
+            {
+                "name": "Website",
+                "href": "https://locedgex.web.app"
+            },
+            {
+                "name": "Poster",
+                "href": "/locedge_poster.pdf"
+            },
+            {
+                "name": "video",
+                "href": "https://www.youtube.com/watch?v=KJSj_DCQ1bI"
+            }
+        ],
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/locedge_Xrl65bRUN.gif",
+            "https://ik.imagekit.io/runh/webcv/image/sigcomm_1l_ozaLw3.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869103"
+        ],
+        "href": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051"
+    },
+    {
+        "title": "ARamsay: An Augmented Reality Cooking Assistant on HoloLens",
+        "author": [
+            {
+                "name": "Run Huang",
+                "self": true
+            },
+            {
+                "name": "Lingshuang Kong"
+            },
+            {
+                "name": "Shutong Wu"
+            },
+            {
+                "name": "Couson Ning"
+            }
+        ],
+        "place": "UC San Diego Design Lab",
+        "description": "We designed simple and intuitive gestures to interact with AR recipes, aiming to provide a more enjoyable and hygienic cooking experience for users",
+        "links": [
+            {
+                "name": "Report",
+                "href": "aramsay.pdf"
+            },
+            {
+                "name": "website",
+                "href": "https://www.lingshuangkong.com/work/aramsay"
+            },
+            {
+                "name": "Video",
+                "href": "https://www.youtube.com/watch?v=7kfy42EO79I&t=33s"
+            },
+            {
+                "name": "code",
+                "href": "https://github.com/ARamsay118/ARamsay-HoloLens"
+            }
+        ],
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/aramsay_TWMvf9_kPa.jpeg",
+            "https://ik.imagekit.io/runh/webcv/image/aramsay_qMWSK00t9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869657"
+        ],
+        "href": "https://www.lingshuangkong.com/work/aramsay"
+    },
+    {
+        "title": "Zel X: Lightweight Cloud-Based 3D Computer-Aided Design Software",
+        "author": [
+            {
+                "name": "internship @siemens"
+            }
+        ],
+        "description": "Contributed to the sketch and 3D modeling function of Siemens NX SaaS, an industry-leading CAD used by NASA, SpaceX, Boeing, etc. ",
+        "place": "Digital Industries Software",
+        "href": "https://trials.sw.siemens.com/en-US/trials/nx-x-online-cad",
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/siemens_if08W_qoS.jpeg"
+        ],
+        "stacks": [
+            {
+                "name": "Three.js",
+                "href": "https://threejs.org/"
+            },
+            {
+                "name": "React",
+                "href": "https://reactjs.org"
+            },
+            {
+                "name": "VTK",
+                "href": "https://vtk.org/"
+            }
+        ]
+    },
+    {
+        "title": "Measurement of HTTP/3's 0-RTT in Public CDNs",
+        "author": [
+            {
+                "name": "ongoing research, Advised by Prof. Yang Chen"
+            }
+        ],
+        "href": "#",
+        "place": "Mobile Systems and Networking Lab",
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/0rtt_oO5MjF3az.gif"
+        ],
+        "description": "QUIC and TLS 1.3 enable 0-RTT connection establishment, and we are investigating its impact on web performance",
+        "stacks": [
+            {
+                "name": "cdn"
+            },
+            {
+                "name": "HTTP/3"
+            },
+            {
+                "name": "Measurement"
+            }
+        ]
+    },
+    {
+        "title": "University + Bootcamp: Roadmaps for Self-Taught Software Engineering",
+        "author": [
+            {
+                "name": "frontend developer, unicamp.online"
+            }
+        ],
+        "href": "#",
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/unicamp_Vr5QMcD71.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395871507"
+        ],
+        "description": "A collaborative learning platform for people aspiring to work in the tech industry to find quality online courses and discuss their progress or experience in self-learning CS",
+        "stacks": [
+            {
+                "name": "React",
+                "href": "https://reactjs.org"
+            },
+            {
+                "name": "Emotion",
+                "href": "https://emotion.sh/docs/introduction"
+            }
+        ]
+    },
+    {
+        "title": "RecipeHunter, A Recipe Management Application for Busy People",
+        "author": [
+            {
+                "name": "cse110 @ uc san diego"
+            }
+        ],
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/pierrecook_T-d3WiFBp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395868346"
+        ],
+        "href": "https://dzhango.github.io/RecipeHunter/",
+        "description": "2nd Place (out of 36 teams). We delivered a user-centric recipe management application that serves quick and easy-to-make recipes for people short on time or on a tight budget",
+        "stacks": [
+            {
+                "name": "bootstrap",
+                "href": "https://getbootstrap.com"
+            },
+            {
+                "name": "Jest",
+                "href": "https://jestjs.io"
+            }
+        ]
+    },
+    {
+        "title": "LocEdge: Accurate CDN Identification & Geolocation",
+        "author": [
+            {
+                "name": "node pacakge"
+            }
+        ],
+        "images": [
+            "https://ik.imagekit.io/runh/webcv/image/locedge_c-tSQh-UG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395870322",
+            "https://ik.imagekit.io/runh/webcv/image/locedge3_zgT_hLAcp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869229",
+            "https://ik.imagekit.io/runh/webcv/image/locedge2_fnfVjZoyd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395870347"
+        ],
+        "href": "https://locedgex.web.app",
+        "description": "With over 1.7k downloads on npm (as of Dec. 2022), LocEdge is a handy tool for web developers to identify the vendor, location, and cache status of a CDN edge server based on the HTTP responses",
+        "links": [
+            {
+                "name": "npm",
+                "href": "https://www.npmjs.com/package/locedge"
+            },
+            {
+                "name": "dataset",
+                "href": "https://github.com/ruh010/locedge-db"
+            },
+            {
+                "name": "code",
+                "href": "https://github.com/ruh010/locedge"
+            }
+        ]
+    }
+]
