@@ -12,7 +12,6 @@ const HeroBox = styled((props) => (
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    minHeight: `calc(100vh - ${theme.spacing(26)})`,
 }));
 
 const HeroAvatarComp = styled(({ img, ...props }) => (
@@ -66,7 +65,7 @@ export default function Hero() {
                 <HeroTitle type="heading1" text="hi, i'm run huang ;)" />
                 <HeroTitle type="heading2" href="mailto:runhuang@acm.org" text="runhuang at acm dot org" />
             </HeroTitleBox>
-            <HeroTerminal />
+            <HeroTerminal commands={data.commands} />
             {data.interest.map(({ name, ...props }) => (
                 <HeroChip {...props} key={name}>{name}</HeroChip>
             ))}

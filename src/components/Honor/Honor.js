@@ -43,6 +43,7 @@ const HonorImg = styled((props) => (
 ))(({ theme }) => ({
     borderRadius: "2rem",
     width: "100%",
+    aspectRatio: "1 / 1",
     backgroundColor: "#90caf9",
 }));
 

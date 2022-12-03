@@ -1,7 +1,7 @@
 import Terminal, { TerminalInput, TerminalOutput } from "react-terminal-ui";
 import { styled } from "@mui/material/styles";
 import { Box, Link } from "@mui/material";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const HeroTerminalContainer = styled(Box)(({ theme }) => ({
@@ -12,9 +12,13 @@ const HeroTerminalContainer = styled(Box)(({ theme }) => ({
     },
     "& .react-terminal-wrapper": {
         padding: "6rem 4rem 3rem",
+        border: "transparent 1px solid",
         borderRadius: "1.6rem",
         backgroundColor: "#1e1e1e",
         height: "fit-content",
+        "&:hover": {
+            borderColor: "#555",
+        },
     },
     "& .react-terminal-wrapper::after": {
         fontSize: "1.6rem",
@@ -37,24 +41,30 @@ const HeroTerminalContainer = styled(Box)(({ theme }) => ({
     },
 }));
 
-export default function HeroTerminal(props) {
-    const [commands, setCommands] = useState([]);
-    // const targetRef = useRef(null);
-    // const { scrollYProgress } = useScroll({
-    //     target: targetRef,
-    //     offset: ["end end", "center start"],
-    // });
-
-    // const scale = useTransform(scrollYProgress, [0, 0.2, 0.48, 1], [1, 1.05, 1.05, 1]);
+export default function HeroTerminal({ commands }) {
+    const [cmd, setCmd] = useState(["what -u -do"]);
+    useEffect(() => {
+        commands.help = [...Object.keys(commands), "clear"].join("\\n");
+    }, [commands]);
 
     const onInput = (cmd) => {
-        cmd = cmd && cmd.trim();
+        cmd = cmd?.split(" ").filter((v) => v).join(" ");
         if (!cmd) return;
-        if (cmd.toLowerCase() === "clear") {
-            setCommands([]);
+        const cmdKey = cmd.toLowerCase();
+        if (cmdKey === "clear") {
+            setCmd([]);
             return;
+        } else if (cmdKey === "rm -rf") {
+            window.alert(commands["rm -rf"]);
+            window.close();
+        } else if (cmdKey === "get -cv") {
+            const tempLink = document.createElement("a");
+            tempLink.download = tempLink.href = `cv.pdf`;
+            document.body.appendChild(tempLink);
+            tempLink.click();
+            document.body.removeChild(tempLink);
         }
-        setCommands((pc) => [...pc, cmd]);
+        setCmd((pc) => [...pc, cmd]);
     };
 
     return (
@@ -64,22 +74,15 @@ export default function HeroTerminal(props) {
                     <TerminalOutput>type to ask anything about me! ('help' for all supported commands)</TerminalOutput>
                     <TerminalInput>who -r -u</TerminalInput>
                     <TerminalOutput>i'm currently an undergraduate at fudan univeristy, where i'm very fortunate to be advised by <Link alt="yang chen's homepage" href="https://chenyang03.wordpress.com/">prof. yang chen</Link>.</TerminalOutput>
-                    <TerminalInput>what -u -do</TerminalInput>
-                    <TerminalOutput>recently, i'm measuring the performance of some critical internet services. my goal is to create products that provide optimal and enjoyable user experiences with technologies in ui/ux (e.g., ar/vr, voice ui) and networking.</TerminalOutput>
-                    {commands.map((cmd, idx) => {
+                    {cmd.map((cmd, idx) => {
                         return (
                             <Fragment key={idx}>
                                 <TerminalInput>{cmd}</TerminalInput>
-                                <TerminalOutput>world</TerminalOutput>
+                                {(commands[cmd.toLowerCase()] || "unknown command").split("\\n").map((resp, idx) => (
+                                    <TerminalOutput key={idx}>{resp}</TerminalOutput>
+                                ))}
                             </Fragment>
                         );
-                        // let response = supportedCommands[cmd.toLowerCase()] || <TerminalOutput>Unknown Command</TerminalOutput>;
-                        // return (
-                        //     <Fragment key={idx}>
-                        //         <TerminalInput>{cmd}</TerminalInput>
-                        //         {response}
-                        //     </Fragment>
-                        // )
                     })}
                 </Terminal>
             </HeroTerminalContainer>
