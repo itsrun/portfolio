@@ -6,26 +6,26 @@
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
             "y": "-4rem",
-            "description": "measure and optimize the performance & QoE of web applications",
-            "placement": "bottom"
-        },
-        {
-            "name": "ui/ux technologies",
-            "reverse": true,
-            "vertical": "end",
-            "angle": -110,
-            "x": "max(6.4rem, 12vw)",
-            "y": "-1.2rem",
-            "description": "design and create accessible & attractive products",
+            "description": "measure and optimize the performance of web applications",
             "placement": "bottom"
         },
         {
             "name": "mixed reality",
             "reverse": true,
+            "vertical": "end",
+            "angle": -110,
+            "x": "max(6.4rem, 12vw)",
+            "y": "-1.8rem",
+            "description": "anything to do with vr/ar",
+            "placement": "bottom"
+        },
+        {
+            "name": "ui/ux technologies",
+            "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 7.2vw)",
-            "y": "16.2rem",
-            "description": "anything to do with vr/ar",
+            "y": "16rem",
+            "description": "design and create accessible & attractive products",
             "placement": "top"
         },
         {
@@ -33,7 +33,7 @@
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 8vw))",
             "y": "14.6rem",
-            "description": "support next-gen latency-sensitive apps, e.g., cloud gaming and metaverse",
+            "description": "support latency-sensitive apps, e.g., metaverse & cloud gaming",
             "placement": "top"
         }
     ],

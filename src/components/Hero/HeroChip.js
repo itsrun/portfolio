@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Tooltip from "components/Tooltip";
 
 const ChipContent = styled(({ description, placement, ...props }) => (
-    <Tooltip title={description} placement={placement}>
+    <Tooltip title={description} placement={placement} arrow>
         <motion.div
             whileHover={{
                 scale: 1.1,

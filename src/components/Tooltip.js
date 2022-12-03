@@ -16,6 +16,9 @@ const Tooltip = styled((({ className, ...props }) => (
         color: "#f0f0f0",
         maxWidth: "20rem",
         fontSize: "1.3rem",
+        "& .MuiTooltip-arrow": {
+            color: "#0055FF",
+        },
     },
 }));
 
