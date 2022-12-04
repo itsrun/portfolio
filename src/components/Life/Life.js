@@ -39,12 +39,14 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
         offset: ["start end", "end end"],
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [128 + 16 * idx, 0]);
+    const margin = 352 - 16 * idx;
+
+    const y = useTransform(scrollYProgress, [0, 1], [margin, 0]);
 
     return (
         <ImageListItem key={alt} sx={{ overflow: "visible" }} ref={itemRef}>
             <motion.div whileHover={{ scale: 1.1 }} style={{ y, borderRadius: "1.6rem", overflow: "hidden" }}>
-                <LazyImage src={src} alt={alt} />
+                <LazyImage src={src} alt={alt} margin={margin + 128} />
                 <ImageListItemBar
                     title={alt}
                     subtitle={`@${place}`}
@@ -128,7 +130,7 @@ export default function Life(props) {
                     <CircularProgress color="secondary" />
                 </Box>
             </BrowserContainer>
-            <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.6rem, 6.4vw)"} sx={{ marginTop: 9, overflow: "visible" }}>
+            <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{ marginTop: 9, overflow: "visible" }}>
                 {data.map((props, idx) => (
                     <LifeImgItem key={idx} idx={idx} {...props} />
                 ))}
