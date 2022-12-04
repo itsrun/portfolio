@@ -180,6 +180,7 @@ const WorkItem = ({ idx, links, stacks, title, images, author, place, descriptio
                         color: "#bfbfbf",
                         textAlign: "justify",
                         marginBottom: 2,
+                        textTransform: "lowercase",
                     }}>
                         {description}
                     </Typography>

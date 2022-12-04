@@ -42,7 +42,7 @@ const SkillItem = ({ scrollYProgress, name, idx, src, total, direction = 1, radi
 
     return (
         <SkillItemBox style={{ rotate }} radius={radius} >
-            <Tooltip title={name}>
+            <Tooltip title={name} arrow>
                 <SkillImg
                     alt={idx}
                     src={src}
@@ -97,6 +97,7 @@ export default function Skill(props) {
             />
             {outerSkill.map((props, idx) => (
                 <SkillItem
+                    key={idx}
                     scrollYProgress={scrollYProgress}
                     idx={idx}
                     total={outerSkill.length}

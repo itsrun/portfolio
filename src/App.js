@@ -36,7 +36,7 @@ function App() {
         <ThemeProvider theme={darkTheme}>
             <CssBaseline enableColorScheme />
             <Background />
-            <Container maxWidth="lg" disableGutters sx={{ paddingX: "8vw" }}>
+            <Container maxWidth="lg" disableGutters sx={{ paddingX: "8vw", overflow: "hidden" }}>
                 <Navbar />
                 <Hero />
                 <LazySection sections={sections} />

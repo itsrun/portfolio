@@ -35,7 +35,7 @@ class ErrorBoundary extends Component {
     }
 };
 
-const LazyFallback = ({ name, error }) => {
+const LazyFallback = ({ error }) => {
     return (
         <Box sx={{
             display: "flex",
@@ -48,7 +48,7 @@ const LazyFallback = ({ name, error }) => {
                 marginTop: 3,
                 textTransform: "lowercase",
             }} color={error && "error"}>
-                {error || `loading ${name} section...`}
+                {error || "loading..."}
             </Typography>
         </Box>
     );
@@ -68,7 +68,7 @@ export default function LazySection({ sections, children, ...props }) {
         margin: "0px 0px 64px 0px",
     });
     const componentPath = sections[0];
-    const name = componentPath.split("/").pop();
+    componentPath.split("/").pop();
 
     useEffect(() => {
         isInView && loadComponent(componentPath, setComponent, setError);
@@ -77,7 +77,7 @@ export default function LazySection({ sections, children, ...props }) {
     return (
         <ErrorBoundary>
             <Box component="section" ref={ref} {...props} sx={{ marginTop: 9 }}>
-                {component ? <component.default /> : <LazyFallback name={name} error={error} />}
+                {component ? <component.default /> : <LazyFallback error={error} />}
             </Box>
             {component && sections.length > 1 && <LazySection sections={sections.slice(1,)} />}
         </ErrorBoundary>

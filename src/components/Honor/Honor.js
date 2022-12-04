@@ -52,6 +52,7 @@ const HonorText = styled(Box)(({ theme }) => ({
     paddingLeft: "1vw",
     lineHeight: 1.25,
     marginTop: theme.spacing(1),
+    textTransform: "lowercase",
     [theme.breakpoints.up("md")]: {
         fontSize: "1.5rem",
     },

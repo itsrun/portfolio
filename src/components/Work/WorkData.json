@@ -87,14 +87,14 @@
         "href": "https://lingshuang.webflow.io/work/aramsay"
     },
     {
-        "title": "Zel X: Lightweight Cloud-Based 3D Computer-Aided Design Software",
+        "title": "Zel X: Cloud-Based 3D Computer-Aided Design (CAD) Software",
         "author": [
             {
                 "name": "internship @siemens"
             }
         ],
         "description": "Contributed to the sketch and 3D modeling function of Siemens NX SaaS, an industry-leading CAD used by NASA, SpaceX, Boeing, etc. ",
-        "place": "Digital Industries Software",
+        "place": "siemens digital industries software",
         "href": "https://trials.sw.siemens.com/en-US/trials/nx-x-online-cad",
         "images": [
             "https://ik.imagekit.io/runh/webcv/image/siemens_if08W_qoS.jpeg"
@@ -118,11 +118,11 @@
         "title": "Measurement of HTTP/3's 0-RTT in Public CDNs",
         "author": [
             {
-                "name": "ongoing research, Advised by Prof. Yang Chen"
+                "name": "ongoing research, advised by prof. yang chen"
             }
         ],
         "href": "#",
-        "place": "Mobile Systems and Networking Lab",
+        "place": "mobile systems and networking lab",
         "images": [
             "https://ik.imagekit.io/runh/webcv/image/0rtt_oO5MjF3az.gif"
         ],
@@ -140,7 +140,7 @@
         ]
     },
     {
-        "title": "University + Bootcamp: Roadmaps for Self-Taught Software Engineering",
+        "title": "University plus Bootcamp: Roadmaps for Self-Taught Software Engineering",
         "author": [
             {
                 "name": "frontend developer, unicamp.online"
