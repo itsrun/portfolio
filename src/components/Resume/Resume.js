@@ -9,7 +9,7 @@ export default function Resume(props) {
             <Box sx={{
                 marginTop: 3,
                 marginBottom: 9,
-                height: "min(calc(118vw + 9.6rem), 150rem)",
+                height: "min(calc(118vw + 12rem), 150rem)",
                 position: "relative",
                 borderRadius: "1.6rem",
                 overflow: "hidden",
