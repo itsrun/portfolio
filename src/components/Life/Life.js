@@ -17,7 +17,7 @@ const BrowserContainer = styled(Box)(({ theme }) => ({
     cursor: "default",
     overflow: "hidden",
     borderRadius: "1.6rem",
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(4),
     position: "relative",
 }));
 
@@ -39,7 +39,7 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
         offset: ["start end", "end end"],
     });
 
-    const margin = 336 - 16 * idx;
+    const margin = 368 - 16 * idx;
 
     const y = useTransform(scrollYProgress, [0, 1], [margin, 0]);
     const opacity = useTransform(scrollYProgress, [0, 0.4, 1], [0, 0.1, 1]);

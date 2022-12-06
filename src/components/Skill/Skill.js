@@ -100,7 +100,7 @@ export default function Skill(props) {
             />
             {outerSkill.map((props, idx) => (
                 <SkillItem
-                    key={idx}
+                    key={`outer-${idx}`}
                     scrollYProgress={scrollYProgress}
                     idx={idx}
                     total={outerSkill.length}
@@ -109,6 +109,7 @@ export default function Skill(props) {
             ))}
             {innerSkill.map((props, idx) => (
                 <SkillItem
+                    key={`inner-${idx}`}
                     scrollYProgress={scrollYProgress}
                     idx={idx}
                     total={innerSkill.length}

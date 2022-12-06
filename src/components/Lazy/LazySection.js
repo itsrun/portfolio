@@ -45,7 +45,7 @@ const LazyFallback = ({ error }) => {
             <CircularProgress />
             <Typography sx={{
                 fontSize: "1.6rem",
-                marginTop: 3,
+                marginY: 3,
                 textTransform: "lowercase",
             }} color={error && "error"}>
                 {error || "loading..."}

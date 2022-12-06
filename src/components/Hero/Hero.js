@@ -22,7 +22,7 @@ const HeroAvatarComp = styled(({ img, ...props }) => (
         }}
     >
         <Avatar
-            src={`${process.env.PUBLIC_URL}/favicon.ico`}
+            src="https://ik.imagekit.io/runh/webcv/profile_L_W-AVext.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1663161608127"
             alt="profile"
             {...props}
         />

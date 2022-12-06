@@ -7,7 +7,7 @@ export default function Resume(props) {
         <Fragment>
             <TypeTitle title="my up-to-date cv" id="cv" />
             <Box sx={{
-                marginTop: 3,
+                marginTop: 4,
                 marginBottom: 9,
                 height: "min(calc(118vw + 12rem), 150rem)",
                 position: "relative",

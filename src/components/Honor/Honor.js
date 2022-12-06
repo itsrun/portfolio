@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import TypeTitle from "../TypeText";
 import data from "./HonorData.json";
 import { motion } from "framer-motion";
+import { Fragment } from "react";
 
 const HonorGrid = styled((props) => (
     <Grid
@@ -13,7 +14,7 @@ const HonorGrid = styled((props) => (
         {...props}
     />
 ))(({ theme }) => ({
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(1),
     padding: 0,
 }));
 
@@ -60,18 +61,18 @@ const HonorText = styled(Box)(({ theme }) => ({
 
 export default function Honor(props) {
     return (
-        <HonorGrid>
-            <Grid item xs={12}>
-                <TypeTitle title="awards / honors" id="honor" />
-            </Grid>
-            {data.map(({ title, src, award }, idx) => (
-                <HonorItem key={title} custom={idx}>
-                    <HonorImg src={src} alt={`img-for-${title}`} />
-                    <HonorText>
-                        <Typography color="primary" variant="span">{award}</Typography>{award && ", "} {title}
-                    </HonorText>
-                </HonorItem>
-            ))}
-        </HonorGrid>
+        <Fragment>
+            <TypeTitle title="awards / honors" id="honor" />
+            <HonorGrid>
+                {data.map(({ title, src, award }, idx) => (
+                    <HonorItem key={title} custom={idx}>
+                        <HonorImg src={src} alt={`img-for-${title}`} />
+                        <HonorText>
+                            <Typography color="primary" variant="span">{award}</Typography>{award && ", "} {title}
+                        </HonorText>
+                    </HonorItem>
+                ))}
+            </HonorGrid>
+        </Fragment>
     );
 };
