@@ -117,7 +117,7 @@ const NavIcon = styled((props) => (
     },
 }));
 
-const links = [{ title: "work", href: "#work" }, { title: "life", href: "#" }, { title: "resume", href: "/cv.pdf" }];
+const links = [{ title: "work", href: "#work" }, { title: "life", href: "#" }, { title: "resume", href: "https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp/CV-Single-Column?node-id=1%3A2&t=YckmRzDGCkhSmEzt-1" }];
 const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/runhuangii/" }, { icon: <InstagramIcon />, href: "https://www.instagram.com/guru.miniyak/" }, { icon: <GitHubIcon />, href: "https://github.com/ruh010" }];
 
 export default function Navbar(props) {

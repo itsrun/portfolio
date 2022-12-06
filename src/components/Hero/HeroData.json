@@ -24,7 +24,7 @@
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 7.2vw)",
-            "y": "16rem",
+            "y": "16.5rem",
             "description": "design and create accessible & attractive products",
             "placement": "top"
         },

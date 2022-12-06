@@ -29,6 +29,7 @@ const sections = [
     "Honor/Honor",
     "Skill/Skill",
     "Life/Life",
+    "Resume/Resume",
 ];
 
 function App() {

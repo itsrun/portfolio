@@ -57,10 +57,10 @@ const SkillItem = ({ scrollYProgress, name, idx, src, total, direction = 1, radi
 };
 
 const outerSkill = [
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/mrtk-min_jpIh3KP8Az.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487699", name: "mixed reality tooltip" },
+    { src: "https://ik.imagekit.io/runh/webcv/image/skills/mrtk-min_jpIh3KP8Az.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487699", name: "mixed reality toolkit" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/3js-min_6TfyWVDGuR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487728", name: "three.js" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/unity-min_JEkumdb-Y3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488972", name: "unity 3d" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/cpp-min_JwwQHM0U7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488790", name: "c sharp" },
+    { src: "https://ik.imagekit.io/runh/webcv/image/skills/csharp-min_InfJ9IeQW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488931", name: "c sharp" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/mui-min_faklaqu3sU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487702", name: "material ui" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/pptr-min_ijlHIiocQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487444", name: "puppeteer" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/d3-min_Ggghkrxl9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487562", name: "d3.js" },

@@ -39,7 +39,7 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
         offset: ["start end", "end end"],
     });
 
-    const margin = 352 - 16 * idx;
+    const margin = 336 - 16 * idx;
 
     const y = useTransform(scrollYProgress, [0, 1], [margin, 0]);
     const opacity = useTransform(scrollYProgress, [0, 0.4, 1], [0, 0.1, 1]);
@@ -103,7 +103,7 @@ export default function Life(props) {
                                     height: "max(36rem, 64vh)",
                                 }}
                                 src="https://open.spotify.com/embed/playlist/7hBSqiY7yd1KdJrSAnA4oG?utm_source=generator" width="100%"
-                                frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                                frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                             />
                         </BrowserTabBox>
                     </Tab>
@@ -116,7 +116,7 @@ export default function Life(props) {
                                     height: "max(36rem, 64vh)",
                                 }}
                                 src="https://open.spotify.com/embed/playlist/1tqPkeMlTl7asYMwhUju5V?utm_source=generator" width="100%"
-                                frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                                frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                             />
                         </BrowserTabBox>
                     </Tab>
@@ -131,7 +131,11 @@ export default function Life(props) {
                     <CircularProgress color="secondary" />
                 </Box>
             </BrowserContainer>
-            <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{ marginTop: 12, overflow: "visible" }}>
+            <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
+                marginTop: 12,
+                overflow: "visible",
+                marginBottom: "min(-3.2rem, -6.4vw)",
+            }}>
                 {data.map((props, idx) => (
                     <LifeImgItem key={idx} idx={idx} {...props} />
                 ))}
