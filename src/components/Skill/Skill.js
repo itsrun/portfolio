@@ -6,7 +6,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const SkillBox = styled(Box)(({ theme }) => ({
-    margin: theme.spacing(12, 0),
     height: "min(84vw, 100rem)",
     width: "100%",
     display: "grid",

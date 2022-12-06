@@ -76,7 +76,7 @@ export default function LazySection({ sections, children, ...props }) {
 
     return (
         <ErrorBoundary>
-            <Box component="section" ref={ref} {...props} sx={{ marginTop: 9 }}>
+            <Box component="section" ref={ref} {...props} sx={{ marginTop: { xs: 9, lg: 12 } }}>
                 {component ? <component.default /> : <LazyFallback error={error} />}
             </Box>
             {component && sections.length > 1 && <LazySection sections={sections.slice(1,)} />}
