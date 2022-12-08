@@ -13,6 +13,7 @@ export default function Resume(props) {
                 position: "relative",
                 borderRadius: "1.6rem",
                 overflow: "hidden",
+                backgroundColor: "#ce93d8",
             }}>
                 <iframe
                     width="100%"

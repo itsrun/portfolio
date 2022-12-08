@@ -41,7 +41,7 @@ const LazyFallback = ({ error, height }) => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            height: `${height * 250}vh`,
+            height,
         }}>
             <CircularProgress />
             <Typography sx={{
@@ -68,19 +68,19 @@ export default function LazySection({ sections, children, ...props }) {
         once: true,
         margin: "0px 0px 64px 0px",
     });
-    const componentPath = sections[0];
-    componentPath.split("/").pop();
+    const { path, id, height } = sections[0];
+    path.split("/").pop();
 
     useEffect(() => {
-        isInView && loadComponent(componentPath, setComponent, setError);
-    }, [isInView, componentPath]);
+        isInView && loadComponent(path, setComponent, setError);
+    }, [isInView, path]);
 
     return (
         <ErrorBoundary>
-            <Box component="section" ref={ref} {...props} sx={{ marginTop: { xs: 9, lg: 12 } }}>
-                {component ? <component.default /> : <LazyFallback error={error} height={sections.length} />}
+            <Box component="section" id={id} ref={ref} {...props} sx={{ marginTop: { xs: 9, lg: 12 } }}>
+                {component ? <component.default /> : <LazyFallback error={error} height={height} />}
             </Box>
-            {component && sections.length > 1 && <LazySection sections={sections.slice(1,)} />}
+            {sections.length > 1 && <LazySection sections={sections.slice(1,)} />}
         </ErrorBoundary>
     );
 };

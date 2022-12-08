@@ -25,11 +25,11 @@ const darkTheme = createTheme({
 });
 
 const sections = [
-    "Work/Work",
-    "Honor/Honor",
-    "Skill/Skill",
-    "Life/Life",
-    "Resume/Resume",
+    { path: "Work/Work", id: "work", height: "240vh" },
+    { path: "Honor/Honor", height: "32rem" },
+    { path: "Skill/Skill", height: "100vh" },
+    { path: "Life/Life", id: "life", height: "360vh" },
+    { path: "Resume/Resume", id: "resume", height: "100vh" },
 ];
 
 function App() {

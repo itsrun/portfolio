@@ -214,7 +214,7 @@ const WorkItem = ({ idx, links, stacks, title, images, author, place, descriptio
 
 export default function Work(props) {
     return (
-        <Stack spacing={8} id="work">
+        <Stack spacing={8} id="projects">
             <TypeTitle id="pub" title="publications / projects" />
             {data.map((props, idx) => (
                 <WorkItem key={idx} idx={idx} {...props} />
