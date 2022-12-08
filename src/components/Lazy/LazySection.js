@@ -41,6 +41,7 @@ const LazyFallback = ({ error }) => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
+            height: "200vh",
         }}>
             <CircularProgress />
             <Typography sx={{
