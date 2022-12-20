@@ -48,7 +48,10 @@ const SkillItem = ({ scrollYProgress, name, idx, src, total, direction = 1, radi
             <Tooltip title={name} arrow>
                 <SkillImg
                     alt={idx}
+                    name={name}
                     src={src}
+                    margin={64}
+                    trim={2}
                 />
             </Tooltip>
         </SkillItemBox>

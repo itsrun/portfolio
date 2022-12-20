@@ -16,7 +16,7 @@ const BrowserContainer = styled(Box)(({ theme }) => ({
     color: "#111",
     cursor: "default",
     overflow: "hidden",
-    borderRadius: "1.6rem",
+    borderRadius: "1.2rem",
     marginTop: theme.spacing(4),
     position: "relative",
 }));
@@ -47,7 +47,7 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
     return (
         <ImageListItem key={alt} sx={{ overflow: "visible" }} ref={itemRef}>
             <motion.div whileHover={{ scale: 1.1 }} style={{ y, opacity, borderRadius: "1.6rem", overflow: "hidden" }}>
-                <LazyImage src={src} alt={alt} margin={margin + 128} />
+                <LazyImage src={src} alt={alt} margin={margin + 128} trim={1} width="100%" />
                 <ImageListItemBar
                     title={alt}
                     subtitle={`@${place}`}
