@@ -105,7 +105,7 @@ const WorkImg = ({ images, idx }) => {
 };
 
 const TextBox = styled(Box)(({ theme }) => ({
-    padding: theme.spacing(1.5, 0, 0, 1),
+    padding: theme.spacing(1.5, 0.6, 0),
     fontSize: "1.4rem",
     color: "#e0e0e0",
     lineHeight: 1.2,
