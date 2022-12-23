@@ -170,8 +170,8 @@ const WorkItem = ({ idx, links, stacks, title, images, author, place, descriptio
                             marginBottom: 1,
                             display: "flex",
                             alignItems: "center",
-                        }} color="gold">
-                            <EmojiEventsIcon sx={{ marginRight: 0.5 }} />{award}
+                        }} color="gold" component={Link} href={award.link}>
+                            <EmojiEventsIcon sx={{ marginRight: 0.5 }} />{award.name}
                         </Typography>
                     )}
                     <Typography sx={{

@@ -1,8 +1,11 @@
 [
     {
         "title": "Locating CDN Edge Servers with HTTP Responses",
-        "award": "1st place, SIGCOMM Student Research Competition",
-        "description": "We proposed an HTTP-based geolocation technique that utilizes subtle geographic hints in HTTP responses to determine the physical locations of CDN PoPs at the city-level granularity",
+        "award": {
+            "name": "1st place, SIGCOMM Student Research Competition",
+            "link": "https://src.acm.org/winners/2023"
+        },
+        "description": "We proposed an HTTP-based geolocation technique that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at a city-level granularity",
         "author": [
             {
                 "name": "Run Huang",
@@ -61,7 +64,7 @@
             }
         ],
         "place": "UC San Diego Design Lab",
-        "description": "We designed simple and intuitive gestures to interact with AR recipes, aiming to provide a more enjoyable and hygienic cooking experience for users",
+        "description": "We designed simple and intuitive gestures to interact with an AR recipe app, aiming to provide a more joyful and hygienic cooking experience",
         "links": [
             {
                 "name": "Report",
@@ -136,29 +139,6 @@
             },
             {
                 "name": "Measurement"
-            }
-        ]
-    },
-    {
-        "title": "University plus Bootcamp: Roadmaps for Self-Taught Software Engineering",
-        "author": [
-            {
-                "name": "frontend developer, unicamp.online"
-            }
-        ],
-        "href": "#",
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/unicamp_Vr5QMcD71.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395871507"
-        ],
-        "description": "A collaborative learning platform for people aspiring to work in the tech industry to find quality online courses and discuss their progress or experience in self-learning CS",
-        "stacks": [
-            {
-                "name": "React",
-                "href": "https://reactjs.org"
-            },
-            {
-                "name": "Emotion",
-                "href": "https://emotion.sh/docs/introduction"
             }
         ]
     },

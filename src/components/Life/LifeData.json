@@ -1,38 +1,28 @@
 [
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/mtjacinto_3aXF6mg2Q.jpeg",
-        "alt": "hiking in mt. jacinto",
+        "alt": "mt. jacinto",
         "place": "palm spring, california, 2021"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/beverly_hills_6YFvpwJtY.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670173061344",
-        "alt": "90210 💵",
+        "alt": "90210",
         "place": "beverly hills, california, 2021"
     },
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/church_0lcFOb2qH.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670160579233",
-        "alt": "my first bible study lol",
-        "place": "la jolla, california, 2021"
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/hat_uy2nWNtuJ.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1670160578155",
+        "alt": "the sorting hat says i'm a ravenclaw",
+        "place": "universal studio hollywood, 2021"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/palmspring_SRwRXQcvR.jpeg",
-        "alt": "mt. jacinto tram 🚡",
+        "alt": "palm spring from above",
         "place": "palm spring, california, 2021"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/hollywood_RRh6zDGkE.jpeg",
         "alt": "trying to reach the hollywood sign",
         "place": "los angeles, california, 2021"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/concerts/dreamgirls_Uk1OPFeCC.jpeg",
-        "alt": "dreamgirls musical",
-        "place": "saic shanghai culture square, 2020"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/japan_i4h2b1gvX.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670328426311",
-        "alt": "鹿の飛び出し",
-        "place": "nara, japan, 2020"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/nevada_s9oUSN2jP.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1663161533195",
@@ -46,13 +36,13 @@
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/concerts/bloom_VQ4BENTVL.jpeg",
-        "alt": "troye sivan, bloom tour 🌸",
+        "alt": "troye sivan, bloom tour",
         "place": "mercedes-benz arena, shanghai, 2019"
     },
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/hat_uy2nWNtuJ.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1670160578155",
-        "alt": "the sorting hat says i'm a ravenclaw",
-        "place": "universal studio hollywood, 2021"
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/church_0lcFOb2qH.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670160579233",
+        "alt": "my first bible study lol",
+        "place": "la jolla, california, 2021"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/vb_SS47yw1lw.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670160579118",
@@ -66,17 +56,12 @@
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/nara_MZ8SQfyed.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670328426420",
-        "alt": "🦌🥺",
+        "alt": "🦌",
         "place": "nara, japan, 2020"
     },
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/lm_KSvYJWlv_.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670160582135",
-        "alt": "☢️",
-        "place": "lake mead, nevada, 2021"
-    },
-    {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/rainier_ZooHkTbnd.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1670160570289",
-        "alt": "mt. rainier from seatac 🌋",
+        "alt": "mt. rainier from seatac",
         "place": "seattle, washington, 2021"
     }
 ]

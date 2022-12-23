@@ -71,7 +71,7 @@ export default function HeroTerminal({ commands }) {
         <motion.div>
             <HeroTerminalContainer>
                 <Terminal name="terminal - chat with me" onInput={onInput}>
-                    <TerminalOutput>type to ask anything about me! ('help' for all supported commands)</TerminalOutput>
+                    <TerminalOutput>type to ask something about me! ('help' for all supported commands)</TerminalOutput>
                     <TerminalInput>who -r -u</TerminalInput>
                     <TerminalOutput>i'm currently an undergraduate at fudan univeristy, where i'm very fortunate to be advised by <Link alt="yang chen's homepage" href="https://chenyang03.wordpress.com/">prof. yang chen</Link>.</TerminalOutput>
                     {cmd.map((cmd, idx) => {
