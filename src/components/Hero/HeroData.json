@@ -11,7 +11,7 @@
         },
         {
             "name": "ui/ux technologies",
-            "description": "anything to do with mixed reality",
+            "description": "intelligent interface, interaction techniques, and mixed reality",
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 7.2vw)",
