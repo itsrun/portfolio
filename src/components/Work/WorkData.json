@@ -104,16 +104,16 @@
         ],
         "stacks": [
             {
+                "name": "wasm",
+                "href": "https://webassembly.org/"
+            },
+            {
                 "name": "Three.js",
                 "href": "https://threejs.org/"
             },
             {
                 "name": "React",
                 "href": "https://reactjs.org"
-            },
-            {
-                "name": "wasm",
-                "href": "https://webassembly.org/"
             }
         ]
     },
