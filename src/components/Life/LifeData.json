@@ -20,16 +20,6 @@
         "place": "palm spring, california, 2021"
     },
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/hollywood_RRh6zDGkE.jpeg",
-        "alt": "trying to reach the hollywood sign",
-        "place": "los angeles, california, 2021"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/nevada_s9oUSN2jP.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1663161533195",
-        "alt": "westworld",
-        "place": "little red rock, nevada, 2021"
-    },
-    {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/ramsay__va3ci2Rx0.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670329355377",
         "alt": "where aramsay got its name...",
         "place": "hell's kitchen, nevada, 2021"
@@ -53,15 +43,5 @@
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/vegas_nBRc6zuWm.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670160580492",
         "alt": "💀",
         "place": "las vegas, nevada, 2021"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/nara_MZ8SQfyed.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1670328426420",
-        "alt": "🦌",
-        "place": "nara, japan, 2020"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/rainier_ZooHkTbnd.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1670160570289",
-        "alt": "mt. rainier from seatac",
-        "place": "seattle, washington, 2021"
     }
 ]
