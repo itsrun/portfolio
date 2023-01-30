@@ -90,7 +90,7 @@
         "href": "https://lingshuang.webflow.io/work/aramsay"
     },
     {
-        "title": "Zel X: Cloud-Based 3D Computer-Aided Design (CAD) Software",
+        "title": "Zel X: Cloud-Based 3D Computer-Aided Design Software",
         "author": [
             {
                 "name": "internship @siemens"
@@ -112,56 +112,8 @@
                 "href": "https://reactjs.org"
             },
             {
-                "name": "VTK",
-                "href": "https://vtk.org/"
-            }
-        ]
-    },
-    {
-        "title": "Measurement of HTTP/3's 0-RTT in Public CDNs",
-        "author": [
-            {
-                "name": "ongoing research, advised by prof. yang chen"
-            }
-        ],
-        "href": "#",
-        "place": "mobile systems and networking lab",
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/0rtt_oO5MjF3az.gif"
-        ],
-        "description": "QUIC and TLS 1.3 enable 0-RTT connection establishment, and we are investigating its impact on web performance",
-        "stacks": [
-            {
-                "name": "cdn"
-            },
-            {
-                "name": "HTTP/3"
-            },
-            {
-                "name": "Measurement"
-            }
-        ]
-    },
-    {
-        "title": "RecipeHunter, A Recipe Management Application for Busy People",
-        "author": [
-            {
-                "name": "cse110 @ uc san diego"
-            }
-        ],
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/pierrecook_T-d3WiFBp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395868346"
-        ],
-        "href": "https://dzhango.github.io/RecipeHunter/",
-        "description": "2nd Place (out of 36 teams). We delivered a user-centric recipe management application that serves quick and easy-to-make recipes for people short on time or on a tight budget",
-        "stacks": [
-            {
-                "name": "bootstrap",
-                "href": "https://getbootstrap.com"
-            },
-            {
-                "name": "Jest",
-                "href": "https://jestjs.io"
+                "name": "wasm",
+                "href": "https://webassembly.org/"
             }
         ]
     },
