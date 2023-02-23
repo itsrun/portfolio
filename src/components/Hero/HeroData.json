@@ -20,7 +20,7 @@
         },
         {
             "name": "usable privacy",
-            "description": "understand people's attitudes toward emerging technologies and help to address their concerns",
+            "description": "measure online privacy threats, understand people's attitudes toward emerging technologies, and help to alleviate their concerns",
             "reverse": true,
             "vertical": "end",
             "angle": -110,
@@ -38,10 +38,10 @@
         }
     ],
     "commands": {
-        "what -u -do": "recently, i'm focusing on measuring the performance of some critical internet services. my goal is to develop human-centered tools that enhance user experience and even augment human capabilities by applying knowledge from various disciplines (e.g., HCI, Networking, AI).",
-        "what -u -into": "in general, computer networks and human-computer interaction. hover over the small chips around my profile image for details!\\noutside of work, i'm a huge fan of frank ocean, glass animals, rosalía, and many other indie/pop artists.",
-        "what -next": "i'm applying to phd programs in us and canada. drop me an email if interested, many thanks!",
-        "get -cv": "downloading...",
+        "what -u -do": "recently, i'm focusing on measuring the performance of some critical internet services. my goal is to develop human-centered tools that enhance user experience or even augment human capabilities by applying knowledge from various disciplines (e.g., HCI, Networking, AI).",
+        "what -u -into": "in general, systems and human-computer interaction. hover over the small chips around my profile image for details!\\noutside of work, i'm a huge fan of frank ocean, glass animals, rosalía, and many other artists.",
+        "what -next": "i'm applying to phd programs in the us and canada. drop me an email if interested, thank you in advance!",
+        "get -cv": "i made my cv with figma, so you can always get the most up-to-date version at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp.",
         "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/ruh010/portfolio.",
         "get -in -touch": "email: itsrunhuang@outlook.com\\nlinkedin: https://www.linkedin.com/in/runhuangii/",
         "rm -rf": "*CORE DUMPED*\nan error occurred. contact the administrator at itsrunhuang@outlook.com for more information ;)"

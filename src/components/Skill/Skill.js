@@ -90,7 +90,7 @@ export default function Skill(props) {
     return (
         <SkillBox ref={containerRef}>
             <TypeTitle
-                title="some of the stuff i've tried before"
+                title="some of the stuff i've been using"
                 id="skill"
                 sx={(theme) => ({
                     paddingX: "30vw",
