@@ -14,7 +14,7 @@ const FooterBox = styled((props) => (
 export default function Footer(props) {
     return (
         <FooterBox>
-            © Run Huang. Last Updated: Dec. 21, 2022
+            © Run Huang. Last Updated: Feb. 23, 2023
         </FooterBox>
     );
 };

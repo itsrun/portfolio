@@ -130,7 +130,7 @@
             "https://ik.imagekit.io/runh/webcv/image/locedge2_fnfVjZoyd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395870347"
         ],
         "href": "https://locedgex.web.app",
-        "description": "With over 1.7k downloads on npm (as of Dec. 2022), LocEdge is a handy tool for web developers to identify the vendor, location, and cache status of a CDN edge server based on the HTTP responses",
+        "description": "LocEdge is a handy tool with over 1.6k downloads on npm (as of Feb. 2023) for web developers to identify the vendor, location, and cache status of a CDN edge server based on the HTTP responses",
         "links": [
             {
                 "name": "npm",
