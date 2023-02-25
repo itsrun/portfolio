@@ -67,13 +67,17 @@ export default function HeroTerminal({ commands }) {
         setCmd((pc) => [...pc, cmd]);
     };
 
+    const onClickHelp = () => {
+        setCmd((prev) => [...prev, "help"]);
+    }
+
     return (
         <motion.div>
             <HeroTerminalContainer>
                 <Terminal name="terminal - chat with me" onInput={onInput}>
-                    <TerminalOutput>type to ask something about me! ('help' for all supported commands)</TerminalOutput>
+                    <TerminalOutput>type to ask something about me! ('<Link onClick={onClickHelp} sx={{ "&:hover": { cursor: "pointer" } }}>help</Link>' for all supported commands)</TerminalOutput>
                     <TerminalInput>who -r -u</TerminalInput>
-                    <TerminalOutput>i'm currently an undergraduate at fudan univeristy, where i'm very fortunate to be advised by <Link alt="yang chen's homepage" href="https://chenyang03.wordpress.com/">prof. yang chen</Link>.</TerminalOutput>
+                    <TerminalOutput>i'm currently an undergraduate student at fudan univeristy, where i'm very fortunate to be advised by <Link alt="yang chen's homepage" href="https://chenyang03.wordpress.com/">prof. yang chen</Link>.</TerminalOutput>
                     {cmd.map((cmd, idx) => {
                         return (
                             <Fragment key={idx}>

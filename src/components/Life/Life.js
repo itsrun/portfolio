@@ -107,15 +107,15 @@ export default function Life(props) {
                             />
                         </BrowserTabBox>
                     </Tab>
-                    <Tab key="san" title="platlist w/ my friends">
+                    <Tab key="san" title="a blend w/ my friends :)">
                         <BrowserTabBox>
                             <iframe
-                                title="study at night"
+                                title="Mangolime + Flamboyant"
                                 style={{
                                     marginBottom: -4,
                                     height: "max(36rem, 64vh)",
                                 }}
-                                src="https://open.spotify.com/embed/playlist/1tqPkeMlTl7asYMwhUju5V?utm_source=generator" width="100%"
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1EJJf1yNS86eOl?utm_source=generator" width="100%"
                                 frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                             />
                         </BrowserTabBox>
