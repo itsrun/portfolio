@@ -136,10 +136,10 @@ export default function Life(props) {
                 display: "block",
                 fontSize: "1.5rem",
             }}>
-                (not exactly a good photographer, but here're some photos i like)
+                (not exactly a decent photographer, but here're some photos i like)
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
-                marginTop: 4,
+                marginTop: 5,
                 overflow: "visible",
                 marginBottom: "min(-3.2rem, -6.4vw)",
             }}>
