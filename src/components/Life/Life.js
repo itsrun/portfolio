@@ -2,7 +2,7 @@ import { Fragment, useRef } from "react";
 import TypeTitle from "../TypeText";
 import { styled } from "@mui/material/styles";
 import Browser, { Chrome } from "react-browser-ui";
-import { Box, CircularProgress, IconButton, useMediaQuery } from "@mui/material";
+import { Box, CircularProgress, IconButton, Typography, useMediaQuery } from "@mui/material";
 import data from "./LifeData.json";
 import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import LazyImage from "components/Lazy/LazyImage";
@@ -17,7 +17,7 @@ const BrowserContainer = styled(Box)(({ theme }) => ({
     cursor: "default",
     overflow: "hidden",
     borderRadius: "1.2rem",
-    marginTop: theme.spacing(4),
+    margin: theme.spacing(4, 0, 8),
     position: "relative",
 }));
 
@@ -131,8 +131,15 @@ export default function Life(props) {
                     <CircularProgress color="secondary" />
                 </Box>
             </BrowserContainer>
+            <Typography sx={{
+                textAlign: "center",
+                display: "block",
+                fontSize: "1.5rem",
+            }}>
+                (not exactly a good photographer, but here're some photos i like)
+            </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
-                marginTop: 12,
+                marginTop: 4,
                 overflow: "visible",
                 marginBottom: "min(-3.2rem, -6.4vw)",
             }}>
