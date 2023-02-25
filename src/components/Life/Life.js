@@ -135,8 +135,9 @@ export default function Life(props) {
                 textAlign: "center",
                 display: "block",
                 fontSize: "1.5rem",
+                color: "#aaa",
             }}>
-                (not exactly a decent photographer, but here're some photos i like)
+                not exactly good at photography, but still decided to put some photos here <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 5,
