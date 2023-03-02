@@ -137,7 +137,7 @@ export default function Life(props) {
                 fontSize: "1.5rem",
                 color: "#aaa",
             }}>
-                not exactly good at photography, but still decided to put some photos here <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
+                not exactly good at taking photos, but still decided to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 5,
