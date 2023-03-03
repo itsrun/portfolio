@@ -2,10 +2,10 @@
     {
         "title": "Locating CDN Edge Servers with HTTP Responses",
         "award": {
-            "name": "1st place, SIGCOMM Student Research Competition",
+            "name": "1st place (1/62), SIGCOMM Student Research Competition",
             "link": "https://src.acm.org/winners/2023"
         },
-        "description": "We proposed an HTTP-based geolocation technique that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at a city-level granularity",
+        "description": "We proposed an HTTP-based geolocation tool that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at the city-level granularity",
         "author": [
             {
                 "name": "Run Huang",
@@ -64,7 +64,7 @@
             }
         ],
         "place": "UC San Diego Design Lab",
-        "description": "We designed simple and intuitive gestures to interact with an AR recipe app, aiming to provide a more joyful and hygienic cooking experience",
+        "description": "We designed simple and intuitive gestures to interact with an AR recipe app, aiming to provide a more enjoyable and hygienic cooking experience",
         "links": [
             {
                 "name": "Report",
@@ -96,7 +96,7 @@
                 "name": "internship @siemens"
             }
         ],
-        "description": "Contributed to the sketch function of Siemens NX SaaS, an industry-leading CAD used by NASA, SpaceX, Boeing, etc. ",
+        "description": "Contributed to the sketch function of the web ver. of siemens nx, an industry-leading CAD used by NASA, Boeing, etc. ",
         "place": "siemens digital industries software",
         "href": "https://trials.sw.siemens.com/en-US/trials/nx-x-online-cad",
         "images": [

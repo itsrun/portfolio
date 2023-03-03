@@ -94,7 +94,7 @@ export default function Life(props) {
                         </Fragment>
                     )}
                 >
-                    <Tab key="hkp" title="songs i love right now">
+                    <Tab key="hkp" title="my spotify playlist">
                         <BrowserTabBox sx={{ minHeight: "64vh" }}>
                             <iframe
                                 title="My Spotify Playlist"
@@ -134,13 +134,13 @@ export default function Life(props) {
             <Typography sx={{
                 textAlign: "center",
                 display: "block",
-                fontSize: "1.5rem",
+                fontSize: "1.3rem",
                 color: "#aaa",
             }}>
-                not exactly good at taking photos, but still decided to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
+                not exactly a good photographer, but still decided to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
-                marginTop: 5,
+                marginTop: 8,
                 overflow: "visible",
                 marginBottom: "min(-3.2rem, -6.4vw)",
             }}>
