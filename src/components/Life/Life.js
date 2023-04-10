@@ -134,10 +134,10 @@ export default function Life(props) {
             <Typography sx={{
                 textAlign: "center",
                 display: "block",
-                fontSize: "1.3rem",
+                fontSize: "1.2rem",
                 color: "#aaa",
             }}>
-                not exactly a good photographer, but still decided to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
+                not exactly good at taking photos, but still wanted to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 8,

@@ -5,7 +5,7 @@
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
-            "y": "-4rem",
+            "y": "-3rem",
             "description": "measure and optimize the performance of web applications",
             "placement": "bottom"
         },
@@ -15,7 +15,7 @@
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 7.2vw)",
-            "y": "16.5rem",
+            "y": "17.5rem",
             "placement": "top"
         },
         {
@@ -25,7 +25,7 @@
             "vertical": "end",
             "angle": -110,
             "x": "max(6.4rem, 12vw)",
-            "y": "-1.8rem",
+            "y": "-0.8rem",
             "placement": "bottom"
         },
         {
@@ -33,7 +33,7 @@
             "description": "anything to do with xr: ui/ux, novel interaction techniques, supporting infrastructures, etc",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 8vw))",
-            "y": "14.6rem",
+            "y": "15.6rem",
             "placement": "top"
         }
     ],

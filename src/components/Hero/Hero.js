@@ -28,8 +28,8 @@ const HeroAvatarComp = styled(({ img, ...props }) => (
         />
     </motion.div>
 ))(({ theme }) => ({
-    width: "15rem",
-    height: "15rem",
+    width: "16rem",
+    height: "16rem",
     position: "relative",
     boxShadow: "0 0 64px 0px hsl(0deg 0% 100% / 15%)",
 }));
