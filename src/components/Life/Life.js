@@ -40,6 +40,7 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
     });
 
     const margin = 368 - 16 * idx;
+    console.log(alt, src, place, idx);
 
     const y = useTransform(scrollYProgress, [0, 1], [margin, 0]);
     const opacity = useTransform(scrollYProgress, [0, 0.4, 1], [0, 0.1, 1]);

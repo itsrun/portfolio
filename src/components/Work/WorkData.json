@@ -93,10 +93,11 @@
         "title": "Zel X: Cloud-Based 3D Computer-Aided Design Software",
         "author": [
             {
-                "name": "internship @siemens"
+                "name": "SDE intern @siemens",
+                "self": true
             }
         ],
-        "description": "Contributed to the sketch function of the web ver. of siemens nx, an industry-leading CAD used by NASA, Boeing, etc. ",
+        "description": "Contributed to the sketch function of the web ver. of siemens nx, an industry-leading computer-aided design software used by NASA, Boeing, etc. ",
         "place": "siemens digital industries software",
         "href": "https://trials.sw.siemens.com/en-US/trials/nx-x-online-cad",
         "images": [
@@ -121,7 +122,8 @@
         "title": "LocEdge: Accurate CDN Identification & Geolocation",
         "author": [
             {
-                "name": "node package"
+                "name": "open source",
+                "self": true
             }
         ],
         "images": [

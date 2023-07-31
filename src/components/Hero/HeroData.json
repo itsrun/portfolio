@@ -1,17 +1,17 @@
 {
     "interest": [
         {
-            "name": "web performance",
+            "name": "internet measurement",
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
             "y": "-3rem",
-            "description": "measure and optimize the performance of web applications",
+            "description": "as the internet becomes an ever more integral part of human existence, i seek to understand its operation in our interconnected lives",
             "placement": "bottom"
         },
         {
-            "name": "interactive interfaces",
-            "description": "design expressive, accessible and intelligent user interfaces",
+            "name": "human-computer interaction",
+            "description": "my goal is to enable more seamless & efficient interactions between humans and digital systems",
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 7.2vw)",
@@ -19,8 +19,8 @@
             "placement": "top"
         },
         {
-            "name": "usable privacy",
-            "description": "measure privacy threats, understand people's attitudes toward emerging technologies, and help to alleviate their concerns",
+            "name": "natural language processing",
+            "description": "i leverage nlp techniques to extract valuable insights from the vast amounts of textual data and create tools that streamline human-ai interactions",
             "reverse": true,
             "vertical": "end",
             "angle": -110,
@@ -29,8 +29,8 @@
             "placement": "bottom"
         },
         {
-            "name": "mixed reality",
-            "description": "anything to do with xr: ui/ux, novel interaction techniques, supporting infrastructures, etc",
+            "name": "web development",
+            "description": "i'm interested in almost every aspect of web dev: from ui/ux design, frontend to backend, webassembly, and many more",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 8vw))",
             "y": "15.6rem",
@@ -38,12 +38,11 @@
         }
     ],
     "commands": {
-        "what -u -do": "recently, i'm focusing on measuring the performance of some critical internet services. my goal is to create human-centered tools that enhance user experience or even extend human capabilities.",
-        "what -u -into": "in general, systems and human-computer interaction. hover over the small chips around my profile image for details!\\noutside of work, i'm a huge fan of frank ocean, glass animals, rosalía, and many other artists (check out my regularly updated spotify playlist below!)",
-        "what -next": "i'm applying to phd programs in the us and canada. drop me an email if interested, thank you in advance!",
+        "what -u -do": "i'm broadly interested in human-computer interaction, internet measurement, and software engineering. recently, i've been seeking to understand the internet's operation in our interconnected lives, in which digital tools are becoming an ever more integral part",
+        "what -u -into": "outside of work, i'm a huge fan of le sserafim, zeph, rosalía, newjeans, and many other artists (check out my regularly updated spotify playlist below!)",
+        "what -next": "i'm going to the university of southern california (usc) to continue my phd studies",
         "get -cv": "i made my cv with figma, so you can always get the most up-to-date version at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp.",
         "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/ruh010/portfolio.",
-        "get -in -touch": "email: itsrunhuang@outlook.com\\nlinkedin: https://www.linkedin.com/in/runhuangii/",
-        "rm -rf": "*CORE DUMPED*\nan error occurred. contact the administrator at itsrunhuang@outlook.com for more information ;)"
+        "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/"
     }
 }

@@ -18,7 +18,6 @@ const ChipContent = styled(({ description, placement, ...props }) => (
     borderRadius: "10rem",
     cursor: "default",
     fontSize: "1rem",
-    fontWeight: 600,
     padding: theme.spacing(0.8, 1.2),
     margin: theme.spacing(0, 0.8),
     [theme.breakpoints.up("sm")]: {

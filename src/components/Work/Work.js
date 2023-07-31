@@ -108,7 +108,7 @@ const TextBox = styled(Box)(({ theme }) => ({
     padding: theme.spacing(1.5, 0.6, 0),
     fontSize: "1.4rem",
     color: "#e0e0e0",
-    lineHeight: 1.2,
+    lineHeight: 1.25,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-evenly",
@@ -140,12 +140,11 @@ const WorkItem = ({ idx, links, stacks, title, images, author, place, descriptio
             <ItemBox ref={targetRef}>
                 <WorkImg images={images} idx={idx} />
                 <TextBox>
-                    <Box sx={{ marginBottom: 1.5, textAlign: "justify" }}>
+                    <Box sx={{ marginBottom: 1.5 }}>
                         {author.map(({ name, self }) => (
                             <span style={{
-                                textDecoration: self && "underline",
-                                fontSize: "1em",
-                                fontWeight: self && 700,
+                                fontSize: self ? "1em" : "0.9em",
+                                color: !self && "#a0a0a0",
                             }} key={name}>{name}, </span>
                         ))}
                         <Link color="secondary" sx={{
@@ -178,7 +177,6 @@ const WorkItem = ({ idx, links, stacks, title, images, author, place, descriptio
                         fontSize: "0.9em",
                         lineHeight: 1.1,
                         color: "#bfbfbf",
-                        textAlign: "justify",
                         marginBottom: 2,
                         textTransform: "lowercase",
                     }}>
