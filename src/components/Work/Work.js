@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import TypeTitle from "components/TypeText";
 import data from "./WorkData.json"
 import { useScroll, useTransform, motion } from "framer-motion";
