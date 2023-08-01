@@ -75,7 +75,7 @@ export default function HeroTerminal({ commands }) {
         <motion.div>
             <HeroTerminalContainer>
                 <Terminal name="terminal" onInput={onInput}>
-                    <TerminalOutput>type to chat with runGPT! ('<Link onClick={onClickHelp} sx={{ "&:hover": { cursor: "pointer" } }}>help</Link>' for all commands)</TerminalOutput>
+                    <TerminalOutput>type to ask me something! ('<Link onClick={onClickHelp} sx={{ "&:hover": { cursor: "pointer" } }}>help</Link>' for all commands)</TerminalOutput>
                     <TerminalInput>who -r -u</TerminalInput>
                     <TerminalOutput>i'm a 1st year phd student in computer science at the university of southern california (usc). i received my bachelor's degree at fudan university, where i was very fortunate to be advised by <Link alt="yang chen's homepage" href="https://chenyang03.wordpress.com/">prof. yang chen</Link>.</TerminalOutput>
                     {cmd.map((cmd, idx) => {
