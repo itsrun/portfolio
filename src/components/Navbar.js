@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { titleFont } from "theme";
 
 const NavBox = styled((props) => (
     <Toolbar component="nav" disableGutters {...props} />
 ))(({ theme }) => ({
-    padding: theme.spacing(5, 0, 16),
+    padding: theme.spacing(5, 0),
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -92,7 +93,7 @@ const NavLink = styled((props) => (
     />
 ))(({ theme }) => ({
     textDecoration: "none",
-    fontFamily: "Montserrat, Inter Var, Inter, Roboto, Arial",
+    fontFamily: titleFont,
     fontSize: "1.3rem",
     fontWeight: 600,
     letterSpacing: 1,
@@ -117,7 +118,7 @@ const NavIcon = styled((props) => (
     },
 }));
 
-const links = [{ title: "work", href: "#work" }, { title: "life", href: "#life" }, { title: "resume", href: "https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp/CV-Single-Column?node-id=1%3A2&t=YckmRzDGCkhSmEzt-1" }];
+const links = [{ title: "/work", href: "#work" }, { title: "/life", href: "#life" }, { title: "/cv", href: "https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp/CV-Single-Column?node-id=1%3A2&t=YckmRzDGCkhSmEzt-1" }];
 const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/runhuangii/" }, { icon: <InstagramIcon />, href: "https://www.instagram.com/guru.miniyak/" }, { icon: <GitHubIcon />, href: "https://github.com/ruh010" }];
 
 export default function Navbar(props) {

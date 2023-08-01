@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styled } from "@mui/material/styles";
 import { Link, Typography } from "@mui/material";
+import { titleFont } from "theme";
 
 // Word wrapper
 const Wrapper = (props) => {
@@ -10,15 +11,21 @@ const Wrapper = (props) => {
 
 const heading = styled((props) => (
     <Typography variant="h1" {...props} />
-))(({
+))(({ theme }) => ({
     fontSize: "3.2rem",
-    fontFamily: "montserrat",
+    fontFamily: titleFont,
     whiteSpace: "nowrap",
+    fontWeight: 800,
+    lineHeight: 1.25,
+    [theme.breakpoints.up("sm")]: {
+        fontSize: "4.8rem",
+    },
 }));
 
 const heading2 = styled((props) => (
     <Link variant="h2" {...props} />
 ))(({ theme }) => ({
+    fontFamily: titleFont,
     fontSize: "1.5rem",
     color: "#aaa",
     fontWeight: 500,

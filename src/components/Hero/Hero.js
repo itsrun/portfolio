@@ -12,6 +12,10 @@ const HeroBox = styled((props) => (
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    marginTop: theme.spacing(12),
+    [theme.breakpoints.up("md")]: {
+        marginTop: theme.spacing(16),
+    }
 }));
 
 const HeroAvatarComp = styled(({ img, ...props }) => (
@@ -28,10 +32,14 @@ const HeroAvatarComp = styled(({ img, ...props }) => (
         />
     </motion.div>
 ))(({ theme }) => ({
-    width: "16rem",
-    height: "16rem",
+    width: "15.6rem",
+    height: "15.6rem",
     position: "relative",
     boxShadow: "0 0 64px 0px hsl(0deg 0% 100% / 15%)",
+    [theme.breakpoints.up("md")]: {
+        width: "18rem",
+        height: "18rem",
+    },
 }));
 
 const HeroTitleBox = styled((props) => (
@@ -55,6 +63,9 @@ const HeroTitleBox = styled((props) => (
     textAlign: "center",
     cursor: "default",
     padding: theme.spacing(2, 0, 3),
+    [theme.breakpoints.up("md")]: {
+        marginTop: theme.spacing(15),
+    },
 }));
 
 export default function Hero() {
@@ -63,7 +74,7 @@ export default function Hero() {
             <HeroAvatarComp />
             <HeroTitleBox>
                 <HeroTitle type="heading1" text="hi there, i'm run ;)" />
-                <HeroTitle type="heading2" href="mailto:runhuang@usc.edu" text="黃潤 | runhuang [at] usc [dot] edu" />
+                <HeroTitle type="heading2" href="mailto:runhuang@usc.edu" text="to seek, to seed | runhuang [at] usc [dot] edu" />
             </HeroTitleBox>
             <HeroTerminal commands={data.commands} />
             {data.interest.map(({ name, ...props }) => (

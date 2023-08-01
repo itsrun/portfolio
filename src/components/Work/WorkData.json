@@ -1,151 +1,16 @@
 [
     {
-        "title": "Locating CDN Edge Servers with HTTP Responses",
-        "award": {
-            "name": "1st place (1/62), SIGCOMM Student Research Competition",
-            "link": "https://src.acm.org/winners/2023"
-        },
-        "description": "We proposed an HTTP-based geolocation tool that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at the city-level granularity",
-        "author": [
-            {
-                "name": "Run Huang",
-                "self": true
-            },
-            {
-                "name": "Mengying Zhou"
-            },
-            {
-                "name": "Tiancheng Guo"
-            },
-            {
-                "name": "Yang Chen"
-            }
-        ],
-        "place": "ACM SIGCOMM 2022 Demos and Posters",
-        "links": [
-            {
-                "name": "Paper",
-                "href": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051"
-            },
-            {
-                "name": "Website",
-                "href": "https://locedgex.web.app"
-            },
-            {
-                "name": "Poster",
-                "href": "/locedge_poster.pdf"
-            },
-            {
-                "name": "video",
-                "href": "https://www.youtube.com/watch?v=KJSj_DCQ1bI"
-            }
-        ],
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/locedge_Xrl65bRUN.gif",
-            "https://ik.imagekit.io/runh/webcv/image/sigcomm_1l_ozaLw3.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869103"
-        ],
-        "href": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051"
+        "title": "Software Engineer Intern",
+        "company": "Siemens",
+        "time": "2022-2023",
+        "image": "siemens.svg",
+        "description": ""
     },
     {
-        "title": "ARamsay: An Augmented Reality Cooking Assistant on HoloLens",
-        "author": [
-            {
-                "name": "Run Huang",
-                "self": true
-            },
-            {
-                "name": "Lingshuang Kong"
-            },
-            {
-                "name": "Shutong Wu"
-            },
-            {
-                "name": "Couson Ning"
-            }
-        ],
-        "place": "UC San Diego Design Lab",
-        "description": "We designed simple and intuitive gestures to interact with an AR recipe app, aiming to provide a more enjoyable and hygienic cooking experience",
-        "links": [
-            {
-                "name": "Report",
-                "href": "aramsay.pdf"
-            },
-            {
-                "name": "website",
-                "href": "https://lingshuang.webflow.io/work/aramsay"
-            },
-            {
-                "name": "Video",
-                "href": "https://www.youtube.com/watch?v=7kfy42EO79I&t=33s"
-            },
-            {
-                "name": "code",
-                "href": "https://github.com/ARamsay118/ARamsay-HoloLens"
-            }
-        ],
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/aramsay_TWMvf9_kPa.jpeg",
-            "https://ik.imagekit.io/runh/webcv/image/aramsay_qMWSK00t9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869657"
-        ],
-        "href": "https://lingshuang.webflow.io/work/aramsay"
-    },
-    {
-        "title": "Zel X: Cloud-Based 3D Computer-Aided Design Software",
-        "author": [
-            {
-                "name": "SDE intern @siemens",
-                "self": true
-            }
-        ],
-        "description": "Contributed to the sketch function of the web ver. of siemens nx, an industry-leading computer-aided design software used by NASA, Boeing, etc. ",
-        "place": "siemens digital industries software",
-        "href": "https://trials.sw.siemens.com/en-US/trials/nx-x-online-cad",
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/siemens_if08W_qoS.jpeg"
-        ],
-        "stacks": [
-            {
-                "name": "wasm",
-                "href": "https://webassembly.org/"
-            },
-            {
-                "name": "Three.js",
-                "href": "https://threejs.org/"
-            },
-            {
-                "name": "React",
-                "href": "https://reactjs.org"
-            }
-        ]
-    },
-    {
-        "title": "LocEdge: Accurate CDN Identification & Geolocation",
-        "author": [
-            {
-                "name": "open source",
-                "self": true
-            }
-        ],
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/locedge_c-tSQh-UG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395870322",
-            "https://ik.imagekit.io/runh/webcv/image/locedge3_zgT_hLAcp.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869229",
-            "https://ik.imagekit.io/runh/webcv/image/locedge2_fnfVjZoyd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395870347"
-        ],
-        "href": "https://locedgex.web.app",
-        "description": "LocEdge is a handy tool with over 1.6k downloads on npm (as of Feb. 2023) for web developers to identify the vendor, location, and cache status of a CDN edge server based on the HTTP responses",
-        "links": [
-            {
-                "name": "npm",
-                "href": "https://www.npmjs.com/package/locedge"
-            },
-            {
-                "name": "dataset",
-                "href": "https://github.com/ruh010/locedge-db"
-            },
-            {
-                "name": "code",
-                "href": "https://github.com/ruh010/locedge"
-            }
-        ]
+        "title": "Research Intern",
+        "company": "Tencent",
+        "time": "2021-2022",
+        "description": "",
+        "image": "tencent.svg"
     }
 ]

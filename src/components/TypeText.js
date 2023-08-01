@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useEffect } from "react";
+import { titleFont } from "theme";
 
 const TitleBox = styled(({ id, sx, ...props }) => (
     <Box {...props}>
@@ -10,6 +11,8 @@ const TitleBox = styled(({ id, sx, ...props }) => (
             sx={{
                 display: "inline",
                 fontSize: "inherit",
+                fontFamily: titleFont,
+                fontWeight: 500,
                 ...sx
             }}
         />

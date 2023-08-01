@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 import Tooltip from "components/Tooltip";
 
 const ChipContent = styled(({ description, placement, ...props }) => (
-    <Tooltip title={description} placement={placement} arrow>
+    <Tooltip sx={{
+        lineHeight: 1.3,
+        fontWeight: 500,
+    }} title={description} placement={placement} arrow>
         <motion.div
             whileHover={{
                 scale: 1.1,
@@ -18,6 +21,7 @@ const ChipContent = styled(({ description, placement, ...props }) => (
     borderRadius: "10rem",
     cursor: "default",
     fontSize: "1rem",
+    fontWeight: 600,
     padding: theme.spacing(0.8, 1.2),
     margin: theme.spacing(0, 0.8),
     [theme.breakpoints.up("sm")]: {

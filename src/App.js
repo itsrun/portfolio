@@ -5,27 +5,20 @@ import Footer from "components/Footer";
 import Hero from "components/Hero/Hero";
 import Background from "components/Background";
 import LazySection from "components/Lazy/LazySection";
+import { paragraphFont } from "theme";
 
 const darkTheme = createTheme({
     palette: {
         mode: "dark",
     },
     typography: {
-        fontFamily: [
-            "Source Sans Pro",
-            "-apple-system",
-            "BlinkMacSystemFont",
-            "'Segoe UI'",
-            "Roboto",
-            "'Helvetica Neue'",
-            "Arial",
-            "sans-serif",
-        ].join(","),
+        fontFamily: paragraphFont,
     },
 });
 
 const sections = [
-    { path: "Work/Work", id: "work", height: "240vh" },
+    { path: "Project/Project", id: "work", height: "240vh" },
+    // { path: "Work/Work", height: "60vh" },
     { path: "Honor/Honor", height: "32rem" },
     { path: "Skill/Skill", height: "100vh" },
     { path: "Life/Life", id: "life", height: "360vh" },

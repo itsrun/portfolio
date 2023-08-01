@@ -5,7 +5,7 @@ import { Fragment, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const HeroTerminalContainer = styled(Box)(({ theme }) => ({
-    marginTop: theme.spacing(3.5),
+    marginTop: theme.spacing(6),
     cursor: "default",
     "& .react-terminal": {
         height: "fit-content",
@@ -14,7 +14,7 @@ const HeroTerminalContainer = styled(Box)(({ theme }) => ({
         padding: "6rem 4rem 3rem",
         border: "transparent 1px solid",
         borderRadius: "1.6rem",
-        backgroundColor: "#1e1e1e",
+        backgroundColor: "#111",
         height: "fit-content",
         "&:hover": {
             borderColor: "#555",
