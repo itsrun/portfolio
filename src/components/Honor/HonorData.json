@@ -1,19 +1,21 @@
 [
     {
-        "title": "ACM SIGCOMM Student Research Competition",
+        "venue": "ACM SIGCOMM Student Research Competition",
         "src": "https://ik.imagekit.io/runh/webcv/image/acm_vjzpDwN8_.jpeg",
-        "award": "Gold Medal"
+        "award": "1st place"
     },
     {
-        "title": "Tencent Cloud Research Scholarship",
-        "src": "https://ik.imagekit.io/runh/webcv/image/tencent_ZwVXkqT-l.jpeg"
+        "venue": "USC Viterbi",
+        "src": "viterbi.jpg",
+        "award": "Annenberg Fellowship"
     },
     {
-        "title": "UCEAP-Fudan Study Abroad Scholarship",
-        "src": "https://ik.imagekit.io/runh/webcv/image/uceap_06iMdFd6O.jpeg"
+        "venue": "Fudan University",
+        "src": "https://ik.imagekit.io/runh/webcv/image/uceap_06iMdFd6O.jpeg",
+        "award": "UCEAP Study Abroad Scholarship"
     },
     {
-        "title": "Fudan Excellence Scholarship",
+        "venue": "Fudan Excellence Scholarship",
         "src": "https://ik.imagekit.io/runh/webcv/image/fudan_RS7j871V9.jpeg",
         "award": "Top 15% (2020), Top 25% (2021)"
     }

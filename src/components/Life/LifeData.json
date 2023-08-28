@@ -1,10 +1,5 @@
 [
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/Qarhan.jpg",
-        "alt": "qarhan playa 🧂",
-        "place": "qinghai, china, 2023"
-    },
-    {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/mtjacinto_3aXF6mg2Q.jpeg",
         "alt": "mt. jacinto 🏔️",
         "place": "palm spring, california, 2021"
@@ -18,11 +13,6 @@
         "src": "https://ik.imagekit.io/runh/webcv/image/concerts/bloom_VQ4BENTVL.jpeg",
         "alt": "troye sivan, bloom tour 🌸",
         "place": "mercedes-benz arena, shanghai, 2019"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/hohxil.jpg",
-        "alt": "hiking in hoh xil, the no man's land 🗻",
-        "place": "qinghai-tibet plateau, 2023"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/concerts/tcs_18XFM2JsJ.jpeg?updatedAt=1663161532878",

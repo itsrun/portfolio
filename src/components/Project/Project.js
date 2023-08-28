@@ -124,7 +124,7 @@ const TextBox = styled(Box)(({ theme }) => ({
     },
 }));
 
-const ProjectItem = ({ idx, links, stacks, title, images, author, place, description, award, href }) => {
+export const ProjectItem = ({ idx, links, stacks, title, images, author, place, description, award, href }) => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,

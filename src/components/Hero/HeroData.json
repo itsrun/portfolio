@@ -20,7 +20,7 @@
         },
         {
             "name": "natural language processing",
-            "description": "i leverage nlp techniques to extract valuable insights from the vast amounts of textual data",
+            "description": "leveraging nlp techniques to extract valuable insights from the vast amounts of textual data",
             "reverse": true,
             "vertical": "end",
             "angle": -110,
@@ -30,7 +30,7 @@
         },
         {
             "name": "web development",
-            "description": "i'm interested in almost every aspect of web dev: from ui/ux design, frontend to backend, webassembly, and many more",
+            "description": "i'm interested in almost every aspect of web dev: ui/ux design, frontend, backend, seo, webassembly, and many more :)",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 9.3vw))",
             "y": "max(14.4rem, 12.6vw)",
@@ -39,7 +39,7 @@
     ],
     "commands": {
         "what -u -do": "i'm broadly interested in human-computer interaction, internet measurement, and software engineering. recently, i'm focusing on measuring the performance of some critical internet services.",
-        "what -u -into": "outside of work, i'm a huge fan of le sserafim, zeph, rosalía, newjeans, and many other artists (check out my regularly updated spotify playlist below)!",
+        "what -u -into": "outside of work, i'm a huge fan of le sserafim, zeph, newjeans, rosalía, and many other artists (check out my regularly updated spotify playlist below ;)",
         "what -next": "i'm going to the university of southern california (usc) to continue my phd studies.",
         "get -cv": "i made my cv with figma, so you can always get the most up-to-date version at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp.",
         "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/ruh010/portfolio.",

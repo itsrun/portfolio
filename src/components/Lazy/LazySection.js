@@ -68,7 +68,7 @@ export default function LazySection({ sections, children, ...props }) {
         once: true,
         margin: "0px 0px 64px 0px",
     });
-    const { path, id, height } = sections[0];
+    const { path, id, height, ...compProps } = sections[0];
     path.split("/").pop();
 
     useEffect(() => {
@@ -78,7 +78,7 @@ export default function LazySection({ sections, children, ...props }) {
     return (
         <ErrorBoundary>
             <Box component="section" id={id} ref={ref} {...props} sx={{ marginTop: { xs: 10, lg: 12 } }}>
-                {component ? <component.default /> : <LazyFallback error={error} height={height} />}
+                {component ? <component.default {...compProps} /> : <LazyFallback error={error} height={height} />}
             </Box>
             {sections.length > 1 && <LazySection sections={sections.slice(1,)} />}
         </ErrorBoundary>

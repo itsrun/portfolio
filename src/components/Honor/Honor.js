@@ -64,11 +64,11 @@ export default function Honor(props) {
         <Fragment>
             <TypeTitle title="awards / honors" id="honor" />
             <HonorGrid>
-                {data.map(({ title, src, award }, idx) => (
-                    <HonorItem key={title} custom={idx}>
-                        <HonorImg src={src} alt={`img-for-${title}`} />
+                {data.map(({ venue, src, award }, idx) => (
+                    <HonorItem key={venue} custom={idx}>
+                        <HonorImg src={src} alt={`img-for-${venue}`} />
                         <HonorText>
-                            <Typography color="primary" variant="span">{award}</Typography>{award && ", "} {title}
+                            <Typography color="primary" variant="span">{award}</Typography>{award && ", "} {venue}
                         </HonorText>
                     </HonorItem>
                 ))}

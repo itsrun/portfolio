@@ -5,7 +5,7 @@
             "name": "1st place (1/62), SIGCOMM Student Research Competition",
             "link": "https://src.acm.org/winners/2023"
         },
-        "description": "We proposed an HTTP-based geolocation tool that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at the city-level granularity",
+        "description": "we proposed an HTTP-based geolocation tool that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at the city-level granularity",
         "author": [
             {
                 "name": "Run Huang",
