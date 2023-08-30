@@ -40,7 +40,6 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
     });
 
     const margin = 368 - 16 * idx;
-    console.log(alt, src, place, idx);
 
     const y = useTransform(scrollYProgress, [0, 1], [margin, 0]);
     const opacity = useTransform(scrollYProgress, [0, 0.4, 1], [0, 0.1, 1]);
@@ -143,7 +142,6 @@ export default function Life(props) {
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 8,
                 overflow: "visible",
-                marginBottom: "min(-3.2rem, -6.4vw)",
             }}>
                 {data.map((props, idx) => (
                     <LifeImgItem key={idx} idx={idx} {...props} />
