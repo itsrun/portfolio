@@ -11,7 +11,7 @@
         },
         {
             "name": "human-computer interaction",
-            "description": "my goal is to enable more seamless & efficient interactions between humans and digital systems",
+            "description": "a broad theme of interest to me",
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 8.8vw)",
@@ -19,8 +19,8 @@
             "placement": "top"
         },
         {
-            "name": "natural language processing",
-            "description": "leveraging nlp techniques to extract valuable insights from the vast amounts of textual data",
+            "name": "information verifiability",
+            "description": "making the web a more accessible and verifiable source of information",
             "reverse": true,
             "vertical": "end",
             "angle": -110,

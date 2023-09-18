@@ -113,6 +113,7 @@ const TextBox = styled(Box)(({ theme }) => ({
     flexDirection: "column",
     justifyContent: "space-evenly",
     cursor: "default",
+    textTransform: "lowercase",
     [theme.breakpoints.up("sm")]: {
         padding: theme.spacing(0, 0, 0, "3vw"),
     },
@@ -145,6 +146,7 @@ export const ProjectItem = ({ idx, links, stacks, title, images, author, place, 
                             <span style={{
                                 fontSize: self ? "1em" : "0.9em",
                                 color: !self && "#a0a0a0",
+                                textTransform: self ? "capitalize" : "lowercase",
                             }} key={name}>{name}, </span>
                         ))}
                         <Link color="secondary" sx={{

@@ -2,15 +2,17 @@
     {
         "title": "Software Engineer Intern",
         "company": "Siemens DISW",
-        "time": "Sep. 2023 - Mar. 2023",
-        "image": "siemens.svg",
+        "href": "https://www.sw.siemens.com/en-US/zel-x",
+        "time": "Sep. 2022 - Mar. 2023",
+        "image": "https://ik.imagekit.io/runh/webcv/image/siemens_FhDSbGJb-.svg?updatedAt=1694997306713",
         "description": ""
     },
     {
         "title": "Research Intern",
         "company": "Tencent Cloud",
+        "href": "https://www.tencentcloud.com/",
         "time": "Jan. 2022 - Mar. 2022",
         "description": "",
-        "image": "tencent.svg"
+        "image": "https://ik.imagekit.io/runh/webcv/image/tencent_2mI0a1Oz8l.svg?updatedAt=1694997306798"
     }
 ]
