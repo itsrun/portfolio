@@ -5,16 +5,6 @@
         "place": "pudong, shanghai, 2023"
     },
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/5171694999731_.pic_hd_4frQfeRJn.jpg",
-        "alt": "seoul street 🇰🇷",
-        "place": "mapo-gu, seoul, 2023"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/lasunset",
-        "alt": "socal sunset 🌇",
-        "place": "los angeles, california, 2023"
-    },
-    {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/mtjacinto_3aXF6mg2Q.jpeg",
         "alt": "hiking in mt. san jacinto 🏔️",
         "place": "palm spring, california, 2021"
@@ -28,10 +18,5 @@
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/palmspring_SRwRXQcvR.jpeg",
         "alt": "palm spring from above 🚡",
         "place": "palm spring, california, 2021"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/japan_i4h2b1gvX.jpeg",
-        "alt": "beware of leaping deer 🦌",
-        "place": "nara, japan, 2020"
     }
 ]

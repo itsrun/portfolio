@@ -5,7 +5,7 @@ import { Fragment } from "react";
 export default function Resume(props) {
     return (
         <Fragment>
-            <TypeTitle title="my up-to-date cv" id="cv" />
+            <TypeTitle title="my (likely outdated) cv" id="cv" />
             <Box sx={{
                 marginTop: 4,
                 marginBottom: 9,

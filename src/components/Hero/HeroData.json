@@ -10,8 +10,8 @@
             "placement": "bottom"
         },
         {
-            "name": "human-computer interaction",
-            "description": "a broad theme of interest to me",
+            "name": "information verifiability",
+            "description": "making the web a more accessible and verifiable source of information",
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 8.8vw)",
@@ -19,8 +19,8 @@
             "placement": "top"
         },
         {
-            "name": "information verifiability",
-            "description": "making the web a more accessible and verifiable source of information",
+            "name": "knowledge diffusion",
+            "description": "explore how cutting-edge academic research diffuses into the industry and touches our daily lives",
             "reverse": true,
             "vertical": "end",
             "angle": -110,
@@ -30,7 +30,7 @@
         },
         {
             "name": "web development",
-            "description": "i'm interested in almost every aspect of web dev: ui/ux design, frontend, backend, seo, webassembly, and many more :)",
+            "description": "i'm passionate about various aspects of web dev: ui/ux design, frontend, backend, seo, webassembly, and many more :)",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 9.3vw))",
             "y": "max(14.4rem, 12.6vw)",
@@ -38,7 +38,7 @@
         }
     ],
     "commands": {
-        "what -u -do": "i'm broadly interested in human-computer interaction, internet measurement, and software engineering. recently, i'm focusing on measuring the performance of some critical internet services.",
+        "what -u -do": "i have a wide-ranging interest in human-computer interaction, internet measurement, and software engineering. recently, i'm focusing on understanding the diffusion of knowledge within q&a communities.",
         "what -u -into": "outside of work, i'm a huge fan of le sserafim, zeph, newjeans, rosalía, and many other artists (check out my regularly updated spotify playlist below ;)",
         "what -next": "i'm going to the university of southern california (usc) to continue my phd studies.",
         "get -cv": "i made my cv with figma, so you can always get the most up-to-date version at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp.",
