@@ -95,15 +95,28 @@ export default function Life(props) {
                     )}
                 >
                     <Tab key="hkp" title="my spotify playlist">
-                        <BrowserTabBox sx={{ minHeight: "64vh" }}>
+                        <BrowserTabBox sx={{ minHeight: "72vh" }}>
                             <iframe
                                 title="My Spotify Playlist"
                                 style={{
                                     marginBottom: -4,
-                                    height: "max(36rem, 64vh)",
+                                    height: "72vh",
                                 }}
-                                src="https://open.spotify.com/embed/playlist/7hBSqiY7yd1KdJrSAnA4oG?utm_source=generator" width="100%"
-                                frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                                src="https://open.spotify.com/embed/playlist/7hBSqiY7yd1KdJrSAnA4oG?utm_source=generator"
+                                width="100%" frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                            />
+                        </BrowserTabBox>
+                    </Tab>
+                    <Tab key="stats" title="my spotify stats">
+                        <BrowserTabBox sx={{ minHeight: "88vh" }}>
+                            <iframe
+                                title="my spotify stats"
+                                style={{
+                                    marginBottom: -4,
+                                    height: "88vh",
+                                }}
+                                src="https://stats.fm/mango.fearnot"
+                                width="100%" frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
                             />
                         </BrowserTabBox>
                     </Tab>
@@ -113,7 +126,7 @@ export default function Life(props) {
                                 title="Mangolime + Flamboyant"
                                 style={{
                                     marginBottom: -4,
-                                    height: "max(36rem, 64vh)",
+                                    height: "72vh",
                                 }}
                                 src="https://open.spotify.com/embed/playlist/37i9dQZF1EJJf1yNS86eOl?utm_source=generator" width="100%"
                                 frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
