@@ -6,7 +6,7 @@
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
             "y": "-3.4rem",
-            "description": "i seek to understand the internet's operation in our interconnected lives by conducting large-scale online measurements",
+            "description": "i conduct large-scale online measurements to understand the internet and its users",
             "placement": "bottom"
         },
         {
@@ -39,10 +39,10 @@
     ],
     "commands": {
         "what -u -do": "i have a wide-ranging interest in human-computer interaction, internet measurement, and software engineering. recently, i'm focusing on understanding knowledge diffusion within q&a communities.",
-        "what -u -into": "outside of work, i'm a huge fan of le sserafim, zeph, newjeans, rosalía, and many other artists (check out my regularly updated spotify playlist below ;)",
-        "what -next": "i'm going to the university of southern california (usc) to continue my phd studies.",
-        "get -cv": "i made my cv with figma, so you can always get the most up-to-date version at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp.",
-        "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/ruh010/portfolio.",
+        "what -u -into": "after work, i unwind with spotify. my biggest jams are LE SSERAFIM, zeph, and the 1975. i also play zelda :)",
+        "what -next": "i'm continuing my research at the university of southern california (usc).",
+        "get -cv": "i made my cv with figma at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp. it might be a bit outdated though :/",
+        "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio.",
         "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/"
     }
 }

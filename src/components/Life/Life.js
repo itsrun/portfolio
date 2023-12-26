@@ -154,6 +154,7 @@ export default function Life(props) {
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 8,
+                marginBottom: 16,
                 overflow: "visible",
             }}>
                 {data.map((props, idx) => (
