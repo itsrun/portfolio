@@ -158,7 +158,8 @@ export const ProjectItem = ({ idx, links, stacks, title, images, author, place, 
                         </Link>
                         {place && (
                             <Typography sx={{
-                                fontSize: "1em",
+                                fontSize: "0.9em",
+                                textTransform: "initial",
                             }} variant="span">
                                 , {place}
                             </Typography>

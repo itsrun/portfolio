@@ -94,7 +94,7 @@ export default function Life(props) {
                         </Fragment>
                     )}
                 >
-                    <Tab key="hkp" title="my spotify playlist">
+                    <Tab key="hkp" title="jam with me 🙌">
                         <BrowserTabBox sx={{ minHeight: "72vh" }}>
                             <iframe
                                 title="My Spotify Playlist"
@@ -154,7 +154,7 @@ export default function Life(props) {
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 8,
-                marginBottom: 16,
+                marginBottom: 12,
                 overflow: "visible",
             }}>
                 {data.map((props, idx) => (

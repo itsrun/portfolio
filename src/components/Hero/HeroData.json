@@ -11,7 +11,7 @@
         },
         {
             "name": "information verifiability",
-            "description": "making the web a more accessible and verifiable source of information",
+            "description": "making the web a more accessible, open, and verifiable source of information",
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 8.8vw)",
@@ -19,7 +19,7 @@
             "placement": "top"
         },
         {
-            "name": "knowledge diffusion",
+            "name": "information diffusion",
             "description": "explore how cutting-edge academic research diffuses into the industry and touches our daily lives",
             "reverse": true,
             "vertical": "end",
@@ -29,8 +29,8 @@
             "placement": "bottom"
         },
         {
-            "name": "web development",
-            "description": "i'm passionate about various aspects of web dev: ui/ux design, frontend, backend, seo, webassembly, and many more :)",
+            "name": "social networks",
+            "description": "",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 9.3vw))",
             "y": "max(14.4rem, 12.6vw)",
@@ -38,7 +38,7 @@
         }
     ],
     "commands": {
-        "what -u -do": "i have a wide-ranging interest in human-computer interaction, internet measurement, and software engineering. recently, i'm focusing on understanding knowledge diffusion within q&a communities.",
+        "what -u -do": "i have a wide-ranging interest in human-computer interaction and internet measurement. recently, i'm focusing on understanding knowledge diffusion within community q&a sites.",
         "what -u -into": "after work, i unwind with spotify. my biggest jams are LE SSERAFIM, zeph, and the 1975. i also play zelda :)",
         "what -next": "i'm continuing my research at the university of southern california (usc).",
         "get -cv": "i made my cv with figma at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp. it might be a bit outdated though :/",
