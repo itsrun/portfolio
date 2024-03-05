@@ -1,17 +1,17 @@
 {
     "interest": [
         {
-            "name": "internet measurement",
+            "name": "web measurement",
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
             "y": "-3.4rem",
-            "description": "i conduct large-scale online measurements to understand the internet and its users",
+            "description": "i conduct large-scale online measurements to understand the web and its users",
             "placement": "bottom"
         },
         {
-            "name": "information verifiability",
-            "description": "making the web a more accessible, open, and verifiable source of information",
+            "name": "interactive interfaces",
+            "description": "",
             "reverse": true,
             "angle": -60,
             "x": "max(4.8rem, 8.8vw)",
@@ -19,7 +19,7 @@
             "placement": "top"
         },
         {
-            "name": "information diffusion",
+            "name": "knowledge diffusion",
             "description": "explore how cutting-edge academic research diffuses into the industry and touches our daily lives",
             "reverse": true,
             "vertical": "end",
@@ -29,8 +29,8 @@
             "placement": "bottom"
         },
         {
-            "name": "social networks",
-            "description": "",
+            "name": "accessibility",
+            "description": "making the web a more accessible, open, and verifiable source of information",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 9.3vw))",
             "y": "max(14.4rem, 12.6vw)",
@@ -39,9 +39,9 @@
     ],
     "commands": {
         "what -u -do": "i have a wide-ranging interest in human-computer interaction and internet measurement. recently, i'm focusing on understanding knowledge diffusion within community q&a sites.",
-        "what -u -into": "after work, i unwind with spotify. my biggest jams are LE SSERAFIM, zeph, and the 1975. i also play zelda :)",
+        "what -u -into": "after work, i unwind with spotify. my favs are LE SSERAFIM, zeph, the 1975, and Charli XCX. i play zelda and stardew valley after 6pm :/",
         "what -next": "i'm continuing my research at the university of southern california (usc).",
-        "get -cv": "i made my cv with figma at https://www.figma.com/file/iRWdgZemqOGDJjkncpqxYp. it might be a bit outdated though :/",
+        "get -cv": "a (likely outdated) copy of my cv has been downloaded. Otherwise, please visit https://iamhuang.run/Run_Vita.pdf",
         "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio.",
         "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/"
     }

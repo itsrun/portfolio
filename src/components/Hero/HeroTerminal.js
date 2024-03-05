@@ -59,7 +59,7 @@ export default function HeroTerminal({ commands }) {
             window.close();
         } else if (cmdKey === "get -cv") {
             const tempLink = document.createElement("a");
-            tempLink.download = tempLink.href = `cv.pdf`;
+            tempLink.download = tempLink.href = `Run_Vita.pdf`;
             document.body.appendChild(tempLink);
             tempLink.click();
             document.body.removeChild(tempLink);
