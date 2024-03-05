@@ -5,18 +5,13 @@
         "place": "pudong, shanghai, 2023"
     },
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/sedona_lPtaBnrgpQ?updatedAt=1703876786429",
-        "alt": "hiking in sedona 🏜️",
-        "place": "sedona, arizona, 2023"
+        "src": "https://ik.imagekit.io/runh/webcv/image/concerts/bloom_VQ4BENTVL.jpeg",
+        "alt": "troye sivan, bloom tour 🌸",
+        "place": "mercedes-benz arena, shanghai, 2019"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/mtjacinto_3aXF6mg2Q.jpeg",
         "alt": "hiking in mt. san jacinto 🏔️",
         "place": "palm spring, california, 2021"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/concerts/bloom_VQ4BENTVL.jpeg",
-        "alt": "troye sivan, bloom tour 🌸",
-        "place": "mercedes-benz arena, shanghai, 2019"
     }
 ]
