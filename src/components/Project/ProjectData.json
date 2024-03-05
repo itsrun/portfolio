@@ -1,5 +1,33 @@
 [
     {
+        "title": "A Tale of Two Communities: Exploring Academic References on Stack Overflow",
+        "author": [
+            {
+                "name": "Run Huang",
+                "self": true
+            },
+            {
+                "name": "Souti Chattopadhyay"
+            }
+        ],
+        "description": "We conducted the first large-scale analysis of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses in this practitioner-centric community",
+        "place": "ACM Web Conference (WWW) 2024 (Short Paper)",
+        "links": [
+            {
+                "name": "Website",
+                "href": "https://sciso.vercel.app"
+            },
+            {
+                "name": "Paper (coming soon)",
+                "href": "#"
+            }
+        ],
+        "images": [
+            "/sciso-www.png"
+        ],
+        "href": "https://sciso.vercel.app"
+    },
+    {
         "title": "Locating CDN Edge Servers with HTTP Responses",
         "award": {
             "name": "1st place (1/62), ACM Student Research Competition",
