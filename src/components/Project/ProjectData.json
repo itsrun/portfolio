@@ -10,20 +10,28 @@
                 "name": "Souti Chattopadhyay"
             }
         ],
-        "description": "We conducted the first large-scale analysis of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses in this practitioner-centric community",
+        "description": "We conducted a large-scale analysis of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses into this developer-centric community",
         "place": "ACM Web Conference (WWW) 2024, Short Paper",
         "links": [
+            {
+                "name": "Paper",
+                "href": "/papers/www24.pdf"
+            },
             {
                 "name": "Website",
                 "href": "https://sciso.vercel.app"
             },
             {
-                "name": "Paper (coming soon)",
-                "href": "#"
+                "name": "Video",
+                "href": "https://youtu.be/vp57dFmh4Ik"
+            },
+            {
+                "name": "Dataset",
+                "href": "https://doi.org/10.6084/m9.figshare.25195805"
             }
         ],
         "images": [
-            "/sciso-www.png"
+            "/pics/sciso-www.png"
         ],
         "href": "https://sciso.vercel.app"
     },
@@ -61,7 +69,7 @@
             },
             {
                 "name": "Poster",
-                "href": "/locedge_poster.pdf"
+                "href": "/papers/locedge_poster.pdf"
             },
             {
                 "name": "video",
@@ -95,7 +103,7 @@
         "links": [
             {
                 "name": "Report",
-                "href": "aramsay.pdf"
+                "href": "/papers/aramsay.pdf"
             },
             {
                 "name": "website",

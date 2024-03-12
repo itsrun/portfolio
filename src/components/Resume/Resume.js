@@ -9,19 +9,20 @@ export default function Resume(props) {
             <Box sx={{
                 marginTop: 4,
                 marginBottom: 9,
-                height: "min(calc(118vw + 12rem), 150rem)",
+                height: "min(calc(100vw + 12rem), 72rem)",
                 position: "relative",
                 borderRadius: "1.6rem",
                 overflow: "hidden",
-                backgroundColor: "#ce93d8",
+                // backgroundColor: "#ce93d8",
             }}>
                 <iframe
                     width="100%"
                     height="100%"
                     frameBorder={0}
                     title="run's cv"
-                    src="https://www.figma.com/embed?embed_host=https://itshuang.run&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiRWdgZemqOGDJjkncpqxYp%2FCV-Single-Column%3Fnode-id%3D0%253A1%26t%3DRL4rJUFFGKh2tvjh-1"
+                    src="/Run_Vita.pdf"
                     allowFullScreen
+                    loading="lazy"
                 />
             </Box>
         </Fragment>

@@ -14,7 +14,7 @@ const FooterBox = styled((props) => (
 export default function Footer(props) {
     return (
         <FooterBox>
-            © Made with 🌮 by Run Huang. Last Updated: Dec. 27, 2023
+            © Made by Run Huang. Last Updated: Mar. 12, 2024
         </FooterBox>
     );
 };

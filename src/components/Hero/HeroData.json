@@ -1,16 +1,16 @@
 {
     "interest": [
         {
-            "name": "web measurement",
+            "name": "world wide web",
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
             "y": "-3.4rem",
-            "description": "i conduct large-scale online measurements to understand the web and its users",
+            "description": "social media, web accessibility, and internet measurement",
             "placement": "bottom"
         },
         {
-            "name": "interactive interfaces",
+            "name": "interactive user interfaces",
             "description": "",
             "reverse": true,
             "angle": -60,
@@ -29,8 +29,8 @@
             "placement": "bottom"
         },
         {
-            "name": "accessibility",
-            "description": "making the web a more accessible, open, and verifiable source of information",
+            "name": "human-computer interaction",
+            "description": "",
             "angle": 60,
             "x": "calc(-100% - max(6.4rem, 9.3vw))",
             "y": "max(14.4rem, 12.6vw)",
@@ -38,11 +38,12 @@
         }
     ],
     "commands": {
-        "what -u -do": "i have a wide-ranging interest in human-computer interaction and internet measurement. recently, i'm focusing on understanding knowledge diffusion within community q&a sites.",
-        "what -u -into": "after work, i unwind with spotify. my favs are LE SSERAFIM, zeph, the 1975, and Charli XCX. i play zelda and stardew valley after 6pm :/",
+        "what -u -do": "i'm broadly interested in human-computer interaction and the web. recently, i'm studying knowledge diffusion in community q&a websites.",
+        "what -u -into": "after work, i unwind with spotify. i'm a huge fan of LE SSERAFIM, zeph, the 1975, and Charli XCX. after 6pm i'm either on hyrule or pelican town :/",
         "what -next": "i'm continuing my research at the university of southern california (usc).",
         "get -cv": "a (likely outdated) copy of my cv has been downloaded. Otherwise, please visit https://iamhuang.run/Run_Vita.pdf",
         "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio.",
-        "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/"
+        "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/",
+        "rm -rf": "o_O?"
     }
 }

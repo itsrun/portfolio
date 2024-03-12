@@ -107,19 +107,6 @@ export default function Life(props) {
                             />
                         </BrowserTabBox>
                     </Tab>
-                    <Tab key="stats" title="my spotify stats">
-                        <BrowserTabBox sx={{ minHeight: "88vh" }}>
-                            <iframe
-                                title="my spotify stats"
-                                style={{
-                                    marginBottom: -4,
-                                    height: "88vh",
-                                }}
-                                src="https://stats.fm/mango.fearnot"
-                                width="100%" frameBorder={0} allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
-                            />
-                        </BrowserTabBox>
-                    </Tab>
                     <Tab key="san" title="a blend w/ my friends :)">
                         <BrowserTabBox>
                             <iframe

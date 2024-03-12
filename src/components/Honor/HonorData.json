@@ -5,18 +5,8 @@
         "award": "1st place"
     },
     {
-        "venue": "USC Viterbi",
+        "venue": "USC",
         "src": "https://ik.imagekit.io/runh/webcv/image/viterbi_psLNQGdh32.jpg?updatedAt=1694997306461",
         "award": "Annenberg Fellowship"
-    },
-    {
-        "venue": "Fudan University",
-        "src": "https://ik.imagekit.io/runh/webcv/image/uceap_06iMdFd6O.jpeg",
-        "award": "UCEAP Study Abroad Scholarship"
-    },
-    {
-        "venue": "Fudan Excellence Scholarship",
-        "src": "https://ik.imagekit.io/runh/webcv/image/fudan_RS7j871V9.jpeg",
-        "award": "Top 15% (2020), Top 25% (2021)"
     }
 ]
