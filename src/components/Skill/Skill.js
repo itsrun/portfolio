@@ -15,9 +15,6 @@ const SkillBox = styled(Box)(({ theme }) => ({
         gridColumn: 1,
         gridRow: 1,
     },
-    [theme.breakpoints.up("lg")]: {
-        margin: theme.spacing(16, 0),
-    },
 }));
 
 const SkillItemBox = styled(motion.div, {
@@ -66,17 +63,15 @@ const outerSkill = [
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/mui-min_faklaqu3sU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487702", name: "material ui" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/pptr-min_ijlHIiocQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487444", name: "puppeteer" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/d3-min_Ggghkrxl9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487562", name: "d3.js" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/selenium-min_v9Lrimfi5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487523", name: "selenium" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/emotion-min_Bsr0IZt2i2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487765", name: "emotion" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/seaborn-min_FX9k88w738.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487638", name: "seaborn" },
+    { src: "https://ik.imagekit.io/runh/webcv/image/skills/Plotly_logo_for_digital_final__286_29_oAGczPWdy.png?updatedAt=1710387873603", name: "plotly" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/sklearn-min_01MHRZmvc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487565", name: "scikit learn" },
 ];
 
 const innerSkill = [
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/node-min_EJUkIwyCHv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488989", name: "node.js" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/python-min_tkOibNaaBZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488783", name: "python" },
+    { src: "https://ik.imagekit.io/runh/webcv/image/skills/PyTorch_logo_icon_yOUL2Y0by.svg?updatedAt=1710387473982", name: "pytorch" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/js-min_GQ-21RlIeD.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487735", name: "javascript" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/cpp-min_JwwQHM0U7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488790", name: "c plus plus" },
+    { src: "https://ik.imagekit.io/runh/webcv/image/skills/Node.js_logo_5p35lS7s7.svg?updatedAt=1710387578127", name: "node.js" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/react-min_EVSbGJb04.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627772956", name: "react.js" },
 ];
 

@@ -1,6 +1,6 @@
 [
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/Shanghai",
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/Shanghai?updatedAt=1710390231070",
         "alt": "glimpse of lohkatse on the shanghai maglev 🚝",
         "place": "pudong, shanghai, 2023"
     },
@@ -10,8 +10,19 @@
         "place": "mercedes-benz arena, shanghai, 2019"
     },
     {
+        "src": "//clustrmaps.com/map_v2.png?cl=0e1633&w=784&t=tt&d=ew_bpDc328zQckeBAMOYJeIjIHVAxcRIYMyuc5-n1uU&co=0b4975&ct=cdd4d9",
+        "alt": "a visitor map",
+        "place": "data collected by clustrmaps.com",
+        "href": "https://clustrmaps.com/site/1byuq"
+    },
+    {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/mtjacinto_3aXF6mg2Q.jpeg",
         "alt": "hiking in mt. san jacinto 🏔️",
         "place": "palm spring, california, 2021"
+    },
+    {
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/qinghai_xAaaVLin0.jpeg?updatedAt=1710389501679",
+        "alt": "graduation trip to qinghai lake 🏞️",
+        "place": "qinghai lake, 2023"
     }
 ]

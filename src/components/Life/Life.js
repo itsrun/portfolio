@@ -32,7 +32,7 @@ const BrowserTabBox = styled(Box)(({ theme }) => ({
     },
 }));
 
-const LifeImgItem = ({ alt, src, place, idx }) => {
+const LifeImgItem = ({ alt, src, place, idx, href }) => {
     const itemRef = useRef();
     const { scrollYProgress } = useScroll({
         target: itemRef,
@@ -47,7 +47,9 @@ const LifeImgItem = ({ alt, src, place, idx }) => {
     return (
         <ImageListItem key={alt} sx={{ overflow: "visible" }} ref={itemRef}>
             <motion.div whileHover={{ scale: 1.1 }} style={{ y, opacity, borderRadius: "1.6rem", overflow: "hidden" }}>
-                <LazyImage src={src} alt={alt} margin={margin + 128} trim={1} width="100%" />
+                <a href={href || src}>
+                    <LazyImage src={src} alt={alt} margin={margin + 128} trim={1} width="100%" />
+                </a>
                 <ImageListItemBar
                     title={alt}
                     subtitle={`@${place}`}
@@ -137,11 +139,11 @@ export default function Life(props) {
                 fontSize: "1.2rem",
                 color: "#aaa",
             }}>
-                terrible at taking photos, but still wanted to put sth here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
+                terrible at taking photos, but still wanted to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 8,
-                marginBottom: 12,
+                marginBottom: 2,
                 overflow: "visible",
             }}>
                 {data.map((props, idx) => (
