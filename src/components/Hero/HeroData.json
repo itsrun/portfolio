@@ -1,12 +1,20 @@
 {
     "interest": [
         {
+            "name": "human-computer interaction",
+            "description": "",
+            "angle": 60,
+            "x": "calc(-100% - max(6.4rem, 9.3vw))",
+            "y": "max(14.4rem, 12.6vw)",
+            "placement": "top"
+        },
+        {
             "name": "world wide web",
+            "description": "social media, web accessibility, and internet measurement",
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(2.4rem, 12vw))",
             "y": "-3.4rem",
-            "description": "social media, web accessibility, and internet measurement",
             "placement": "bottom"
         },
         {
@@ -27,14 +35,6 @@
             "x": "max(6.4rem, 12vw)",
             "y": "-1.5rem",
             "placement": "bottom"
-        },
-        {
-            "name": "human-computer interaction",
-            "description": "",
-            "angle": 60,
-            "x": "calc(-100% - max(6.4rem, 9.3vw))",
-            "y": "max(14.4rem, 12.6vw)",
-            "placement": "top"
         }
     ],
     "commands": {

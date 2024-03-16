@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const SkillBox = styled(Box)(({ theme }) => ({
-    height: "min(84vw, 100rem)",
+    height: "min(82vw, 100rem)",
     width: "100%",
     display: "grid",
     justifyContent: "center",
@@ -20,7 +20,7 @@ const SkillBox = styled(Box)(({ theme }) => ({
 const SkillItemBox = styled(motion.div, {
     shouldForwardProp: (prop) => prop !== "radius"
 })(({ theme, radius }) => ({
-    width: `calc(${radius} * min(84vw, 100rem))`,
+    width: `calc(${radius} * min(82vw, 100rem))`,
     margin: "0 auto",
     height: "fit-content",
 }));
@@ -59,20 +59,14 @@ const outerSkill = [
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/mrtk-min_jpIh3KP8Az.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487699", name: "mixed reality toolkit" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/3js-min_6TfyWVDGuR.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487728", name: "three.js" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/unity-min_JEkumdb-Y3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488972", name: "unity 3d" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/csharp-min_InfJ9IeQW.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488931", name: "c sharp" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/mui-min_faklaqu3sU.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487702", name: "material ui" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/pptr-min_ijlHIiocQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487444", name: "puppeteer" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/d3-min_Ggghkrxl9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487562", name: "d3.js" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/Plotly_logo_for_digital_final__286_29_oAGczPWdy.png?updatedAt=1710387873603", name: "plotly" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/sklearn-min_01MHRZmvc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487565", name: "scikit learn" },
+    { src: "https://ik.imagekit.io/runh/webcv/image/skills/react-min_EVSbGJb04.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627772956", name: "react.js" },
 ];
 
 const innerSkill = [
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/PyTorch_logo_icon_yOUL2Y0by.svg?updatedAt=1710387473982", name: "pytorch" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/js-min_GQ-21RlIeD.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627487735", name: "javascript" },
     { src: "https://ik.imagekit.io/runh/webcv/image/skills/cpp-min_JwwQHM0U7.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627488790", name: "c plus plus" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/Node.js_logo_5p35lS7s7.svg?updatedAt=1710387578127", name: "node.js" },
-    { src: "https://ik.imagekit.io/runh/webcv/image/skills/react-min_EVSbGJb04.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669627772956", name: "react.js" },
 ];
 
 export default function Skill(props) {

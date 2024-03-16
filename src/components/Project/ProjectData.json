@@ -10,8 +10,8 @@
                 "name": "Souti Chattopadhyay"
             }
         ],
-        "description": "We conducted a large-scale analysis of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses into this developer-centric community",
-        "place": "ACM Web Conference (WWW) 2024, Short Paper",
+        "description": "We conducted a large-scale study of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses into this developer-centric community",
+        "place": "The Web Conference (WWW) 2024, Short Paper",
         "links": [
             {
                 "name": "Paper",
@@ -33,7 +33,7 @@
         "images": [
             "https://ik.imagekit.io/runh/webcv/image/sciso-www_6oycWWGtd.png?updatedAt=1710388046437"
         ],
-        "href": "https://sciso.vercel.app"
+        "href": "/papers/www24.pdf"
     },
     {
         "title": "Locating CDN Edge Servers with HTTP Responses",
@@ -122,37 +122,5 @@
             "https://ik.imagekit.io/runh/webcv/image/aramsay_qMWSK00t9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395869657"
         ],
         "href": "https://lingshuang.webflow.io/work/aramsay"
-    },
-    {
-        "title": "LocEdge: Accurate CDN Identification & Geolocation",
-        "author": [
-            {
-                "name": "open source",
-                "self": true
-            }
-        ],
-        "images": [
-            "https://ik.imagekit.io/runh/webcv/image/locedge_c-tSQh-UG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669395870322"
-        ],
-        "href": "https://locedgex.web.app",
-        "description": "LocEdge is a handy tool with over 2k downloads on npm (as of Dec. 2023) for web developers to identify the provider, location, and cache status of a CDN edge server based on its HTTP responses",
-        "links": [
-            {
-                "name": "demo",
-                "href": "https://locedgex.web.app"
-            },
-            {
-                "name": "npm",
-                "href": "https://www.npmjs.com/package/locedge"
-            },
-            {
-                "name": "dataset",
-                "href": "https://github.com/ruh010/locedge-db"
-            },
-            {
-                "name": "code",
-                "href": "https://github.com/ruh010/locedge"
-            }
-        ]
     }
 ]
