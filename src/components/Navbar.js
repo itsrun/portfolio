@@ -118,7 +118,7 @@ const NavIcon = styled((props) => (
     },
 }));
 
-const links = [{ title: "/work", href: "#work" }, { title: "/life", href: "#life" }, { title: "/cv", href: "/Run_Vita.pdf" }];
+const links = [{ title: "/work", href: "https://scholar.google.com/citations?user=v9vsJ64AAAAJ" }, { title: "/life", href: "#life" }, { title: "/cv", href: "/Run_Vita.pdf" }];
 const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/runhuangii/" }, { icon: <InstagramIcon />, href: "https://www.instagram.com/mangofearnot" }, { icon: <GitHubIcon />, href: "https://github.com/itsrun" }];
 
 export default function Navbar(props) {

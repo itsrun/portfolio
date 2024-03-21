@@ -20,7 +20,7 @@ const sections = [
     { path: "Project/Project", id: "work", height: "240vh" },
     { path: "Work/Work", height: "60vh" },
     // { path: "Honor/Honor", height: "32rem" },
-    { path: "Skill/Skill", height: "100vh" },
+    // { path: "Skill/Skill", height: "100vh" },
     { path: "Resume/Resume", id: "resume", height: "100vh" },
     { path: "Life/Life", id: "life", height: "360vh" },
 ];

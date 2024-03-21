@@ -38,7 +38,7 @@
     {
         "title": "Locating CDN Edge Servers with HTTP Responses",
         "award": {
-            "name": "1st place (1/62), ACM Student Research Competition",
+            "name": "1st place, ACM Student Research Competition",
             "link": "https://src.acm.org/winners/2023"
         },
         "description": "we proposed an HTTP-based geolocation tool that utilizes subtle geographic hints in HTTP headers to determine the physical locations of CDN PoPs at the city-level granularity",
