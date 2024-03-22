@@ -32,14 +32,10 @@ const HeroAvatarComp = styled(({ img, ...props }) => (
         />
     </motion.div>
 ))(({ theme }) => ({
-    width: "15.6rem",
-    height: "15.6rem",
+    width: "max(min(20rem, 18vw), 16rem)",
+    height: "max(min(20rem, 18vw), 16rem)",
     position: "relative",
     boxShadow: "0 0 64px 0px hsl(0deg 0% 100% / 15%)",
-    [theme.breakpoints.up("md")]: {
-        width: "18rem",
-        height: "18rem",
-    },
 }));
 
 const HeroTitleBox = styled((props) => (

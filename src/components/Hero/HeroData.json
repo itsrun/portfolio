@@ -4,8 +4,8 @@
             "name": "human-computer interaction",
             "description": "",
             "angle": 60,
-            "x": "calc(-100% - max(6.4rem, 9.3vw))",
-            "y": "max(14.4rem, 12.6vw)",
+            "x": "calc(-100% - max(min(9.6vw, 12rem), 5.4rem))",
+            "y": "max(min(14.4vw, 20rem), 16rem)",
             "placement": "top"
         },
         {
@@ -13,8 +13,8 @@
             "description": "social media, web accessibility, and internet measurement",
             "vertical": "end",
             "angle": 120,
-            "x": "calc(-100% - max(2.4rem, 12vw))",
-            "y": "-3.4rem",
+            "x": "calc(-100% - max(min(9.6vw, 9.6rem), 2.4rem))",
+            "y": "min(max(-3.6vw, -5.4rem), -3rem)",
             "placement": "bottom"
         },
         {
@@ -22,8 +22,8 @@
             "description": "",
             "reverse": true,
             "angle": -60,
-            "x": "max(4.8rem, 8.8vw)",
-            "y": "max(16.5rem, 13.2vw)",
+            "x": "max(min(8.8vw, 12rem), 4.8rem)",
+            "y": "max(min(17.2vw, 20rem), 16.5rem)",
             "placement": "top"
         },
         {
@@ -32,7 +32,7 @@
             "reverse": true,
             "vertical": "end",
             "angle": -110,
-            "x": "max(6.4rem, 12vw)",
+            "x": "max(min(12vw, 11.2rem), 6.4rem)",
             "y": "-1.5rem",
             "placement": "bottom"
         }
