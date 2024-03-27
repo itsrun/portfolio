@@ -14,12 +14,12 @@
         "place": "The Web Conference (WWW) 2024, Short Paper",
         "links": [
             {
-                "name": "Preprint",
-                "href": "https://arxiv.org/abs/2403.09856"
+                "name": "Paper",
+                "href": "/papers/www24short.pdf"
             },
             {
                 "name": "Video",
-                "href": "https://youtu.be/vp57dFmh4Ik"
+                "href": "https://youtu.be/KKZUX7_mgeY?si=pKsoEnn01e80_eyJ"
             },
             {
                 "name": "Website",
@@ -33,7 +33,7 @@
         "images": [
             "https://ik.imagekit.io/runh/webcv/image/sciso-www_6oycWWGtd.png?updatedAt=1710388046437"
         ],
-        "href": "https://arxiv.org/abs/2403.09856"
+        "href": "/papers/www24short.pdf"
     },
     {
         "title": "Locating CDN Edge Servers with HTTP Responses",
