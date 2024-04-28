@@ -1,5 +1,15 @@
 [
     {
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/pasadena_CcusUepRA.jpeg?updatedAt=1714286563309",
+        "alt": "ventura freeway 🚗",
+        "place": "pasadena, california, 2024"
+    },
+    {
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/usc-panda-express_JBwR9auql.jpeg?updatedAt=1714286563234",
+        "alt": "usc dining hall 🍽️",
+        "place": "panda express, usc, 2024"
+    },
+    {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/Shanghai?updatedAt=1710390231070",
         "alt": "glimpse of lohkatse on the shanghai maglev 🚝",
         "place": "pudong, shanghai, 2023"
@@ -8,10 +18,5 @@
         "src": "https://ik.imagekit.io/runh/webcv/image/concerts/bloom_VQ4BENTVL.jpeg",
         "alt": "troye sivan, bloom tour 🌸",
         "place": "mercedes-benz arena, shanghai, 2019"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/mtjacinto_3aXF6mg2Q.jpeg",
-        "alt": "hiking in mt. san jacinto 🏔️",
-        "place": "palm spring, california, 2021"
     }
 ]

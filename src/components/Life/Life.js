@@ -96,7 +96,7 @@ export default function Life(props) {
                         </Fragment>
                     )}
                 >
-                    <Tab key="hkp" title="jam with me 🙌">
+                    <Tab key="hkp" title="🙌">
                         <BrowserTabBox sx={{ minHeight: "72vh" }}>
                             <iframe
                                 title="My Spotify Playlist"
@@ -139,7 +139,7 @@ export default function Life(props) {
                 fontSize: "1.2rem",
                 color: "#aaa",
             }}>
-                terrible at taking photos, but still wanted to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
+                just started experimenting with my $200 fuji x-t1 and a $80 lens, but still wanted to put something here anyway <span style={{ display: "inline-block" }}>¯\_(ツ)_/¯</span>
             </Typography>
             <ImageList variant="masonry" cols={smbk ? 2 : 1} gap={"max(3.2rem, 6.4vw)"} sx={{
                 marginTop: 8,

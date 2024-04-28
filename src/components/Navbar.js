@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import SchoolIcon from '@mui/icons-material/School';
 import { titleFont } from "theme";
 
 const NavBox = styled((props) => (
@@ -119,7 +119,7 @@ const NavIcon = styled((props) => (
 }));
 
 const links = [{ title: "/work", href: "https://scholar.google.com/citations?user=v9vsJ64AAAAJ" }, { title: "/life", href: "#life" }, { title: "/cv", href: "/Run_Vita.pdf" }];
-const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/runhuangii/" }, { icon: <InstagramIcon />, href: "https://www.instagram.com/mangofearnot" }, { icon: <GitHubIcon />, href: "https://github.com/itsrun" }];
+const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/runhuangii/" }, { icon: <SchoolIcon />, href: "https://scholar.google.com/citations?user=v9vsJ64AAAAJ" }, { icon: <GitHubIcon />, href: "https://github.com/itsrun" }];
 
 export default function Navbar(props) {
     return (

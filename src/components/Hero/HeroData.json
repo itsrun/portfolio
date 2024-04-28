@@ -38,11 +38,11 @@
         }
     ],
     "commands": {
-        "what -u -do": "i'm broadly interested in human-computer interaction and the web. recently, i'm studying knowledge diffusion in community q&a websites.",
-        "what -u -into": "after work, i unwind with spotify. i'm a huge fan of LE SSERAFIM, zeph, the 1975, and Charli XCX. after 6pm i'm either on hyrule or pelican town :/",
+        "what -u -do": "i'm broadly interested in human-computer interaction and the web. recently, i'm studying how academic findings should be communicated to non-academic audiences.",
+        "what -u -into": "after work, i unwind with spotify. i'm a huge fan of LE SSERAFIM, zeph, Fujii Kaze, and Charli XCX. after 6pm i'm either on hyrule or pelican town :/",
         "what -next": "i'm continuing my research at the university of southern california (usc).",
-        "get -cv": "a (likely outdated) copy of my cv has been downloaded. Otherwise, please visit https://iamhuang.run/Run_Vita.pdf",
-        "get -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio.",
+        "wget -cv": "a (likely outdated) copy of my cv has been downloaded. Otherwise, please visit https://iamhuang.run/Run_Vita.pdf",
+        "wget -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio.",
         "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/",
         "rm -rf": "o_O?"
     }

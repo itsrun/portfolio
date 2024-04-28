@@ -18,16 +18,16 @@
                 "href": "/papers/www24short.pdf"
             },
             {
+                "name": "Dataset",
+                "href": "https://doi.org/10.6084/m9.figshare.25195805"
+            },
+            {
                 "name": "Video",
                 "href": "https://youtu.be/KKZUX7_mgeY?si=pKsoEnn01e80_eyJ"
             },
             {
                 "name": "Website",
                 "href": "https://sciso.vercel.app"
-            },
-            {
-                "name": "Dataset",
-                "href": "https://doi.org/10.6084/m9.figshare.25195805"
             }
         ],
         "images": [
