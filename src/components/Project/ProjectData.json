@@ -15,10 +15,10 @@
         "links": [
             {
                 "name": "Paper",
-                "href": "/papers/www24short.pdf"
+                "href": "https://dl.acm.org/doi/10.1145/3589335.3651464"
             },
             {
-                "name": "Dataset",
+                "name": "Dataset ⭐️",
                 "href": "https://doi.org/10.6084/m9.figshare.25195805"
             },
             {
@@ -33,7 +33,7 @@
         "images": [
             "https://ik.imagekit.io/runh/webcv/image/sciso-www_6oycWWGtd.png?updatedAt=1710388046437"
         ],
-        "href": "/papers/www24short.pdf"
+        "href": "https://dl.acm.org/doi/10.1145/3589335.3651464"
     },
     {
         "title": "Locating CDN Edge Servers with HTTP Responses",

@@ -96,7 +96,7 @@ export default function Life(props) {
                         </Fragment>
                     )}
                 >
-                    <Tab key="hkp" title="🙌">
+                    <Tab key="hkp" title="my playlist 🎧">
                         <BrowserTabBox sx={{ minHeight: "72vh" }}>
                             <iframe
                                 title="My Spotify Playlist"
