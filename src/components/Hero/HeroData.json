@@ -27,7 +27,7 @@
             "placement": "top"
         },
         {
-            "name": "knowledge diffusion",
+            "name": "information diffusion",
             "description": "explore how cutting-edge academic research diffuses into the industry and touches our daily lives",
             "reverse": true,
             "vertical": "end",
