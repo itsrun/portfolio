@@ -1,22 +1,27 @@
 [
     {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/palm%20springs_MXPomUVic.jpeg?updatedAt=1727203701330",
-        "alt": "mt. san jacinto 🚡",
-        "place": "palm springs, california, 2024"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/usc-panda-express_JBwR9auql.jpeg?updatedAt=1714286563234",
-        "alt": "usc dining hall 🍽️",
-        "place": "panda express, usc, 2024"
-    },
-    {
-        "src": "https://ik.imagekit.io/runh/webcv/image/travels/yosemite__fUtkTh0KV.jpeg?updatedAt=1727204439746",
-        "alt": "glacier point 🏞️",
-        "place": "yosemite, california, 2024"
-    },
-    {
         "src": "https://ik.imagekit.io/runh/webcv/image/concerts/bloom_VQ4BENTVL.jpeg",
         "alt": "troye sivan, bloom tour 🌸",
         "place": "mercedes-benz arena, shanghai, 2019"
+    },
+    {
+        "src": "/pics/mthood.jpeg",
+        "alt": "paddleboard >>>>>",
+        "place": "mt. hood, oregon, 2025"
+    },
+    {
+        "src": "/pics/nemo.jpeg",
+        "alt": "nemo 🐟",
+        "place": "being a cat dad, 2024"
+    },
+    {
+        "src": "/pics/bryce.jpeg",
+        "alt": "bryce canyon national park 🏞️",
+        "place": "bryce canyon, utah, 2025"
+    },
+    {
+        "src": "https://ik.imagekit.io/runh/webcv/image/travels/palm%20springs_MXPomUVic.jpeg?updatedAt=1727203701330",
+        "alt": "mt. san jacinto 🚡",
+        "place": "palm springs, california, 2024"
     }
 ]

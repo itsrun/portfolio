@@ -1,48 +1,48 @@
 {
     "interest": [
         {
-            "name": "human-computer interaction",
-            "description": "",
+            "name": "have a cat named nemo",
+            "description": "and i'm constantly finding nemo 🐟 :/",
             "angle": 60,
             "x": "calc(-100% - max(min(9.6vw, 12rem), 5.4rem))",
-            "y": "max(min(14.4vw, 20rem), 16rem)",
+            "y": "max(min(32vw, 24rem), 16rem)",
             "placement": "top"
         },
         {
-            "name": "world wide web",
-            "description": "social media, web accessibility, and internet measurement",
+            "name": "phding at usc",
+            "description": "✌️",
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(min(9.6vw, 9.6rem), 2.4rem))",
-            "y": "min(max(-3.6vw, -5.4rem), -3rem)",
+            "y": "min(max(-4.5vw, -4.8em), -3.2em)",
             "placement": "bottom"
         },
         {
-            "name": "intelligent user interfaces",
-            "description": "",
+            "name": "name pronounced as ruen (/ruːn/)",
+            "description": "not a fan of the 'run' pronunciation 😅",
             "reverse": true,
             "angle": -60,
             "x": "max(min(8.8vw, 12rem), 4.8rem)",
-            "y": "max(min(17.2vw, 20rem), 16.5rem)",
+            "y": "max(min(30vw, 23rem), 16.5rem)",
             "placement": "top"
         },
         {
-            "name": "information diffusion",
-            "description": "explore how cutting-edge academic research diffuses into the industry and touches our daily lives",
+            "name": "broadly interested in hci",
+            "description": "specifically, intelligent user interfaces and accessibility",
             "reverse": true,
             "vertical": "end",
             "angle": -110,
             "x": "max(min(12vw, 11.2rem), 6.4rem)",
-            "y": "-1.5rem",
+            "y": "-1.6rem",
             "placement": "bottom"
         }
     ],
     "commands": {
-        "what -u -do": "i'm broadly interested in human-computer interaction and the web. recently, i'm studying how academic findings should be communicated to non-academic audiences.",
-        "what -u -into": "after work, i unwind with spotify. i'm a huge fan of LE SSERAFIM, zeph, Fujii Kaze, and Charli XCX. after 6pm i'm either on hyrule or pelican town :/",
+        "what -u -do": "i'm broadly interested in human-computer interaction and accessibility. recently, i'm studying how academic findings should be communicated to non-academic audiences.",
+        "what -u -into": "after work, i unwind with spotify. after 6pm i'm either on splatsville, hyrule or pelican town 🎮",
         "what -next": "i'm continuing my research at the university of southern california (usc).",
         "wget -cv": "a (likely outdated) copy of my cv has been downloaded. Otherwise, please visit https://iamhuang.run/Run_Vita.pdf",
-        "wget -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio.",
+        "wget -src": "i built this website using react, material ui, framer motion, and d3.js. the source code can be accessed from https://github.com/itsrun/portfolio. feel free to reuse it with attribution!",
         "get -in -touch": "email: runhuang@usc.edu\\nlinkedin: https://www.linkedin.com/in/runhuangii/",
         "rm -rf": "o_O?"
     }

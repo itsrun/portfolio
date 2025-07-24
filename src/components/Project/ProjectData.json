@@ -1,5 +1,32 @@
 [
     {
+        "title": "Beyond the Page: Enriching Academic Paper Reading with Social Media Discussions",
+        "author": [
+            {
+                "name": "Run Huang",
+                "self": true
+            },
+            {
+                "name": "Anna Katherine Zhao"
+            },
+            {
+                "name": "Zeinabsadat Saghi"
+            },
+            {
+                "name": "Sadra Sabouri"
+            },
+            {
+                "name": "Souti Chattopadhyay"
+            }
+        ],
+        "description": "",
+        "place": "ACM Symposium on User Interface Software and Technology, UIST 2025",
+        "links": [],
+        "images": [
+            "/pics/surf.png"
+        ]
+    },
+    {
         "title": "A Tale of Two Communities: Exploring Academic References on Stack Overflow",
         "author": [
             {
@@ -11,7 +38,7 @@
             }
         ],
         "description": "We conducted a large-scale study of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses into this developer-centric community",
-        "place": "The Web Conference (WWW) 2024, Short Paper",
+        "place": "The ACM Web Conference, WWW 2024 (Short Paper)",
         "links": [
             {
                 "name": "Paper",

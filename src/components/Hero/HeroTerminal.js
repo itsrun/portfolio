@@ -5,91 +5,120 @@ import { Fragment, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const HeroTerminalContainer = styled(Box)(({ theme }) => ({
-    marginTop: theme.spacing(6),
-    cursor: "default",
-    "& .react-terminal": {
-        height: "fit-content",
+  marginTop: theme.spacing(6),
+  cursor: "default",
+  "& .react-terminal": {
+    height: "fit-content",
+  },
+  "& .react-terminal-wrapper": {
+    padding: "6rem 4rem 3rem",
+    border: "transparent 1px solid",
+    borderRadius: "1.6rem",
+    backgroundColor: "#111",
+    height: "fit-content",
+    "&:hover": {
+      borderColor: "#555",
     },
-    "& .react-terminal-wrapper": {
-        padding: "6rem 4rem 3rem",
-        border: "transparent 1px solid",
-        borderRadius: "1.6rem",
-        backgroundColor: "#111",
-        height: "fit-content",
-        "&:hover": {
-            borderColor: "#555",
-        },
+  },
+  "& .react-terminal-wrapper::after": {
+    fontSize: "1.6rem",
+    fontWeight: 600,
+    marginTop: "0.6rem",
+    display: "none",
+    [theme.breakpoints.up("sm")]: {
+      display: "inline",
     },
-    "& .react-terminal-wrapper::after": {
-        fontSize: "1.6rem",
-        fontWeight: 600,
-        marginTop: "0.6rem",
-        display: "none",
-        [theme.breakpoints.up("sm")]: {
-            display: "inline",
-        },
-    },
-    "& .react-terminal-line": {
-        whiteSpace: "normal",
-        fontSize: "1.4rem",
-        marginBottom: "1rem",
-    },
-    "& .react-terminal-line.react-terminal-input": {
-        color: "#44b700",
-        fontSize: "1.7rem",
-        marginBottom: 0,
-    },
+  },
+  "& .react-terminal-line": {
+    whiteSpace: "normal",
+    fontSize: "1.4rem",
+    marginBottom: "1rem",
+  },
+  "& .react-terminal-line.react-terminal-input": {
+    color: "#44b700",
+    fontSize: "1.7rem",
+    marginBottom: 0,
+  },
 }));
 
 export default function HeroTerminal({ commands }) {
-    const [cmd, setCmd] = useState(["what -u -do"]);
-    useEffect(() => {
-        commands.help = [...Object.keys(commands), "clear"].join("\\n");
-    }, [commands]);
+  const [cmd, setCmd] = useState(["what -u -do"]);
+  useEffect(() => {
+    commands.help = [...Object.keys(commands), "clear"].join("\\n");
+  }, [commands]);
 
-    const onInput = (cmd) => {
-        cmd = cmd?.split(" ").filter((v) => v).join(" ");
-        if (!cmd) return;
-        const cmdKey = cmd.toLowerCase();
-        if (cmdKey === "clear") {
-            setCmd([]);
-            return;
-        } else if (cmdKey === "rm -rf") {
-            window.alert(commands["rm -rf"]);
-            window.close();
-        } else if (cmdKey === "get -cv") {
-            const tempLink = document.createElement("a");
-            tempLink.download = tempLink.href = `Run_Vita.pdf`;
-            document.body.appendChild(tempLink);
-            tempLink.click();
-            document.body.removeChild(tempLink);
-        }
-        setCmd((pc) => [...pc, cmd]);
-    };
-
-    const onClickHelp = () => {
-        setCmd((prev) => [...prev, "help"]);
+  const onInput = (cmd) => {
+    cmd = cmd
+      ?.split(" ")
+      .filter((v) => v)
+      .join(" ");
+    if (!cmd) return;
+    const cmdKey = cmd.toLowerCase();
+    if (cmdKey === "clear") {
+      setCmd([]);
+      return;
+    } else if (cmdKey === "rm -rf") {
+      window.alert(commands["rm -rf"]);
+      window.close();
+    } else if (cmdKey === "get -cv") {
+      const tempLink = document.createElement("a");
+      tempLink.download = tempLink.href = `Run_Vita.pdf`;
+      document.body.appendChild(tempLink);
+      tempLink.click();
+      document.body.removeChild(tempLink);
     }
+    setCmd((pc) => [...pc, cmd]);
+  };
 
-    return (
-        <motion.div>
-            <HeroTerminalContainer>
-                <Terminal name="terminal" onInput={onInput}>
-                    <TerminalOutput>type to ask me something! ('<Link onClick={onClickHelp} sx={{ "&:hover": { cursor: "pointer" } }}>help</Link>' for all supported commands)</TerminalOutput>
-                    <TerminalInput>who -r -u</TerminalInput>
-                    <TerminalOutput>i'm a 1st year phd student in computer science at the university of southern california (usc), advised by <Link alt="rini's homepage" href="https://soutirini.com/">prof. souti chattopadhyay</Link>. i received my bachelor's degree at fudan university (復旦大學), where i was very fortunate to be mentored by <Link alt="yang chen's homepage" href="https://chenyang03.wordpress.com/">prof. yang chen</Link>.</TerminalOutput>
-                    {cmd.map((cmd, idx) => {
-                        return (
-                            <Fragment key={idx}>
-                                <TerminalInput>{cmd}</TerminalInput>
-                                {(commands[cmd.toLowerCase()] || "unknown command").split("\\n").map((resp, idx) => (
-                                    <TerminalOutput key={idx}>{resp}</TerminalOutput>
-                                ))}
-                            </Fragment>
-                        );
-                    })}
-                </Terminal>
-            </HeroTerminalContainer>
-        </motion.div>
-    );
-};
+  const onClickHelp = () => {
+    setCmd((prev) => [...prev, "help"]);
+  };
+
+  return (
+    <motion.div>
+      <HeroTerminalContainer>
+        <Terminal name="terminal" onInput={onInput}>
+          <TerminalOutput>
+            type to ask me something! ('
+            <Link
+              onClick={onClickHelp}
+              sx={{ "&:hover": { cursor: "pointer" } }}
+            >
+              help
+            </Link>
+            ' for all supported commands)
+          </TerminalOutput>
+          <TerminalInput>who -r -u</TerminalInput>
+          <TerminalOutput>
+            i'm a 2nd year phd student in computer science at the university of
+            southern california (usc), advised by{" "}
+            <Link alt="rini's homepage" href="https://soutirini.com/">
+              prof. souti chattopadhyay
+            </Link>
+            . i received my bachelor's degree at fudan university (復旦大學),
+            where i was mentored by{" "}
+            <Link
+              alt="yang chen's homepage"
+              href="https://chenyang03.wordpress.com/"
+            >
+              prof. yang chen
+            </Link>
+            .
+          </TerminalOutput>
+          {cmd.map((cmd, idx) => {
+            return (
+              <Fragment key={idx}>
+                <TerminalInput>{cmd}</TerminalInput>
+                {(commands[cmd.toLowerCase()] || "unknown command")
+                  .split("\\n")
+                  .map((resp, idx) => (
+                    <TerminalOutput key={idx}>{resp}</TerminalOutput>
+                  ))}
+              </Fragment>
+            );
+          })}
+        </Terminal>
+      </HeroTerminalContainer>
+    </motion.div>
+  );
+}
