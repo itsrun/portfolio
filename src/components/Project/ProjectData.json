@@ -20,7 +20,7 @@
             }
         ],
         "description": "",
-        "place": "ACM Symposium on User Interface Software and Technology, UIST 2025",
+        "place": "UIST 2025, ACM Symposium on User Interface Software and Technology",
         "links": [],
         "images": [
             "/pics/surf.png"
@@ -38,7 +38,7 @@
             }
         ],
         "description": "We conducted a large-scale study of academic references on Stack Overflow, aiming to understand how scholarly knowledge diffuses into this developer-centric community",
-        "place": "The ACM Web Conference, WWW 2024 (Short Paper)",
+        "place": "WWW 2024, The ACM Web Conference (Short Paper)",
         "links": [
             {
                 "name": "Paper",
