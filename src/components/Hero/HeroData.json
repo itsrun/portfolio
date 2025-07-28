@@ -2,7 +2,7 @@
     "interest": [
         {
             "name": "have a cat named nemo",
-            "description": "and i'm constantly finding nemo 🐟 :/",
+            "description": "and he's constantly finding nemo 🐟 :/",
             "angle": 60,
             "x": "calc(-100% - max(min(9.6vw, 12rem), 5.4rem))",
             "y": "max(min(32vw, 24rem), 16rem)",

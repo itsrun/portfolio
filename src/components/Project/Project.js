@@ -134,6 +134,7 @@ export const ProjectItem = ({
   images,
   author,
   place,
+  ar,
   description,
   award,
   href,
@@ -209,6 +210,19 @@ export const ProjectItem = ({
               variant="span"
             >
               {place}
+            </Typography>
+          )}
+          {ar && (
+            <Typography
+              sx={{
+                fontSize: "0.9em",
+                marginBottom: 1,
+                textTransform: "initial",
+                color: "#a0a0a0",
+              }}
+              variant="span"
+            >
+              {ar}
             </Typography>
           )}
           <Stack spacing={1.5} direction="row" sx={{ alignItems: "center" }}>

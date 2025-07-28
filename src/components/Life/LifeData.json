@@ -10,14 +10,19 @@
         "place": "mt. hood, oregon, 2025"
     },
     {
+        "src": "/pics/zion.jpeg",
+        "alt": "angel's landing 🪽",
+        "place": "zion national park, utah, 2025"
+    },
+    {
+        "src": "/pics/oregon.jpeg",
+        "alt": "doing random walks 🥾",
+        "place": "crater lake national park, oregon, 2025"
+    },
+    {
         "src": "/pics/nemo.jpeg",
         "alt": "nemo 🐟",
         "place": "being a cat dad, 2024"
-    },
-    {
-        "src": "/pics/bryce.jpeg",
-        "alt": "bryce canyon national park 🏞️",
-        "place": "bryce canyon, utah, 2025"
     },
     {
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/palm%20springs_MXPomUVic.jpeg?updatedAt=1727203701330",
