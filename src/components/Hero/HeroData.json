@@ -10,7 +10,7 @@
         },
         {
             "name": "phding at usc",
-            "description": "✌️",
+            "description": "✌️ fight on",
             "vertical": "end",
             "angle": 120,
             "x": "calc(-100% - max(min(9.6vw, 9.6rem), 2.4rem))",
