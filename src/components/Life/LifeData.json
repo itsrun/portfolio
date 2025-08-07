@@ -5,16 +5,6 @@
         "place": "mercedes-benz arena, shanghai, 2019"
     },
     {
-        "src": "/pics/zion.jpeg",
-        "alt": "angel's landing 🪽",
-        "place": "zion national park, utah, 2025"
-    },
-    {
-        "src": "/pics/oregon.jpeg",
-        "alt": "hiking 🥾",
-        "place": "crater lake national park, oregon, 2025"
-    },
-    {
         "src": "/pics/nemo.jpeg",
         "alt": "nemo 🐟",
         "place": "being a cat dad, 2024"
@@ -23,5 +13,10 @@
         "src": "https://ik.imagekit.io/runh/webcv/image/travels/palm%20springs_MXPomUVic.jpeg?updatedAt=1727203701330",
         "alt": "mt. san jacinto 🚡",
         "place": "palm springs, california, 2024"
+    },
+    {
+        "src": "/pics/oregon.jpeg",
+        "alt": "how i usually spend my weekends 🥾",
+        "place": "crater lake national park, oregon, 2025"
     }
 ]
