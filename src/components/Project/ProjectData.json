@@ -21,7 +21,12 @@
         ],
         "description": "",
         "place": "UIST 2025, ACM Symposium on User Interface Software and Technology",
-        "links": [],
+        "links": [
+            {
+                "name": "Paper",
+                "href": "/papers/surf.pdf"
+            }
+        ],
         "images": [
             "/pics/surf.png"
         ]
