@@ -1,0 +1,18 @@
+{
+    "sourceFile": "public/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1756180911108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1756180911108,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <link rel=\"icon\" href=\"%PUBLIC_URL%/favicon.ico\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <meta name=\"theme-color\" content=\"#000000\" />\n  <meta name=\"description\"\n    content=\"cs phd@ut dallas, working on ai security\" />\n  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n  <link rel=\"preload\"\n    href=\"https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500;600;700&family=Syne:wght@500;700&family=Roboto+Condensed:wght@700&display=swap\"\n    as=\"style\">\n  <link rel=\"stylesheet\"\n    href=\"https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@500;600;700&family=Syne:wght@500;700&family=Roboto+Condensed:wght@700&display=swap\"\n    as=\"style\">\n  <script src=\"https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js\"></script>\n  <script type=\"application/ld+json\">\n      {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"ProfilePage\",\n        \"mainEntity\": {\n          \"@type\": \"Person\",\n          \"name\": \"Tingxi Li\",\n          \"description\": \"first year cs phd student at the university of texas at dallas (UTD)\",\n          \"alumniOf\": [\"The University of Texas at Dallas\", \"Dalian University of Technology\"],\n          \"url\": \"https://tingxi.li\",\"image\": \"https://tingxi.li/favicon.ico\",\n              \"sameAs\": [\n                  \"https://scholar.google.com/citations?user=a_XpeY0AAAAJ&hl=en\",\n                  \"https://www.linkedin.com/in/tingxi-li-352a45297/\"\n              ]\n        }\n      }\n  </script>\n  <style>\n    html {\n      font-size: 62.5%;\n    }\n\n    body {\n      margin: 0;\n    }\n\n    #root {\n      position: relative;\n      overflow-x: hidden;\n    }\n  </style>\n  <title>Tingxi Li</title>\n</head>\n\n<body>\n  <noscript>You need to enable JavaScript to run this app.</noscript>\n  <div id=\"root\"></div>\n</body>\n\n</html>"
+        }
+    ]
+}

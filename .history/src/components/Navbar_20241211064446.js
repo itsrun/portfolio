@@ -119,7 +119,7 @@ const NavIcon = styled((props) => (
 }));
 
 const links = [{ title: "/work", href: "#work" }, { title: "/life", href: "#life" }, { title: "/vitae", href: "/tingxi-cv.pdf" }];
-const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/tingxi-li-352a45297/" }, { icon: <SchoolIcon />, href: "https://scholar.google.com/citations?user=a_XpeY0AAAAJ&hl=en" }, { icon: <GitHubIcon />, href: "https://github.com/tingxi-li" }];
+const icons = [{ icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/tingxi-li-352a45297/" }, { icon: <SchoolIcon />, href: "https://scholar.google.com/" }, { icon: <GitHubIcon />, href: "https://github.com/tingxi-li" }];
 
 export default function Navbar(props) {
     return (

@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Efficiency Attack and Defences Towards Deep Learning Systems",
+        "author": [
+            {
+                "name": "Ravishka Rathnasuriya"
+            },
+            {
+                "name": "Zihe Song"
+            },
+            {
+                "name": "Tingxi Li",
+                "self": true
+            },
+            {
+                "name": "Zexin Xu"
+            },
+            {
+                "name": "Mirazul Haque"
+            },
+            {
+                "name": "Simin Chen"
+            },
+            {
+                "name": "Wei Yang"
+            }
+        ],
+        "description": "We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.",
+        "place": "Usenix Security 2025",
+        "links": [
+
+        ],
+        "images": [
+            "https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745"
+        ]
+    }
+]

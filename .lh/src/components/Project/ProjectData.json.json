@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/components/Project/ProjectData.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1756180962748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756180970883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,15 @@\n             {\n                 \"name\": \"Ravishka Rathnasuriya\"\n             },\n             {\n-                \"name\": \"Zihe Song\"\n-            },\n-            {\n                 \"name\": \"Tingxi Li\",\n                 \"self\": true\n             },\n             {\n+                \"name\": \"Zihe Song\"\n+            },\n+            {\n                 \"name\": \"Zexin Xu\"\n             },\n             {\n                 \"name\": \"Mirazul Haque\"\n"
+                },
+                {
+                    "date": 1756180976205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n                 \"name\": \"Tingxi Li\",\n                 \"self\": true\n             },\n             {\n-                \"name\": \"Zihe Song\"\n+                \"name\": \"Zexin Xu\"\n             },\n             {\n-                \"name\": \"Zexin Xu\"\n+                \"name\": \"Zihe Song\"\n             },\n             {\n                 \"name\": \"Mirazul Haque\"\n             },\n"
+                },
+                {
+                    "date": 1756181066917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,44 @@\n         ],\n         \"images\": [\n             \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n         ]\n+    },\n+    {\n+        \"title\": \"COMET: Closed-loop Orchestration for Malicious Elicitation Techniques in Code Models\",\n+        \"author\": [\n+            {\n+                \"name\": \"Zexin Xu\"\n+            },\n+            {\n+                \"name\": \"Tingxi Li\",\n+                \"self\": true\n+            },\n+            {\n+                \"name\": \"Ravishka Rathnasuriya\"\n+            },\n+            {\n+                \"name\": \"Zihe Song\"\n+            },\n+            {\n+                \"name\": \"Jun Ren\"\n+            },\n+            {\n+                \"name\": \"Bhavesh Mandalapu\"\n+            },\n+            {\n+                \"name\": \"Soroush Setayeshpour\"\n+            },\n+            {\n+                \"name\": \"Wei Yang\"\n+            }\n+        ],\n+        \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n+        \"place\": \"Usenix Security 2025\",\n+        \"links\": [\n+\n+        ],\n+        \"images\": [\n+            \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n+        ]\n     }\n ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756181080970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,11 @@\n             {\n                 \"name\": \"Soroush Setayeshpour\"\n             },\n             {\n+                \"name\": \"Xinya Du\"\n+            },\n+            {\n                 \"name\": \"Wei Yang\"\n             }\n         ],\n         \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n"
+                },
+                {
+                    "date": 1756181128803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,13 +66,13 @@\n                 \"name\": \"Wei Yang\"\n             }\n         ],\n         \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n-        \"place\": \"Usenix Security 2025\",\n+        \"place\": \"Technical Report\",\n         \"links\": [\n \n         ],\n         \"images\": [\n-            \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n+            \"Redteaming Code Models\"\n         ]\n     }\n ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756181178282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,14 +65,14 @@\n             {\n                 \"name\": \"Wei Yang\"\n             }\n         ],\n-        \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n+        \"description\": \"A closed-loop red teaming framework for code generation models, developed by Team ASTRO in the Amazon Nova AI Challenge, to systematically generate and evaluate adversarial probes for safer LLM deployment.\",\n         \"place\": \"Technical Report\",\n         \"links\": [\n \n         ],\n         \"images\": [\n-            \"Redteaming Code Models\"\n+            \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n         ]\n     }\n ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756181333153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n         \"links\": [\n \n         ],\n         \"images\": [\n-            \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n+            \"https://ik.imagekit.io/tingxi/usenix-the-advanced-computing-systems-association-logo.png?updatedAt=1756181315562\"\n         ]\n     },\n     {\n         \"title\": \"COMET: Closed-loop Orchestration for Malicious Elicitation Techniques in Code Models\",\n"
+                },
+                {
+                    "date": 1756181363197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         ],\n         \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n         \"place\": \"Usenix Security 2025\",\n         \"links\": [\n-\n+            \"https://www.usenix.org/system/files/usenixsecurity25-rathnasuriya.pdf\"\n         ],\n         \"images\": [\n             \"https://ik.imagekit.io/tingxi/usenix-the-advanced-computing-systems-association-logo.png?updatedAt=1756181315562\"\n         ]\n"
+                },
+                {
+                    "date": 1756181402844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n         ],\n         \"description\": \"A closed-loop red teaming framework for code generation models, developed by Team ASTRO in the Amazon Nova AI Challenge, to systematically generate and evaluate adversarial probes for safer LLM deployment.\",\n         \"place\": \"Technical Report\",\n         \"links\": [\n-\n+            \"https://assets.amazon.science/6f/16/076dff834864823e4f09322d1495/astro-comet-closed-loop-orchestration-for-malicious-elicitation-techniques-in-code-models.pdf\"\n         ],\n         \"images\": [\n             \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n         ]\n"
+                },
+                {
+                    "date": 1756181471988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,8 @@\n         \"links\": [\n             \"https://assets.amazon.science/6f/16/076dff834864823e4f09322d1495/astro-comet-closed-loop-orchestration-for-malicious-elicitation-techniques-in-code-models.pdf\"\n         ],\n         \"images\": [\n-            \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n+            \"https://ik.imagekit.io/tingxi/brand-logo-primary.jpg?updatedAt=17561814538905\"\n         ]\n     }\n ]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1756181576093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             {\n                 \"name\": \"Wei Yang\"\n             }\n         ],\n-        \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n+        \"description\": \"We systematically study the efficiency robustness of dynamic deep learning systems, introducing the first taxonomy of efficiency attacks and highlighting their security challenges.\",\n         \"place\": \"Usenix Security 2025\",\n         \"links\": [\n             \"https://www.usenix.org/system/files/usenixsecurity25-rathnasuriya.pdf\"\n         ],\n"
+                },
+                {
+                    "date": 1756181710429,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n         ],\n         \"description\": \"We systematically study the efficiency robustness of dynamic deep learning systems, introducing the first taxonomy of efficiency attacks and highlighting their security challenges.\",\n         \"place\": \"Usenix Security 2025\",\n         \"links\": [\n-            \"https://www.usenix.org/system/files/usenixsecurity25-rathnasuriya.pdf\"\n+            { \"name\": \"paper (PDF)\", \"href\": \"https://www.usenix.org/system/files/usenixsecurity25-rathnasuriya.pdf\" }\n         ],\n         \"images\": [\n             \"https://ik.imagekit.io/tingxi/usenix-the-advanced-computing-systems-association-logo.png?updatedAt=1756181315562\"\n         ]\n"
+                },
+                {
+                    "date": 1756181747002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n         ],\n         \"description\": \"A closed-loop red teaming framework for code generation models, developed by Team ASTRO in the Amazon Nova AI Challenge, to systematically generate and evaluate adversarial probes for safer LLM deployment.\",\n         \"place\": \"Technical Report\",\n         \"links\": [\n-            \"https://assets.amazon.science/6f/16/076dff834864823e4f09322d1495/astro-comet-closed-loop-orchestration-for-malicious-elicitation-techniques-in-code-models.pdf\"\n+            { \"name\": \"technical report (PDF)\", \"href\": \"https://assets.amazon.science/6f/16/076dff834864823e4f09322d1495/astro-comet-closed-loop-orchestration-for-malicious-elicitation-techniques-in-code-models.pdf\" }\n         ],\n         \"images\": [\n             \"https://ik.imagekit.io/tingxi/brand-logo-primary.jpg?updatedAt=17561814538905\"\n         ]\n"
+                }
+            ],
+            "date": 1756180962748,
+            "name": "Commit-0",
+            "content": "[\n    {\n        \"title\": \"Efficiency Attack and Defences Towards Deep Learning Systems\",\n        \"author\": [\n            {\n                \"name\": \"Ravishka Rathnasuriya\"\n            },\n            {\n                \"name\": \"Zihe Song\"\n            },\n            {\n                \"name\": \"Tingxi Li\",\n                \"self\": true\n            },\n            {\n                \"name\": \"Zexin Xu\"\n            },\n            {\n                \"name\": \"Mirazul Haque\"\n            },\n            {\n                \"name\": \"Simin Chen\"\n            },\n            {\n                \"name\": \"Wei Yang\"\n            }\n        ],\n        \"description\": \"We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.\",\n        \"place\": \"Usenix Security 2025\",\n        \"links\": [\n\n        ],\n        \"images\": [\n            \"https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745\"\n        ]\n    }\n]"
+        }
+    ]
+}

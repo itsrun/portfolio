@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Hero/HeroData.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1756181890844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1756181904813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         }\n     ],\n     \"commands\": {\n         \"what -u -do\": \"i'm broadly interested in security and software engineering.\",\n-        \"what -u -into\": \"hiking / hearthstone / soccer games \",\n+        \"what -u -into\": \"hiking / splatoon 3 / soccer games \",\n         \"what -next\": \"i'm continuing my research at the university of texas at dallas (ut dallas).\",\n         \"wget -cv\": \"a (likely outdated) copy of my cv has been downloaded.\",\n         \"wget -src\": \"this website was initially designed and built by one of my best friends, run huang. all credit goes to -> https://github.com/itsrun/portfolio.\",\n         \"rm -rf\": \"o_O?\"\n"
+                },
+                {
+                    "date": 1756181921632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n         }\n     ],\n     \"commands\": {\n         \"what -u -do\": \"i'm broadly interested in security and software engineering.\",\n-        \"what -u -into\": \"hiking / splatoon 3 / soccer games \",\n+        \"what -u -into\": \"hiking / splatoon 3 / premier league\",\n         \"what -next\": \"i'm continuing my research at the university of texas at dallas (ut dallas).\",\n         \"wget -cv\": \"a (likely outdated) copy of my cv has been downloaded.\",\n         \"wget -src\": \"this website was initially designed and built by one of my best friends, run huang. all credit goes to -> https://github.com/itsrun/portfolio.\",\n         \"rm -rf\": \"o_O?\"\n"
+                }
+            ],
+            "date": 1756181890844,
+            "name": "Commit-0",
+            "content": "{\n    \"interest\": [\n        {\n            \"name\": \"ai security\",\n            \"description\": \"attacks and defenses related to the accuracy and efficiency of deep learning models\",\n            \"angle\": 60,\n            \"x\": \"calc(-100% - max(min(9.6vw, 12rem), 5.4rem))\",\n            \"y\": \"max(min(14.4vw, 20rem), 16rem)\",\n            \"placement\": \"top\"\n        },\n        {\n            \"name\": \"software engineering\",\n            \"description\": \"\",\n            \"vertical\": \"end\",\n            \"angle\": 120,\n            \"x\": \"calc(-100% - max(min(9.6vw, 9.6rem), 2.4rem))\",\n            \"y\": \"min(max(-3.6vw, -5.4rem), -3rem)\",\n            \"placement\": \"bottom\"\n        },\n        {\n            \"name\": \"language models\",\n            \"description\": \"Language Models & Code Models\",\n            \"reverse\": true,\n            \"angle\": -60,\n            \"x\": \"max(min(8.8vw, 12rem), 4.8rem)\",\n            \"y\": \"max(min(17.2vw, 20rem), 16.5rem)\",\n            \"placement\": \"top\"\n        },\n        {\n            \"name\": \"ai for science\",\n            \"description\": \"'ai + x' interdiciplinary research\",\n            \"reverse\": true,\n            \"vertical\": \"end\",\n            \"angle\": -110,\n            \"x\": \"max(min(12vw, 11.2rem), 6.4rem)\",\n            \"y\": \"-1.5rem\",\n            \"placement\": \"bottom\"\n        }\n    ],\n    \"commands\": {\n        \"what -u -do\": \"i'm broadly interested in security and software engineering.\",\n        \"what -u -into\": \"hiking / hearthstone / soccer games \",\n        \"what -next\": \"i'm continuing my research at the university of texas at dallas (ut dallas).\",\n        \"wget -cv\": \"a (likely outdated) copy of my cv has been downloaded.\",\n        \"wget -src\": \"this website was initially designed and built by one of my best friends, run huang. all credit goes to -> https://github.com/itsrun/portfolio.\",\n        \"rm -rf\": \"o_O?\"\n    }\n}"
+        }
+    ]
+}

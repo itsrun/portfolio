@@ -77,7 +77,7 @@ export default function HeroTerminal({ commands }) {
                 <Terminal name="terminal" onInput={onInput}>
                     <TerminalOutput>type to ask me something! ('<Link onClick={onClickHelp} sx={{ "&:hover": { cursor: "pointer" } }}>help</Link>' for all supported commands)</TerminalOutput>
                     <TerminalInput>who -r -u</TerminalInput>
-                    <TerminalOutput>i'm a <s>1st</s> 2nd year phd student in computer science at the university of texas at dallas (ut dallas), advised by <Link alt="wei's homepage" href="https://youngwei.com/">prof. wei yang</Link>. before that, i was an undergrad at dalian university of technology (大連理工大學), and a visiting student at technical university of munich (technische universität münchen).</TerminalOutput>
+                    <TerminalOutput>i'm a 1st year phd student in computer science at the university of texas at dallas (ut dallas), advised by <Link alt="wei's homepage" href="https://youngwei.com/">prof. wei yang</Link>. before that, i was an undergrad at dalian university of technology (大連理工大學), and a visiting student at technical university of munich (technische universität münchen).</TerminalOutput>
                     {cmd.map((cmd, idx) => {
                         return (
                             <Fragment key={idx}>

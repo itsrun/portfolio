@@ -38,8 +38,8 @@
         }
     ],
     "commands": {
-        "what -u -do": "i'm broadly interested in security and software engineering.",
-        "what -u -into": "hiking / splatoon 3 / premier league",
+        "what -u -do": "i'm broadly interested in security, especially ai security. recently, I am studying how efficiency attacks influence deep learning systems and exploring mitigation strategies.",
+        "what -u -into": "hiking / hearthstone / soccer games ",
         "what -next": "i'm continuing my research at the university of texas at dallas (ut dallas).",
         "wget -cv": "a (likely outdated) copy of my cv has been downloaded.",
         "wget -src": "this website was initially designed and built by one of my best friends, run huang. all credit goes to -> https://github.com/itsrun/portfolio.",

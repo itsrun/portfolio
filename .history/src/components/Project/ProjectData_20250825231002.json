@@ -25,10 +25,10 @@
                 "name": "Wei Yang"
             }
         ],
-        "description": "We systematically study the efficiency robustness of dynamic deep learning systems, introducing the first taxonomy of efficiency attacks and highlighting their security challenges.",
+        "description": "We taxonomized existing efficiency attacks and their corresponding defenses on deep learning systems and analyzed their mechanisms.",
         "place": "Usenix Security 2025",
         "links": [
-            { "name": "paper (PDF)", "href": "https://www.usenix.org/system/files/usenixsecurity25-rathnasuriya.pdf" }
+            "https://www.usenix.org/system/files/usenixsecurity25-rathnasuriya.pdf"
         ],
         "images": [
             "https://ik.imagekit.io/tingxi/usenix-the-advanced-computing-systems-association-logo.png?updatedAt=1756181315562"
@@ -69,10 +69,10 @@
         "description": "A closed-loop red teaming framework for code generation models, developed by Team ASTRO in the Amazon Nova AI Challenge, to systematically generate and evaluate adversarial probes for safer LLM deployment.",
         "place": "Technical Report",
         "links": [
-            { "name": "technical report (PDF)", "href": "https://assets.amazon.science/6f/16/076dff834864823e4f09322d1495/astro-comet-closed-loop-orchestration-for-malicious-elicitation-techniques-in-code-models.pdf" }
+            "https://assets.amazon.science/6f/16/076dff834864823e4f09322d1495/astro-comet-closed-loop-orchestration-for-malicious-elicitation-techniques-in-code-models.pdf"
         ],
         "images": [
-            "https://ik.imagekit.io/tingxi/brand-logo-primary.jpg?updatedAt=17561814538905"
+            "https://ik.imagekit.io/tingxi/under_review?updatedAt=1738602968745"
         ]
     }
 ]
