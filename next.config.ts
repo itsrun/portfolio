@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  swcMinify: true,
+  transpilePackages: [], // Empty array means no packages will be transpiled
 };
 
 export default nextConfig;

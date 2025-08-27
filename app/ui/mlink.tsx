@@ -37,6 +37,7 @@ export default function MLink({
             className="w-full h-full"
             sandbox="allow-scripts allow-same-origin"
             loading="lazy"
+            referrerPolicy="no-referrer"
           />
         </div>
       )}
