@@ -1,0 +1,12 @@
+[
+    {
+        "title": "CSCI 571: Web Technologies",
+        "desc": "Developed four projects where students built full-stack applications for web (React, Node.js) and Android",
+        "note": "Fall 2024, with Prof. Marco Papa"
+    },
+    {
+        "title": "DSCI 510: Principles of Programming for Data Science",
+        "desc": "Designed and led lab sessions on Data Science programming in Python",
+        "note": "Fall 2025, with Prof. Alexey Tregubov"
+    }
+]
