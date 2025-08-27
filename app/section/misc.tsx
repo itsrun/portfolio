@@ -18,12 +18,16 @@ export default function Misc() {
           Hyrule
         </MLink>
         , or{" "}
-        <MLink href="#spo" inplace>
+        <MLink
+          href="https://open.spotify.com/embed/playlist/0RkGGBaCE995JF22l5pwqj?utm_source=generator"
+          inplace
+          preview
+        >
           Spotify
         </MLink>{" "}
         when I'm off work. If it's a holiday, I'm most likely visiting a
-        National Park or ski resort. Here's my (subjective) tier ranking of the
-        national parks, beaches, and mountains I have visited so far:
+        National Park or ski resort. Here's my tier ranking of the national
+        parks and some other places I have visited so far:
       </div>
       <div className="w-full max-w-2xl mx-auto mt-4 pl-0.5">
         <div className="flex flex-col gap-1.5">
@@ -52,7 +56,7 @@ export default function Misc() {
               parks: [
                 {
                   name: "Crater Lake",
-                  pic: "/pics/craterlake.jpeg",
+                  // pic: "/pics/craterlake.jpeg",
                 },
                 { name: "Arches" },
                 { name: "Yosemite" },
@@ -61,10 +65,10 @@ export default function Misc() {
             {
               tier: "C",
               parks: [
+                { name: "Cannon Beach", pic: "/pics/cannon.jpeg" },
                 { name: "Canyonlands" },
                 { name: "Death Valley" },
                 { name: "Joshua Tree" },
-                { name: "Cannon Beach", pic: "/pics/cannon.jpeg" },
               ],
             },
             {

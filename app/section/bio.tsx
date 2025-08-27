@@ -6,7 +6,7 @@ export default function Bio() {
   return (
     <Section id="bio">
       <h1 className="text-5xl">Run Huang</h1>
-      <h2 className="text-3xl mt-1 font-serif">黄润</h2>
+      <h2 className="text-3xl mt-0.5 font-serif">黄润</h2>
       <h3 className="text-2xl">&quot;ruen&quot; (/ru:n/)</h3>
       <div className="text-lg leading-[1.36] gap-5 flex flex-col mt-6 break-words hyphens-auto cursor-default">
         <div>
@@ -14,16 +14,16 @@ export default function Bio() {
           <MLink href="https://www.cs.usc.edu/" preview>
             University of Southern California
           </MLink>
-          , where I am fortunate to be advised by{" "}
+          , advised by{" "}
           <MLink href="https://aceatusc.github.io" preview>
             Prof. Souti Chattopadhyay
           </MLink>
-          . Prior to this, I graduated from{" "}
+          . I earned my Bachelor's degree in Computer Science from{" "}
           <MLink href="https://en.wikipedia.org/wiki/Fudan_University" preview>
             Fudan University
           </MLink>{" "}
-          (<span className="font-sans text-[0.93rem]">复旦大学</span>) with a
-          Bachelor's degree in Computer Science, mentored by{" "}
+          (<span className="font-serif text-base">复旦大学</span>), where I
+          worked with{" "}
           <MLink href="https://chenyang03.wordpress.com/" preview>
             Prof. Yang Chen
           </MLink>
@@ -39,7 +39,7 @@ export default function Bio() {
               UIST '25
             </MLink>
           }
-          ) and how academic knowledge diffuses into the software developer
+          ) and how academic knowledge spreads across the software developer
           community (
           <MLink href="#sciso" inplace>
             WWW '24

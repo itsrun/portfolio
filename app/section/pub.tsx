@@ -15,7 +15,7 @@ function PubItem(item: PubItemProps) {
   const { title, authors, link, venue, award, id } = item;
   return (
     <a
-      className="my-auto px-1 cursor-pointer hover:bg-blue-50 transition-all duration-200 max-w-[64rem]"
+      className="my-auto px-1 hover:bg-blue-50 transition-all duration-200 max-w-[64rem]"
       href={link}
       target="_blank"
       rel="noreferrer"
@@ -32,9 +32,9 @@ function PubItem(item: PubItemProps) {
       </p>
       <p className="leading-5">{venue}</p>
       {award && (
-        <u className="leading-7 text-secondary underline-offset-2 decoration-dotted">
+        <p className="underline text-secondary underline-offset-2 decoration-dotted leading-5 mt-0.5">
           {award}
-        </u>
+        </p>
       )}
     </a>
   );

@@ -29,7 +29,7 @@ export default function MLink({
       {preview && (
         <div
           // hidden until hover => no hit-testing, no scroll blocking
-          className="absolute top-4 left-0 -translate-x-1/2 mt-2 w-[24rem] h-[18rem] bg-white shadow-2xl z-10 overflow-hidden hidden group-hover:block"
+          className="absolute top-4 left-0 -translate-x-1/6 mt-2 w-[25rem] h-[22rem] bg-white shadow-2xl z-10 overflow-hidden hidden group-hover:block"
         >
           <iframe
             src={href}

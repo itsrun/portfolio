@@ -2,7 +2,7 @@ import MLink from "../ui/mlink";
 
 export default function Contact({ className }: { className?: string }) {
   return (
-    <div className={`flex flex-wrap text-lg gap-y-0 ${className}`}>
+    <div className={`flex flex-wrap text-lg gap-y-0 gap-x-2 ${className}`}>
       <MLink
         href="mailto:itsrunhuang@outlook.com"
         className="block underline-offset-3"

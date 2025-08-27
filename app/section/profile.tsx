@@ -4,7 +4,7 @@ import Section from "../ui/section";
 export default function Profile() {
   return (
     <section className="mt-5" id="profile">
-      <div className="relative w-full h-auto aspect-[480/640] overflow-hidden rounded">
+      <div className="relative w-full h-auto aspect-[480/640] overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 bg-zinc-200 animate-pulse"

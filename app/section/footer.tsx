@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <Section id="footer" className="absolute bottom-0 left-0 right-0 -z-10">
       <Image
-        src="/snoopy.gif"
+        src="/snoopy.webp"
         alt="Snoopy footer logo"
         loading="lazy"
         priority={false}
