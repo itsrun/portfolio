@@ -7,7 +7,7 @@ export default function Bio() {
     <Section id="bio">
       <h1 className="text-5xl">Run Huang</h1>
       <h2 className="text-3xl mt-1">黃潤</h2>
-      <h3 className="text-2xl">"ruen" (/ruːn/)</h3>
+      <h3 className="text-2xl">&quot;ruen&quot; (/ru:n/)</h3>
       <div className="text-lg leading-[1.36] gap-5 flex flex-col mt-6 break-words hyphens-auto cursor-default">
         <div>
           I am a Ph.D. student in Computer Science at the{" "}
