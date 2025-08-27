@@ -55,10 +55,6 @@ export default function Misc() {
                   pic: "/pics/craterlake.jpeg",
                 },
                 { name: "Arches" },
-                {
-                  name: "Santa Monica",
-                  pic: "/pics/santamonica.gif",
-                },
                 { name: "Yosemite" },
               ],
             },
@@ -90,7 +86,7 @@ export default function Misc() {
                     >
                       {park.name}
                       <span
-                        className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block z-10"
+                        className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block"
                         style={{
                           width: "auto",
                           minWidth: "0",

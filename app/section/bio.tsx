@@ -6,7 +6,7 @@ export default function Bio() {
   return (
     <Section id="bio">
       <h1 className="text-5xl">Run Huang</h1>
-      <h2 className="text-3xl mt-1">黃潤</h2>
+      <h2 className="text-3xl mt-1 font-serif">黄润</h2>
       <h3 className="text-2xl">&quot;ruen&quot; (/ru:n/)</h3>
       <div className="text-lg leading-[1.36] gap-5 flex flex-col mt-6 break-words hyphens-auto cursor-default">
         <div>
@@ -22,7 +22,7 @@ export default function Bio() {
           <MLink href="https://en.wikipedia.org/wiki/Fudan_University" preview>
             Fudan University
           </MLink>{" "}
-          (<span className="font-sans text-[0.93rem]">復旦大學</span>) with a
+          (<span className="font-sans text-[0.93rem]">复旦大学</span>) with a
           Bachelor's degree in Computer Science, mentored by{" "}
           <MLink href="https://chenyang03.wordpress.com/" preview>
             Prof. Yang Chen
