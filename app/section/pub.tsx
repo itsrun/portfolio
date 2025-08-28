@@ -57,7 +57,7 @@ function PubItem(item: PubItemProps) {
             />
           </div>
 
-          <MLink href={link} className="text-lg">
+          <MLink href={link} className="">
             Read the paper
           </MLink>
         </div>
