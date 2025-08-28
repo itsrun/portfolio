@@ -18,7 +18,7 @@ export default function Bio() {
           <MLink href="https://aceatusc.github.io" preview>
             Prof. Souti Chattopadhyay
           </MLink>
-          . I earned my Bachelor's degree in Computer Science from{" "}
+          . I received my Bachelor's degree in Computer Science from{" "}
           <MLink href="https://en.wikipedia.org/wiki/Fudan_University" preview>
             Fudan University
           </MLink>{" "}

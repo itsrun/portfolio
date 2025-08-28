@@ -39,12 +39,12 @@ function PubItem(item: PubItemProps) {
         <div
           className="
         h-0
-        group-hover:h-[calc(min(32vw,16rem)+3rem)]
+        group-hover:h-[calc(min(31.6vw,16rem)+3rem)]
         overflow-hidden
         transition-all duration-300
       "
         >
-          <div className="relative h-[min(32vw,16rem)] mt-3 mb-1 w-[min(28rem,100%)]">
+          <div className="relative h-[min(32vw,16rem)] w-[min(28.44rem,56.8889vw)] -m-[1px] mt-3">
             <iframe
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube.com/embed/${video}?loop=1&rel=0`}
@@ -57,7 +57,7 @@ function PubItem(item: PubItemProps) {
             />
           </div>
 
-          <MLink href={link} className="">
+          <MLink href={link} className="leading-8">
             Read the paper
           </MLink>
         </div>
@@ -128,7 +128,7 @@ export default function Pub() {
   return (
     <Section id="pub">
       <Separator name="Publications" className="mt-6 mb-3" />
-      <p className="mb-3">
+      <p className="mb-3 text-gray-700">
         *C: full conference paper, *E: extended abstract & short paper
       </p>
       <div className="border-gray-300 flex flex-col gap-6 cursor-default">

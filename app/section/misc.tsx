@@ -105,7 +105,7 @@ export default function Misc() {
                       </span>
                     </span>
                   ) : (
-                    <span key={park.name} className="text-zinc-600">
+                    <span key={park.name} className="text-gray-600">
                       {park.name}
                     </span>
                   )

@@ -20,9 +20,18 @@ export default function Profile() {
           fetchPriority="high"
         />
       </div>
-      <div className="text-sm text-gray-500 px-1 pt-1.5 leading-4">
+      <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
         Aug 2025 at Los Angeles, CA
       </div>
+      {/* <iframe
+        data-testid="embed-iframe"
+        src="https://open.spotify.com/embed/track/4fsQ0K37TOXa3hEQfjEic1?utm_source=generator&theme=0"
+        height="80"
+        allowFullScreen={false}
+        className="w-[200%] origin-top-left scale-50 mt-1 -mb-[42px] sm:w-[150%] sm:scale-67 sm:-mb-[36px] md:w-[125%] md:scale-80 md:-mb-[24px] lg:w-[100%] lg:scale-100 lg:-mb-[8px]"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe> */}
     </Section>
   );
 }
