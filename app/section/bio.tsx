@@ -31,9 +31,9 @@ export default function Bio() {
         </div>
         <div>
           I'm interested in designing <i>intelligent interfaces</i> that make
-          dense and complex information more accessible to users. My recent work
-          has explored how peer discussions on social media can enrich academic
-          paper reading (
+          dense and complex information more accessible and digestible to users.
+          My recent work has explored how peer discussions on social media can
+          enrich academic paper reading (
           {
             <MLink href="#surf" inplace>
               UIST '25

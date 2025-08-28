@@ -3,7 +3,7 @@ import Section from "../ui/section";
 
 export default function Profile() {
   return (
-    <section className="mt-5" id="profile">
+    <Section className="mt-5" id="profile">
       <div className="relative w-full h-auto aspect-[480/640] overflow-hidden">
         <div
           aria-hidden
@@ -23,7 +23,7 @@ export default function Profile() {
       <div className="text-sm text-gray-500 px-1 pt-1.5 leading-4">
         Aug 2025 at Los Angeles, CA
       </div>
-    </section>
+    </Section>
   );
 }
 

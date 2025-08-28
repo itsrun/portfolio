@@ -1,6 +1,5 @@
 // "use client";
 // import { useEffect, useState } from "react";
-import Image from "next/image";
 import Section from "../ui/section";
 
 export default function Footer() {
@@ -15,15 +14,12 @@ export default function Footer() {
 
   return (
     <Section id="footer" className="absolute bottom-0 left-0 right-0 -z-10">
-      <Image
+      <img
         src="/snoopy.webp"
         alt="Snoopy footer logo"
         loading="lazy"
-        priority={false}
         width={192}
         height={192}
-        placeholder="empty"
-        fetchPriority="low"
       />
       <div className="text-xs text-gray-400 leading-[1.12]">
         © 2025 Run Huang. All rights reserved. <br /> 🤍 Snoopy © Peanuts
