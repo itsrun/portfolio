@@ -13,7 +13,7 @@ export default function MLink({
   children,
   className,
   inplace,
-  preview,
+  preview = false,
 }: LinkProps) {
   return (
     <span className="relative group">
