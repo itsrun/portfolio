@@ -21,7 +21,7 @@ export default function Contact({ className }: { className?: string }) {
       >
         Google Scholar
       </MLink>
-      <MLink href="/cv.pdf" className="block underline-offset-3">
+      <MLink href="/papers/cv.pdf" className="block underline-offset-3">
         Curriculum Vitae
       </MLink>
     </div>
