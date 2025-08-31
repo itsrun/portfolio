@@ -9,6 +9,22 @@ export default function Profile() {
           aria-hidden
           className="absolute inset-0 bg-zinc-200 animate-pulse"
         />
+        <style>
+          {`
+        .profile-img {
+        content: url('/profile.jpeg');
+        transition: content 0.2s;
+        }
+        .profile-img:hover {
+        content: url('/santamonica.gif');
+        }
+      `}
+        </style>
+        <img
+          className="profile-img z-10 relative"
+          alt="Profile picture of Run Huang"
+        />
+        {/*
         <Image
           src="/profile.jpeg"
           alt="Profile picture of Run Huang"
@@ -18,7 +34,7 @@ export default function Profile() {
           sizes="(max-width: 640px) 100vw, 480px"
           priority
           fetchPriority="high"
-        />
+        /> */}
       </div>
       <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
         Aug 2025 in Los Angeles, CA
@@ -34,33 +50,4 @@ export default function Profile() {
       ></iframe> */}
     </Section>
   );
-}
-
-{
-  /* <style>
-        {`
-        .profile-img {
-        content: url('/profile.jpeg');
-        transition: content 0.2s;
-        }
-        .profile-img:hover {
-        content: url('/profile.gif');
-        }
-      `}
-      </style>
-      <img
-        src="/profile.jpeg"
-        width={1}
-        height={1}
-        alt="Profile picture of Run Huang"
-        style={{ opacity: 1 }}
-      />
-      <img
-        src="/profile.gif"
-        width={1}
-        height={1}
-        style={{ opacity: 0 }}
-        alt="Profile picture of Run Huang"
-      />
-      <img className="profile-img" alt="Profile picture of Run Huang" /> */
 }
