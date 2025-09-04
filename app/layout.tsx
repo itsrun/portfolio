@@ -10,7 +10,7 @@ const alegreya = Alegreya({
 export const metadata: Metadata = {
   title: "Run Huang",
   description:
-    "Personal website of Run Huang, a Computer Sciences Ph.D. student at USC working in HCI and Accessibility.",
+    "Run Huang is a CS Ph.D. student at University of Southern California. His research focuses on HCI and A11y. He earned his Bachelor's degree from Fudan University.",
   icons: {
     icon: "/favicon.webp",
   },

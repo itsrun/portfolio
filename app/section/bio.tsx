@@ -27,7 +27,11 @@ export default function Bio() {
           <MLink href="https://chenyang03.wordpress.com/" preview>
             Prof. Yang Chen
           </MLink>
-          .
+          . I was also a UCEAP visiting student at the{" "}
+          <MLink href="https://designlab.ucsd.edu/" preview>
+            Design Lab
+          </MLink>{" "}
+          of UC San Diego.
         </div>
         <div>
           I'm interested in designing <i>intelligent interfaces</i> that make
@@ -44,7 +48,8 @@ export default function Bio() {
           <MLink href="#sciso" inplace>
             WWW '24
           </MLink>
-          ).
+          ). I'm always happy to chat about research or ideas, so feel free to{" "}
+          <MLink href="mailto:itsrunhuang@outlook.com">reach out</MLink> :)
         </div>
         <div>
           I'm experienced in full-stack web development, having contributed to
