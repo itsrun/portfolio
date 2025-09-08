@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Ephidona';
+  src: url('/public/Ephidona.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --grad-1: #7a3cff;
+  --grad-2: #ff4d4f;
+  --grad-3: #ffc107;
+}
+
+
+.myname {
+  font-family: 'Ephidona', sans-serif;
+  font-size: 80px;
+  color: #333333;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 3px;
+}
+
+.addressline {
+  font-family: 'Ephidona', sans-serif;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  margin-top: 0px;
+  letter-spacing: 0px;
+}
+
+.contactline {
+  font-family: 'Ephidona', sans-serif;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  margin-top: 0px;
+  letter-spacing: 0px;
+}
+
+.heading {
+  font-family: 'Ephidona', sans-serif;
+  font-size: 48px;
+  color: #333333;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.line-left-right {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  width: 100%;
+}
+
+.normal-text {
+  font-family: 'Charter', sans-serif;
+  font-size: 18px;
+  color: #333333;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.normal-text {
+  font-family: 'Charter', sans-serif;
+  font-size: 18px;
+  color: #333333;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.normal-text-highlight {
+  font-family: 'Charter', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.6;
+  margin-top: 20px;
+
+  /* Gradient text color */
+  background: linear-gradient(90deg, var(--grad-1), var(--grad-2), var(--grad-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Publications */
+.publications {
+  --accent: #e87500;               /* 主题强调色，与链接保持一致 */
+  /* 可调字体与字号变量 */
+  --pub-font: 'Charter', sans-serif;
+  --pub-title-size: 18px;
+  --pub-authors-size: 14px;
+  --pub-meta-size: 12px;           /* 会议名/年份 */
+  --pub-link-size: 12px;           /* PDF/GitHub 链接 */
+  --grad-time: .85s;               /* 标题渐变扫光时间 */
+
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 8px;
+}
+
+.publications .pub-item {
+  display: grid;
+  grid-template-columns: 1fr auto; /* 内容 + 右侧链接区 */
+  gap: 6px 14px;
+  padding: 14px 12px;
+  border: none;
+  border-radius: 10px;
+  background: #FFFFFF;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.publications .pub-item + .pub-item { margin-top: 12px; }
+.publications .pub-item:hover { background: #FFFFFF; }
+
+/* 标题 */
+.publications .pub-title {
+  grid-column: 1 / -1;             /* 跨两列 */
+  margin: 0;
+  font-family: var(--pub-font);
+  font-size: var(--pub-title-size);
+  line-height: 1.35;
+  font-weight: 500;
+  color: #333;
+}
+.publications .pub-title a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  background-image: linear-gradient(90deg, var(--grad-1), var(--grad-2), var(--grad-3));
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-position var(--grad-time) ease, color .28s ease;
+}
+.publications .pub-title a:hover,
+.publications .pub-title a:focus-visible {
+  color: transparent;                  /* 让渐变可见 */
+  background-position: 100% 50%;       /* 左→右扫光 */
+}
+
+/* 作者 */
+.publications .pub-authors {
+  font-family: var(--pub-font);
+  font-size: var(--pub-authors-size);
+  color: #333333;
+}
+.publications .pub-authors .me {font-weight: 500; color: var(--accent);}
+
+/* 会议 + 年份（胶囊标签） */
+.publications .pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.publications .pub-venue,
+.publications .pub-year {
+  font-size: var(--pub-meta-size);
+  color: #555;
+  background: #f0f2f4;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* 链接（PDF, GitHub 可选） */
+.publications .pub-links {
+  grid-column: 2;                   /* 右侧列 */
+  display: flex;
+  gap: 8px;
+  align-self: start;
+}
+.publications .pub-link {
+  font-size: var(--pub-link-size);
+  color: #333;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.publications .pub-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: #fff9f2;
+}
+
+/* 小屏堆叠展示 */
+@media (max-width: 640px) {
+  .publications .pub-item { grid-template-columns: 1fr; }
+  .publications .pub-links { grid-column: 1; margin-top: 6px; }
+}

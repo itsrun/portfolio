@@ -1,0 +1,134 @@
+/* 可调参数（也可放到:root里全局复用） */
+.preview-link {
+  --link-color: #333;
+  --link-hover: #7a3cff;        /* 悬停文字颜色 */
+  --pop-width: 280px;           /* 预览框宽度 */
+  --pop-ratio: 4/3;             /* 预览框宽高比 */
+  --pop-radius: 12px;           /* 圆角 */
+  --spin-speed: 1.1s;           /* 旋转速度 */
+  --border-thick: 2px;          /* 边框粗细 */
+  --timing: .35s;               /* 动画时间 */
+  --img-delay: .35s;            /* 图片淡入延迟（等边框先演一会儿） */
+
+  position: relative;
+  display: inline-block;
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--timing) ease;
+}
+
+/* 1) 悬停先让链接文本变色 */
+.preview-link:hover {
+  color: var(--link-hover);
+}
+
+/* 预览弹出层：默认隐藏在链接下方 */
+.preview-pop {
+  position: absolute;
+  top: 125%;
+  left: 0;
+  width: var(--pop-width);
+  aspect-ratio: var(--pop-ratio);
+  border-radius: var(--pop-radius);
+  pointer-events: none;              /* 不阻塞鼠标 */
+  transform: translateY(6px);
+  opacity: 0;
+  transition:
+    transform var(--timing) ease,
+    opacity var(--timing) ease;
+  z-index: 30;
+}
+
+/* 可切换到右侧显示 */
+.preview-link.right .preview-pop {
+  left: auto;
+  right: 0;
+}
+
+/* 2) 旋转边框：用 conic-gradient + mask 做“环形边框”，悬停时启动旋转 */
+.preview-frame {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    conic-gradient(from 0turn,
+      currentColor 0 20%,
+      transparent 20% 100%); /* 只留一段弧作“边框” */
+  /* 挖空中间，留下环 */
+  -webkit-mask:
+    radial-gradient(farthest-side, transparent calc(100% - var(--border-thick)), #000 0);
+  mask:
+    radial-gradient(farthest-side, transparent calc(100% - var(--border-thick)), #000 0);
+
+  opacity: 0;
+  transform: scale(0.96);
+  transition:
+    opacity var(--timing) ease,
+    transform var(--timing) ease;
+  animation: spin var(--spin-speed) linear infinite;
+  animation-play-state: paused;     /* 默认暂停，悬停时开始转 */
+}
+
+/* 3) 图片：延迟淡入，等边框先转一小下 */
+.preview-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--timing) ease var(--img-delay);
+}
+
+/* 悬停：弹层上移出现；边框显现并开始旋转；图片随后淡入 */
+.preview-link:hover .preview-pop {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.preview-link:hover .preview-frame {
+  opacity: 1;
+  transform: scale(1);
+  animation-play-state: running;
+}
+.preview-link:hover .preview-img {
+  opacity: 1;
+}
+
+/* 下划线跟随动画（可选的额外质感） */
+.preview-link .link-text {
+  position: relative;
+}
+.preview-link .link-text::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--timing) ease;
+}
+.preview-link:hover .link-text::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* 旋转关键帧 */
+@keyframes spin {
+  to { transform: rotate(1turn); }
+}
+
+/* 轻度防锯齿（可选） */
+.preview-link,
+.preview-pop {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 移动端保护：小屏上把预览宽度调窄 */
+@media (max-width: 480px) {
+  .preview-link { --pop-width: 220px; }
+}
