@@ -44,7 +44,7 @@ function PubItem(item: PubItemProps) {
         transition-all duration-300
       "
         >
-          <div className="relative h-[min(32vw,16rem)] w-[min(28.44rem,56.8889vw)] -m-[1px] mt-3">
+          <div className="relative h-[min(32vw,16rem)] w-[min(28.44rem,56.8889vw)] -m-[1px] mt-3 hidden group-hover:block transition-opacity duration-300">
             <iframe
               className="absolute inset-0 w-full h-full"
               src={`https://www.youtube.com/embed/${video}?loop=1&rel=0`}
