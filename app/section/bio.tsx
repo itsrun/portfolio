@@ -27,11 +27,7 @@ export default function Bio() {
           <MLink href="https://chenyang03.wordpress.com/" preview>
             Prof. Yang Chen
           </MLink>
-          . I was also a UCEAP visiting student at the{" "}
-          <MLink href="https://designlab.ucsd.edu/" preview>
-            Design Lab
-          </MLink>{" "}
-          of UC San Diego.
+          . I was also a UCEAP visiting student at UC San Diego.
         </div>
         <div>
           I'm interested in designing <i>intelligent interfaces</i> that make
