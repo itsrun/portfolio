@@ -34,13 +34,9 @@ export default function Bio() {
           dense and complex information more accessible and digestible to users.
           My recent work has explored how peer discussions on social media can
           enrich academic paper reading (
-          {
-            <MLink href="#surf" inplace>
-              UIST '25
-            </MLink>
-          }
-          ) and how academic knowledge spreads across the software developer
-          community (
+          {<MLink href="https://aceatusc.github.io/surf">UIST '25</MLink>}) and
+          how academic knowledge spreads across the software developer community
+          (
           <MLink href="#sciso" inplace>
             WWW '24
           </MLink>

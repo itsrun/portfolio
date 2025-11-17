@@ -4,27 +4,26 @@ import Section from "../ui/section";
 export default function Profile() {
   return (
     <Section className="mt-5" id="profile">
-      <div className="relative w-full h-auto aspect-[480/640] overflow-hidden">
+      <div className="relative w-full h-auto aspect-[3/5] overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 bg-zinc-200 animate-pulse"
         />
-        <style>
+        {/* <style>
           {`
         .profile-img {
         content: url('/profile.jpeg');
         transition: content 0.2s;
         }
         .profile-img:hover {
-        content: url('/santamonica.gif');
+        content: url('/hallo.gif');
         }
       `}
         </style>
         <img
           className="profile-img z-10 relative"
           alt="Profile picture of Run Huang"
-        />
-        {/*
+        /> */}
         <Image
           src="/profile.jpeg"
           alt="Profile picture of Run Huang"
@@ -34,10 +33,10 @@ export default function Profile() {
           sizes="(max-width: 640px) 100vw, 480px"
           priority
           fetchPriority="high"
-        /> */}
+        />
       </div>
       <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
-        Aug 2025 in Los Angeles, CA
+        Dec 2024 in Deer Valley, UT
       </div>
       {/* <iframe
         data-testid="embed-iframe"
