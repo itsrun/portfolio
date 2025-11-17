@@ -22,12 +22,8 @@ export default function Bio() {
           <MLink href="https://en.wikipedia.org/wiki/Fudan_University" preview>
             Fudan University
           </MLink>{" "}
-          (<span className="font-serif text-base">复旦大学</span>), where I
-          worked with{" "}
-          <MLink href="https://chenyang03.wordpress.com/" preview>
-            Prof. Yang Chen
-          </MLink>
-          . I was also a UCEAP visiting student at UC San Diego.
+          (<span className="font-serif text-base">复旦大学</span>). I was also a
+          UCEAP visiting student at UC San Diego.
         </div>
         <div>
           I'm interested in designing <i>intelligent interfaces</i> that make
