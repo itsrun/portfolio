@@ -6,20 +6,27 @@ import MLink from "../ui/mlink";
 interface PubItemProps {
   title: string;
   authors: { name: string; self?: boolean }[];
-  link: string;
+  link?: string;
   venue: string;
   award?: string;
   id?: string;
   video?: string;
+  paper: string;
 }
 
 function PubItem(item: PubItemProps) {
-  const { title, authors, link, venue, award, id, video } = item;
+  const { title, authors, link, venue, award, id, video, paper } = item;
   return (
     <div
-      className="my-auto px-1 hover:bg-blue-50 transition-all duration-200 max-w-[64rem] group cursor-pointer"
+      className="my-auto px-1 hover:bg-blue-50 transition-all duration-200 max-w-[64rem] group relative"
       id={id}
     >
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0 opacity-0"
+      />
       <h3 className="font-semibold leading-6 text-xl">{title}</h3>
       <p className="mt-1 mb-1.5 text-gray-600 leading-5 italic">
         {authors.map((a, i) => (
@@ -38,10 +45,10 @@ function PubItem(item: PubItemProps) {
       {video && (
         <div
           className="
-        h-0
-        group-hover:h-[calc(min(31.6vw,16rem)+3rem)]
-        overflow-hidden
-        transition-all duration-300
+      h-0
+      group-hover:h-[calc(min(31.6vw,16rem)+3rem)]
+      overflow-hidden
+      transition-all duration-300
       "
         >
           <div className="relative h-[min(32vw,16rem)] w-[min(28.44rem,56.8889vw)] -m-[1px] mt-3 hidden group-hover:block transition-opacity duration-300">
@@ -57,8 +64,13 @@ function PubItem(item: PubItemProps) {
             />
           </div>
 
-          <MLink href={link} className="leading-8">
-            Read the paper
+          {link && (
+            <MLink href={link} className="leading-8 mr-3">
+              [Website]
+            </MLink>
+          )}
+          <MLink href={paper} className="leading-8">
+            [Paper]
           </MLink>
         </div>
       )}

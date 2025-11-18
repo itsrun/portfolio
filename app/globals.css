@@ -41,7 +41,8 @@ a:hover {
 }
 
 body {
-  font-family: "Alegreya", serif;
+  font-family: "Alegreya", "Noto Serif SC", "Alegreya Fallback",
+    "Noto Serif SC Fallback";
 }
 
 .text-primary {

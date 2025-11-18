@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Alegreya } from "next/font/google";
+import { Alegreya, Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
 
 const alegreya = Alegreya({
   variable: "--font-alegreya",
   subsets: ["latin"],
+});
+
+const notoSerifSC = Noto_Serif_SC({
+  variable: "--font-noto-serif-sc",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${alegreya.variable} antialiased`}>{children}</body>
+      <body
+        className={`${alegreya.variable} ${notoSerifSC.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

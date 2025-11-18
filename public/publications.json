@@ -20,9 +20,10 @@
             }
         ],
         "venue": "UIST 2025, ACM Symposium on User Interface Software and Technology",
-        "link": "/papers/surf.pdf",
+        "paper": "/papers/surf.pdf",
         "id": "surf",
-        "video": "kMw4qqfSzWU"
+        "video": "kMw4qqfSzWU",
+        "link": "https://aceatusc.github.io/surf"
     },
     {
         "title": "[E.2] A Tale of Two Communities: Exploring Academic References on Stack Overflow",
@@ -36,9 +37,10 @@
             }
         ],
         "venue": "WWW 2024, ACM The Web Conference, Short Paper",
-        "link": "https://dl.acm.org/doi/10.1145/3589335.3651464",
+        "paper": "https://dl.acm.org/doi/10.1145/3589335.3651464",
         "id": "sciso",
-        "video": "vp57dFmh4Ik"
+        "video": "vp57dFmh4Ik",
+        "link": "https://sciso.vercel.app/"
     },
     {
         "title": "[E.1] Locating CDN Edge Servers with HTTP Responses",
@@ -59,7 +61,7 @@
             }
         ],
         "venue": "ACM SIGCOMM 2022, Demo Session",
-        "link": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051",
+        "paper": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051",
         "video": "KJSj_DCQ1bI"
     }
 ]

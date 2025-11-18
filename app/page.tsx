@@ -13,8 +13,8 @@ import Footer from "./section/footer";
 
 export default function Home() {
   return (
-    <main className="mx-auto px-[6%] max-w-[72rem] my-[4.2vw] grid grid-cols-3 gap-[4vw]">
-      <div className="col-span-2">
+    <main className="mx-auto px-[6%] max-w-[78rem] my-[4.2vw] grid grid-cols-8 gap-[3.2vw]">
+      <div className="col-span-5">
         <Bio />
         <Pub />
         <Section id="teaching">
@@ -23,7 +23,7 @@ export default function Home() {
         </Section>
         <Misc />
       </div>
-      <div className="col-span-1 relative">
+      <div className="col-span-3 relative">
         <Profile />
         <Section id="news">
           <Separator name="News" className="mt-4 mb-3" />

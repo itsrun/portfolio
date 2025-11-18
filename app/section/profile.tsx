@@ -4,7 +4,7 @@ import Section from "../ui/section";
 export default function Profile() {
   return (
     <Section className="mt-5" id="profile">
-      <div className="relative w-full h-auto aspect-[3/5] overflow-hidden">
+      <div className="relative w-full h-auto aspect-[2/3] overflow-hidden">
         <div
           aria-hidden
           className="absolute inset-0 bg-zinc-200 animate-pulse"
@@ -36,7 +36,7 @@ export default function Profile() {
         />
       </div>
       <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
-        Dec 2024 in Deer Valley, UT
+        Me as Linguini 🧑‍🍳, West Hollywood, Halloween 2025
       </div>
       {/* <iframe
         data-testid="embed-iframe"
