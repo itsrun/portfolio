@@ -19,7 +19,7 @@ export default function Misc() {
         </MLink>
         , or{" "}
         <MLink
-          href="https://open.spotify.com/embed/playlist/0RkGGBaCE995JF22l5pwqj?utm_source=generator"
+          href="https://open.spotify.com/embed/album/6dVCpQ7oGJD1oYs2fv1t5M?utm_source=generator"
           inplace
           preview
         >
@@ -36,7 +36,10 @@ export default function Misc() {
               tier: "S",
               parks: [
                 { name: "Zion", pic: "/pics/zion.jpeg" },
-                { name: "Mt. Hood", pic: "/pics/mthood.jpeg" },
+                {
+                  name: "Mt. San Jacinto",
+                  pic: "/pics/jacinto.jpeg",
+                },
               ],
             },
             {
@@ -45,10 +48,7 @@ export default function Misc() {
                 { name: "Deer Valley", pic: "/pics/deervalley.jpeg" },
                 { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
                 { name: "Grand Canyon" },
-                {
-                  name: "Mt. San Jacinto",
-                  pic: "/pics/jacinto.jpeg",
-                },
+                { name: "Mt. Hood", pic: "/pics/mthood.jpeg" },
               ],
             },
             {
@@ -60,6 +60,7 @@ export default function Misc() {
                 },
                 { name: "Arches" },
                 { name: "Yosemite" },
+                { name: "Mammoth Lakes" },
               ],
             },
             {

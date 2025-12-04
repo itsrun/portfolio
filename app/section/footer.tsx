@@ -18,8 +18,8 @@ export default function Footer() {
         src="/snoopy.webp"
         alt="Snoopy footer logo"
         loading="lazy"
-        width={160}
-        height={160}
+        width={196}
+        height={196}
       />
       <div className="text-xs text-gray-400 leading-[1.12]">
         © 2025 Run Huang. All rights reserved. <br /> 🤍 Snoopy © Peanuts

@@ -14,16 +14,16 @@ export default function Bio() {
           <MLink href="https://www.cs.usc.edu/" preview>
             University of Southern California
           </MLink>
-          , advised by{" "}
+          , supported by the Annenberg Fellowship. I am fortunate to be advised
+          by{" "}
           <MLink href="https://aceatusc.github.io" preview>
             Prof. Souti Chattopadhyay
           </MLink>
-          . I received my Bachelor's degree in Computer Science from{" "}
+          . Previously, I earned my Bachelor's degree in Computer Science from{" "}
           <MLink href="https://en.wikipedia.org/wiki/Fudan_University" preview>
             Fudan University
           </MLink>{" "}
-          (<span className="text-base">复旦大学</span>). I was also a UCEAP
-          visiting student at UC San Diego.
+          (<span className="text-base">复旦大学</span>).
         </div>
         <div>
           I'm interested in designing <i>intelligent interfaces</i> that make
@@ -44,8 +44,8 @@ export default function Bio() {
           <MLink href="mailto:itsrunhuang@outlook.com">reach out</MLink> :)
         </div>
         <div>
-          I'm experienced in full-stack web development, having contributed to
-          both frontend and backend projects during internships at{" "}
+          I'm experienced in full-stack development, having contributed to both
+          frontend and backend projects during internships at{" "}
           <MLink href="https://en.wikipedia.org/wiki/siemens" preview>
             Siemens
           </MLink>{" "}
