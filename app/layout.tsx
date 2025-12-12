@@ -16,7 +16,7 @@ const notoSerifSC = Noto_Serif_SC({
 export const metadata: Metadata = {
   title: "Run Huang",
   description:
-    "Run Huang is a CS Ph.D. student at University of Southern California. His research focuses on HCI and A11y. He earned his Bachelor's degree from Fudan University.",
+    "Run Huang is a CS Ph.D. student at University of Southern California. His research focuses on Human-AI collaboration. He earned his Bachelor's degree from Fudan University.",
   icons: {
     icon: "/favicon.webp",
   },

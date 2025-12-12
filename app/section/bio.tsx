@@ -14,7 +14,7 @@ export default function Bio() {
           <MLink href="https://www.cs.usc.edu/" preview>
             University of Southern California
           </MLink>
-          , supported by the Annenberg Fellowship. I am fortunate to be advised
+          , supported by an Annenberg Fellowship. I am fortunate to be advised
           by{" "}
           <MLink href="https://aceatusc.github.io" preview>
             Prof. Souti Chattopadhyay
