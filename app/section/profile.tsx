@@ -36,7 +36,7 @@ export default function Profile() {
         />
       </div>
       <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
-        Nov 2025, Los Angeles
+        Dec 2025, Lake Tahoe
       </div>
     </Section>
   );
