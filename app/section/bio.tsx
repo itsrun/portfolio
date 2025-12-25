@@ -53,7 +53,7 @@ export default function Bio() {
           <MLink href="https://en.wikipedia.org/wiki/Tencent" preview>
             Tencent
           </MLink>
-          . <b>I am currently seeking a Summer 2026 internship.</b>
+          .
         </div>
         <Contact className="flex-row sm:gap-x-3 sm:text-base md:text-lg md:gap-x-6" />
       </div>

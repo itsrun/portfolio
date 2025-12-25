@@ -30,12 +30,15 @@ export default function Misc() {
         parks and some other places I have visited so far:
       </div>
       <div className="w-full max-w-2xl mx-auto mt-4 pl-0.5">
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-x-2 gap-y-1.5">
           {[
             {
               tier: "S",
               parks: [
                 { name: "Zion", pic: "/pics/zion.jpeg" },
+                {
+                  name: "Red Rock (Nevada)",
+                },
                 {
                   name: "Mt. San Jacinto",
                   pic: "/pics/jacinto.jpeg",
@@ -47,30 +50,35 @@ export default function Misc() {
               parks: [
                 { name: "Deer Valley", pic: "/pics/deervalley.jpeg" },
                 { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
-                { name: "Grand Canyon" },
+                { name: "Tahoe" },
                 { name: "Mt. Hood", pic: "/pics/mthood.jpeg" },
               ],
             },
             {
               tier: "B",
               parks: [
+                { name: "Grand Canyon" },
+                { name: "Canyonlands" },
+                { name: "Yosemite" },
                 {
                   name: "Crater Lake",
                   // pic: "/pics/craterlake.jpeg",
                 },
                 { name: "Arches" },
-                { name: "Yosemite" },
-                { name: "Mammoth Lakes" },
               ],
             },
             {
               tier: "C",
               parks: [
-                { name: "Cannon Beach", pic: "/pics/cannon.jpeg" },
-                { name: "Canyonlands" },
+                { name: "Cannon Beach" },
+                { name: "Mammoth" },
                 { name: "Death Valley" },
-                { name: "Joshua Tree" },
+                { name: "Sequoia & Kings Canyon" },
               ],
+            },
+            {
+              tier: "D",
+              parks: [{ name: "Joshua Tree" }],
             },
             {
               tier: "F",
