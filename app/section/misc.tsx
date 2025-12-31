@@ -35,7 +35,7 @@ export default function Misc() {
             {
               tier: "S",
               parks: [
-                { name: "Zion", pic: "/pics/zion.jpeg" },
+                { name: "Tahoe", pic: "/pics/tahoe.jpeg" },
                 {
                   name: "Red Rock (Nevada)",
                 },
@@ -48,10 +48,9 @@ export default function Misc() {
             {
               tier: "A",
               parks: [
+                { name: "Zion", pic: "/pics/zion.jpeg" },
                 { name: "Deer Valley", pic: "/pics/deervalley.jpeg" },
                 { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
-                { name: "Tahoe" },
-                { name: "Mt. Hood", pic: "/pics/mthood.jpeg" },
               ],
             },
             {
@@ -65,6 +64,7 @@ export default function Misc() {
                   // pic: "/pics/craterlake.jpeg",
                 },
                 { name: "Arches" },
+                { name: "Mt. Hood", pic: "/pics/mthood.jpeg" },
               ],
             },
             {
