@@ -56,6 +56,15 @@ export default function Bio() {
           .
         </div>
         <Contact className="flex-row sm:gap-x-3 sm:text-base md:text-lg md:gap-x-6" />
+        <iframe
+          data-testid="embed-iframe"
+          src="https://open.spotify.com/embed/album/6dVCpQ7oGJD1oYs2fv1t5M?utm_source=generator&theme=0"
+          width="100%"
+          height="80"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </div>
     </Section>
   );
