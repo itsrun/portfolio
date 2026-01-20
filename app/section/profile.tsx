@@ -35,9 +35,9 @@ export default function Profile() {
           fetchPriority="high"
         />
       </div>
-      {/* <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
-        Los Angeles, 2024
-      </div> */}
+      <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
+        Lake Tahoe, 2026
+      </div>
     </Section>
   );
 }
