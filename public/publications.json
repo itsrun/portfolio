@@ -1,5 +1,22 @@
 [
     {
+        "title": "\"Like Taking the Path of Least Resistance\": Exploring the Impact of LLM Interaction on the Creative Process of Programming",
+        "authors": [
+            {
+                "name": "Zeinabsadat Saghi"
+            },
+            {
+                "name": "Run Huang",
+                "self": true
+            },
+            {
+                "name": "Souti Chattopadhyay"
+            }
+        ],
+        "venue": "CHI 2026 (In 2nd Round Review)",
+        "id": "chi2026"
+    },
+    {
         "title": "[C.1] Beyond the Page: Enriching Academic Paper Reading with Social Media Discussions",
         "authors": [
             {

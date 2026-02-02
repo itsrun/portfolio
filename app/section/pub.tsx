@@ -11,7 +11,7 @@ interface PubItemProps {
   award?: string;
   id?: string;
   video?: string;
-  paper: string;
+  paper?: string;
 }
 
 function PubItem(item: PubItemProps) {
@@ -69,9 +69,11 @@ function PubItem(item: PubItemProps) {
               [Website]
             </MLink>
           )}
-          <MLink href={paper} className="leading-8">
-            [Paper]
-          </MLink>
+          {paper && (
+            <MLink href={paper} className="leading-8">
+              [Paper]
+            </MLink>
+          )}
         </div>
       )}
     </div>
@@ -141,7 +143,7 @@ export default function Pub() {
     <Section id="pub">
       <Separator name="Publications" className="mt-6 mb-3" />
       <p className="mb-3 text-gray-700">
-        *C: full conference paper, *E: extended abstract & short paper
+        *C: conference full paper, *E: short paper & extended abstract
       </p>
       <div className="border-gray-300 flex flex-col gap-6 cursor-default">
         {data.map((item, index) => (
