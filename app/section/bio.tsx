@@ -47,7 +47,7 @@ export default function Bio() {
           I'm experienced in full-stack development, having contributed to both
           frontend and backend projects during internships at{" "}
           <MLink href="https://en.wikipedia.org/wiki/siemens" preview>
-            Siemens
+            Siemens NX
           </MLink>{" "}
           and{" "}
           <MLink href="https://en.wikipedia.org/wiki/Tencent" preview>
@@ -56,7 +56,7 @@ export default function Bio() {
           .
         </div>
         <Contact className="flex-row sm:gap-x-3 sm:text-base md:text-lg md:gap-x-6" />
-        <iframe
+        {/* <iframe
           data-testid="embed-iframe"
           src="https://open.spotify.com/embed/album/6dVCpQ7oGJD1oYs2fv1t5M?utm_source=generator&theme=0"
           width="100%"
@@ -64,7 +64,7 @@ export default function Bio() {
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
-        ></iframe>
+        ></iframe> */}
       </div>
     </Section>
   );

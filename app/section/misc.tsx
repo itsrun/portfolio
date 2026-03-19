@@ -35,13 +35,13 @@ export default function Misc() {
             {
               tier: "S",
               parks: [
-                { name: "Tahoe", pic: "/pics/tahoe.jpeg" },
-                {
-                  name: "Red Rock (Nevada)",
-                },
                 {
                   name: "Mt. San Jacinto",
                   pic: "/pics/jacinto.jpeg",
+                },
+                { name: "Tahoe" },
+                {
+                  name: "Red Rock (Nevada)",
                 },
               ],
             },
@@ -49,7 +49,7 @@ export default function Misc() {
               tier: "A",
               parks: [
                 { name: "Zion", pic: "/pics/zion.jpeg" },
-                { name: "Deer Valley", pic: "/pics/deervalley.jpeg" },
+                { name: "Deer Valley" },
                 { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
               ],
             },
@@ -117,7 +117,7 @@ export default function Misc() {
                     <span key={park.name} className="text-gray-600">
                       {park.name}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
