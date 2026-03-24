@@ -25,9 +25,9 @@ export default function Misc() {
         >
           Spotify
         </MLink>{" "}
-        when I'm off work. If it's a holiday, I'm most likely visiting a
-        National Park or ski resort. Here's my tier ranking of the national
-        parks and some other places I have visited so far:
+        when I'm off work. If it's a holiday, I'm most definitely at a National
+        Park or ski resort. Here's my tier ranking of the places I have visited
+        so far:
       </div>
       <div className="w-full max-w-2xl mx-auto mt-4 pl-0.5">
         <div className="flex flex-col gap-x-2 gap-y-1.5">
@@ -41,7 +41,7 @@ export default function Misc() {
                 },
                 { name: "Tahoe" },
                 {
-                  name: "Red Rock (Nevada)",
+                  name: "Red Rock (NV)",
                 },
               ],
             },
@@ -78,7 +78,10 @@ export default function Misc() {
             },
             {
               tier: "D",
-              parks: [{ name: "Joshua Tree" }],
+              parks: [
+                { name: "Joshua Tree" },
+                { name: "Caddo Lake", pic: "/pics/caddo.jpeg" },
+              ],
             },
             {
               tier: "F",

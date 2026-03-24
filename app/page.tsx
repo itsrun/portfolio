@@ -21,7 +21,6 @@ export default function Home() {
           <Separator name="Teaching" className="mt-4 mb-3" />
           <List data={teachingData} large />
         </Section>
-        <Misc />
       </div>
       <div className="col-span-1 relative">
         <Profile />
@@ -37,6 +36,7 @@ export default function Home() {
           <Separator name="Awards" className="mt-4 mb-3" />
           <List data={awardData} />
         </Section>
+        <Misc />
         <Footer />
       </div>
     </main>

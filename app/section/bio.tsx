@@ -26,7 +26,7 @@ export default function Bio() {
           (<span className="text-base">复旦大学</span>).
         </div>
         <div>
-          I'm interested in designing <i>intelligent interfaces</i> that make
+          I'm interested in designing <b>intelligent interfaces</b> that make
           dense and complex information more accessible and digestible to users.
           My recent work has explored how peer discussions on social media can
           enrich academic paper reading (

@@ -23,6 +23,7 @@
         "paper": "/papers/surf.pdf",
         "id": "surf",
         "video": "kMw4qqfSzWU",
+        "cover": "/pics/surf-cover.png",
         "link": "https://aceatusc.github.io/surf"
     },
     {
@@ -40,6 +41,7 @@
         "paper": "https://dl.acm.org/doi/10.1145/3589335.3651464",
         "id": "sciso",
         "video": "vp57dFmh4Ik",
+        "cover": "/pics/sciso-cover.jpg",
         "link": "https://sciso.vercel.app/"
     },
     {
@@ -62,6 +64,7 @@
         ],
         "venue": "ACM SIGCOMM 2022, Demo Session",
         "paper": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051",
-        "video": "KJSj_DCQ1bI"
+        "video": "KJSj_DCQ1bI",
+        "cover": "/pics/sigcomm-cover.jpg"
     }
 ]

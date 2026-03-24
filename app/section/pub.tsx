@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Section from "../ui/section";
 import data from "../../public/publications.json";
 import Separator from "../ui/separator";
@@ -12,17 +15,63 @@ interface PubItemProps {
   id?: string;
   video?: string;
   paper?: string;
+  cover?: string;
+}
+
+function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
+  const [playing, setPlaying] = useState(false);
+
+  if (playing || !cover) {
+    return (
+      <iframe
+        className="absolute inset-0 w-full h-full"
+        src={`https://www.youtube.com/embed/${video}?loop=1&rel=0${playing ? "&autoplay=1" : ""}`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        loading="lazy"
+        allowFullScreen
+      />
+    );
+  }
+
+  return (
+    <button
+      className="absolute inset-0 w-full h-full cursor-pointer group/play"
+      onClick={() => setPlaying(true)}
+    >
+      <img
+        src={cover}
+        alt="Video thumbnail"
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-black/10 group-hover/play:bg-black/20 transition-colors duration-200" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <svg
+          viewBox="0 0 68 48"
+          className="w-16 h-11 opacity-80 group-hover/play:opacity-100 transition-opacity duration-200"
+        >
+          <path
+            d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
+            fill="red"
+          />
+          <path d="M45 24 27 14v20" fill="white" />
+        </svg>
+      </div>
+    </button>
+  );
 }
 
 function PubItem(item: PubItemProps) {
-  const { title, authors, link, venue, award, id, video, paper } = item;
+  const { title, authors, link, venue, award, id, video, paper, cover } = item;
   return (
     <div
       className="my-auto px-1 hover:bg-blue-50 transition-all duration-200 max-w-[64rem] group relative"
       id={id}
     >
       <a
-        href={link}
+        href={link || paper || video}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute inset-0 opacity-0"
@@ -43,25 +92,9 @@ function PubItem(item: PubItemProps) {
         </p>
       )}
       {video && (
-        <div
-          className="
-      h-0
-      group-hover:h-[calc(min(31.6vw,16rem)+3rem)]
-      overflow-hidden
-      transition-all duration-300
-      "
-        >
-          <div className="relative h-[min(32vw,16rem)] w-[min(28.44rem,56.8889vw)] -m-[1px] mt-3 hidden group-hover:block transition-opacity duration-300">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src={`https://www.youtube.com/embed/${video}?loop=1&rel=0`}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              loading="lazy"
-              allowFullScreen
-            />
+        <div>
+          <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-3">
+            <VideoPlayer video={video} cover={cover} />
           </div>
 
           {link && (
