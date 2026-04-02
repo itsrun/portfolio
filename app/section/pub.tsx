@@ -44,7 +44,7 @@ function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
       <img
         src={cover}
         alt="Video thumbnail"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover grayscale opacity-75 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
       />
       <div className="absolute inset-0 bg-black/10 group-hover/play:bg-black/20 transition-colors duration-200" />
       <div className="absolute inset-0 flex items-center justify-center">
