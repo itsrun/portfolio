@@ -39,7 +39,7 @@ export default function Misc() {
                   name: "Mt. San Jacinto",
                   pic: "/pics/jacinto.jpeg",
                 },
-                { name: "Tahoe" },
+                { name: "Tahoe", pic: "/pics/tahoe.jpeg" },
                 {
                   name: "Red Rock (NV)",
                 },
@@ -79,8 +79,8 @@ export default function Misc() {
             {
               tier: "D",
               parks: [
-                { name: "Joshua Tree" },
                 { name: "Caddo Lake", pic: "/pics/caddo.jpeg" },
+                { name: "Joshua Tree" },
               ],
             },
             {
