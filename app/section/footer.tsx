@@ -13,13 +13,14 @@ export default function Footer() {
   //   }, []);
 
   return (
-    <Section id="footer" className="absolute bottom-0 left-0 right-0 -z-10">
+    <Section id="footer" className="absolute bottom-0 right-0">
       <img
         src="/snoopy.webp"
         alt="Snoopy footer logo"
         loading="lazy"
-        width={196}
-        height={196}
+        width={144}
+        height={144}
+        className="ml-auto"
       />
       <div className="text-xs text-gray-400 leading-[1.12]">
         © 2025 Run Huang. All rights reserved. <br /> 🤍 Snoopy © Peanuts

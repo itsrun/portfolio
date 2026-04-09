@@ -13,7 +13,7 @@ import Footer from "./section/footer";
 
 export default function Home() {
   return (
-    <main className="mx-auto px-[6%] max-w-[78rem] my-[4.2vw] grid grid-cols-3 gap-[3.2vw]">
+    <main className="mx-auto px-[6%] max-w-[78.5rem] my-[4.2vw] grid grid-cols-3 gap-[3.2vw]">
       <div className="col-span-2">
         <Bio />
         <Pub />
