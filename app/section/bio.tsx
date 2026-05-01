@@ -10,7 +10,7 @@ export default function Bio() {
       <h3 className="text-2xl">&quot;ruen&quot; (/ru:n/)</h3>
       <div className="text-lg leading-[1.36] gap-5 flex flex-col mt-6 break-words hyphens-auto cursor-default">
         <div>
-          I am a Ph.D. student in Computer Science at the{" "}
+          I am a Ph.D. candidate in Computer Science at the{" "}
           <MLink href="https://www.cs.usc.edu/" preview>
             University of Southern California
           </MLink>

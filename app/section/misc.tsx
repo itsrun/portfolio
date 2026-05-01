@@ -48,7 +48,7 @@ export default function Misc() {
             {
               tier: "A",
               parks: [
-                { name: "Zion", pic: "/pics/zion.jpeg" },
+                { name: "Zion" },
                 { name: "Deer Valley" },
                 { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
               ],
