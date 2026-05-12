@@ -5,6 +5,7 @@ import newsData from "../public/news.json";
 import teachingData from "../public/teaching.json";
 import jobData from "../public/job.json";
 import awardData from "../public/award.json";
+import servicesData from "../public/services.json";
 import List from "./ui/list";
 import Section from "./ui/section";
 import Separator from "./ui/separator";
@@ -35,6 +36,10 @@ export default function Home() {
         <Section id="awards">
           <Separator name="Awards" className="mt-4 mb-3" />
           <List data={awardData} />
+        </Section>
+        <Section id="services">
+          <Separator name="Services" className="mt-4 mb-3" />
+          <List data={servicesData} />
         </Section>
         <Misc />
         <Footer />

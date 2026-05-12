@@ -25,9 +25,9 @@ export default function Misc() {
         >
           Spotify
         </MLink>{" "}
-        when I'm off work. If it's a holiday, I'm most definitely at a National
-        Park or ski resort. Here's my tier ranking of the places I have visited
-        so far:
+        when I'm off work. If it's a holiday, I'm most certainly at a National
+        Park or ski resort. Here's my highly subjective tier ranking of some
+        places I have visited:
       </div>
       <div className="w-full max-w-2xl mx-auto mt-4 pl-0.5">
         <div className="flex flex-col gap-x-2 gap-y-1.5">

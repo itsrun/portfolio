@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Alegreya, Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const alegreya = Alegreya({
   variable: "--font-alegreya",
@@ -30,6 +31,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "db45a1317af24187b1f85d7450e8c149"}'
+        ></Script>
+      </head>
       <body
         className={`${alegreya.variable} ${notoSerifSC.variable} antialiased`}
       >
