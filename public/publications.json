@@ -24,7 +24,29 @@
         "id": "surf",
         "video": "kMw4qqfSzWU",
         "cover": "/pics/surf-cover.png",
-        "link": "https://aceatusc.github.io/surf"
+        "link": "https://aceatusc.github.io/surf",
+        "note": "CCF-A, Acceptance Rate: 210/947 (22%)"
+    },
+    {
+        "title": "[J.1] Quantifying Factors that Drive Trust and Satisfaction with AI Health Chatbots: A Mixed-Methods Vignette Survey of Caregivers for Pediatric Infectious Diseases",
+        "authors": [
+            {
+                "name": "Run Huang",
+                "self": true
+            },
+            {
+                "name": "Joseph Cecil"
+            },
+            {
+                "name": "Marjorie Freedman"
+            },
+            {
+                "name": "Souti Chattopadhyay"
+            }
+        ],
+        "venue": "JMIR 2026, Journal of Medical Internet Research",
+        "id": "alice",
+        "note": "Q1 Journal, Impact Factor: 6.0"
     },
     {
         "title": "[E.2] A Tale of Two Communities: Exploring Academic References on Stack Overflow",
@@ -46,7 +68,7 @@
     },
     {
         "title": "[E.1] Locating CDN Edge Servers with HTTP Responses",
-        "award": "First Place in ACM Student Research Competition",
+        "award": "First Place in ACM Student Research Competition (1/62)",
         "authors": [
             {
                 "name": "Run Huang",

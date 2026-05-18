@@ -16,6 +16,7 @@ interface PubItemProps {
   video?: string;
   paper?: string;
   cover?: string;
+  note?: string;
 }
 
 function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
@@ -64,7 +65,8 @@ function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
 }
 
 function PubItem(item: PubItemProps) {
-  const { title, authors, link, venue, award, id, video, paper, cover } = item;
+  const { title, authors, link, venue, award, id, video, paper, cover, note } =
+    item;
   return (
     <div
       className="my-auto px-1 hover:bg-blue-50 transition-all duration-200 max-w-[64rem] group relative"
@@ -92,23 +94,25 @@ function PubItem(item: PubItemProps) {
         </p>
       )}
       {video && (
+        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-2.5 mb-1.5">
+          <VideoPlayer video={video} cover={cover} />
+        </div>
+      )}
+      {
         <div>
-          <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-3">
-            <VideoPlayer video={video} cover={cover} />
-          </div>
-
           {link && (
-            <MLink href={link} className="leading-8 mr-3">
+            <MLink href={link} className="mr-3">
               [Website]
             </MLink>
           )}
           {paper && (
-            <MLink href={paper} className="leading-8">
+            <MLink href={paper} className="mr-2.5">
               [Paper]
             </MLink>
           )}
+          {note && <span className="text-sm text-gray-500">{note}</span>}
         </div>
-      )}
+      }
     </div>
   );
 }
@@ -176,7 +180,7 @@ export default function Pub() {
     <Section id="pub">
       <Separator name="Publications" className="mt-6 mb-3" />
       <p className="mb-3 text-gray-700">
-        *C: conference full paper, *E: short paper & extended abstract
+        *J: journal article, *C: conference full paper, *E: extended abstract
       </p>
       <div className="border-gray-300 flex flex-col gap-6 cursor-default">
         {data.map((item, index) => (

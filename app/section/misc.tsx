@@ -94,34 +94,37 @@ export default function Misc() {
             >
               <div className={`text-center font-bold text-lg`}>{tier}</div>
               <div className={`flex-1 flex flex-wrap gap-2 px-3 text-sm`}>
-                {parks.map((park) =>
-                  park.pic ? (
-                    <span
-                      key={park.name}
-                      className={`relative group cursor-pointer underline decoration-wavy decoration-1 underline-offset-2`}
-                    >
-                      {park.name}
-                      <span
-                        className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block"
-                        style={{
-                          width: "auto",
-                          minWidth: "0",
-                        }}
-                      >
-                        <img
-                          src={park.pic}
-                          alt={park.name}
-                          className="shadow-lg border border-gray-200 bg-white max-w-xs w-[24rem]"
-                          loading="lazy"
-                        />
-                      </span>
-                    </span>
-                  ) : (
-                    <span key={park.name} className="text-gray-600">
-                      {park.name}
-                    </span>
-                  ),
-                )}
+                {parks.map((park) => (
+                  // park.pic ? (
+                  //   <span
+                  //     key={park.name}
+                  //     className={`relative group cursor-pointer underline decoration-wavy decoration-1 underline-offset-2`}
+                  //   >
+                  //     {park.name}
+                  //     <span
+                  //       className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 hidden group-hover:block"
+                  //       style={{
+                  //         width: "auto",
+                  //         minWidth: "0",
+                  //       }}
+                  //     >
+                  //       <img
+                  //         src={park.pic}
+                  //         alt={park.name}
+                  //         className="shadow-lg border border-gray-200 bg-white max-w-xs w-[24rem]"
+                  //         loading="lazy"
+                  //       />
+                  //     </span>
+                  //   </span>
+                  // ) : (
+                  //   <span key={park.name} className="text-gray-600">
+                  //     {park.name}
+                  //   </span>
+                  // ),
+                  <span key={park.name} className="text-gray-600">
+                    {park.name}
+                  </span>
+                ))}
               </div>
             </div>
           ))}

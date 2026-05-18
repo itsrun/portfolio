@@ -23,7 +23,7 @@ export default function Footer() {
         className="ml-auto"
       />
       <div className="text-xs text-gray-400 leading-[1.12]">
-        © 2025 Run Huang. All rights reserved. <br /> 🤍 Snoopy © Peanuts
+        © 2026 Run Huang. All rights reserved. <br /> 🤍 Snoopy © Peanuts
         Worldwide LLC
       </div>
     </Section>
