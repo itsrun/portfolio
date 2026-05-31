@@ -35,8 +35,8 @@ export default function Profile() {
           fetchPriority="high"
         />
       </div>
-      <div className="text-sm text-gray-500 px-1 pt-1 leading-4">
-        Zion NP, 2025
+      <div className="text-sm text-gray-500 px-0.25 pt-1 leading-4">
+        Shanghai, May 2026
       </div>
     </Section>
   );
