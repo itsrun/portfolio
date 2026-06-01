@@ -5,18 +5,18 @@ export default function Profile() {
   return (
     <Section className="mt-1" id="profile">
       <div className="relative w-full h-auto aspect-[9/16] overflow-hidden">
-        <div
+        {/* <div
           aria-hidden
           className="absolute inset-0 bg-zinc-200 animate-pulse"
-        />
+        /> */}
         {/* <style>
           {`
         .profile-img {
-        content: url('/profile.jpeg');
+        content: url('/profile5.jpeg');
         transition: content 0.2s;
         }
         .profile-img:hover {
-        content: url('/hallo.gif');
+        content: url('/profile.jpeg');
         }
       `}
         </style>
@@ -24,14 +24,14 @@ export default function Profile() {
           className="profile-img z-10 relative"
           alt="Profile picture of Run Huang"
         /> */}
-        <Image
+        <img
           src="/profile.jpeg"
           alt="Profile picture of Run Huang"
-          fill
+          // fill
           className="object-cover"
-          placeholder="empty"
+          // placeholder="empty"
           sizes="(max-width: 640px) 100vw, 480px"
-          priority
+          // priority
           fetchPriority="high"
         />
       </div>

@@ -7,7 +7,7 @@ export default function Misc() {
     <Section id="misc" className="cursor-default">
       <Separator name="Miscellaneous" className="mt-6 mb-3" />
       <div>
-        I'm born and raised in Guangdong (Canton). Find me on{" "}
+        Find me on{" "}
         {
           <MLink href="https://splatoon.nintendo.com/" preview>
             Splatsville
@@ -52,7 +52,7 @@ export default function Misc() {
               tier: "A",
               parks: [
                 {
-                  name: "Hangzhou",
+                  name: "Xihu",
                 },
                 { name: "Zion" },
                 { name: "Deer Valley" },
