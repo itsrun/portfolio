@@ -24,14 +24,14 @@ export default function Profile() {
           className="profile-img z-10 relative"
           alt="Profile picture of Run Huang"
         /> */}
-        <img
-          src="/profile.jpeg"
+        <Image
+          src="/profile3.jpeg"
           alt="Profile picture of Run Huang"
-          // fill
+          fill
           className="object-cover"
-          // placeholder="empty"
+          placeholder="empty"
           sizes="(max-width: 640px) 100vw, 480px"
-          // priority
+          priority
           fetchPriority="high"
         />
       </div>
