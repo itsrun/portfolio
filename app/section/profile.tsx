@@ -25,7 +25,7 @@ export default function Profile() {
           alt="Profile picture of Run Huang"
         /> */}
         <Image
-          src="/profile3.jpeg"
+          src="/profile.jpeg"
           alt="Profile picture of Run Huang"
           fill
           className="object-cover"
