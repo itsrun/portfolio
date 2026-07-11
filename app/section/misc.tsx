@@ -80,6 +80,7 @@ export default function Misc() {
                 { name: "Mammoth" },
                 { name: "Death Valley" },
                 { name: "Sequoia & Kings Canyon" },
+                { name: "Redwood" },
               ],
             },
             {
@@ -87,6 +88,7 @@ export default function Misc() {
               parks: [
                 { name: "Caddo Lake", pic: "/pics/caddo.jpeg" },
                 { name: "Joshua Tree" },
+                { name: "Lassen Volcanic" },
               ],
             },
             {

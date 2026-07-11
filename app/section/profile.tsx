@@ -36,7 +36,7 @@ export default function Profile() {
         />
       </div>
       <div className="text-sm text-gray-500 px-0.25 pt-1 leading-4">
-        Shanghai, May 2026
+        Santa Rosa, Jul 2026
       </div>
     </Section>
   );
