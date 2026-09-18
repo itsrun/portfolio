@@ -94,8 +94,10 @@ export default function Misc() {
               key={tier}
               className="flex items-center pb-0.5 border-b border-gray-200"
             >
-              <div className={`text-center font-bold`}>{tier}</div>
-              <div className={`flex-1 flex flex-wrap gap-2 px-3 text-sm`}>
+              <div className={`text-center font-semibold`}>{tier}</div>
+              <div
+                className={`flex-1 flex flex-wrap gap-x-2 gap-y-1 px-3 text-sm`}
+              >
                 {parks.map((park) => (
                   // park.pic ? (
                   //   <span
@@ -130,6 +132,11 @@ export default function Misc() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-3 text-xs text-stone-600 leading-snug">
+          Shoutout to my friends who've joined me on these trips.{" "}
+          <MLink href="mailto:runhuang@usc.edu">Hit me up</MLink> if have a hike
+          or ski trip in mind—or, of course, talk research :)
         </div>
       </div>
       {/* <details>

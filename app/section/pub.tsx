@@ -54,7 +54,7 @@ function VideoPlayer({
       <img
         src={cover}
         alt="Video thumbnail"
-        className="w-full h-full object-contain grayscale opacity-75 group-hover/play:grayscale-0 group-hover/play:opacity-100 transition-all duration-300"
+        className="w-full h-full object-contain grayscale opacity-75 group-hover/publication:grayscale-0 group-hover/publication:opacity-100 transition-all duration-300"
       />
       <div className="absolute inset-0 bg-black/10 group-hover/play:bg-black/20 transition-colors duration-200" />
       <div className="absolute inset-0 flex items-center justify-center">
@@ -79,24 +79,25 @@ function PubItem(item: PubItemProps) {
   const { title, authors, link, venue, award, id, video, paper, cover, note } =
     item;
   return (
-    <div
-      className="my-auto px-1 hover:bg-[#f3f3f3] transition-all duration-200 group relative"
-      id={id}
-    >
+    <div className="my-auto px-1 group/publication relative" id={id}>
       <a
         href={link || paper || video}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute inset-0 opacity-0"
       />
-      <h3 className="font-medium leading-tight sm:leading-snug text-lg">
+      <h3 className="font-medium leading-tight sm:leading-snug text-lg group-hover/publication:underline underline-offset-2">
         {title}
       </h3>
-      {award && <p className="text-amber-700 mt-0.5">{award}</p>}
-      <p className="mt-1 mb-1.5 text-gray-900 leading-tight font-light">
+      {award && <p className="text-amber-700 mt-0.25">{award}</p>}
+      <p className="mt-0.75 mb-1.5 text-gray-900 leading-tight font-light">
         {authors.map((a, i) => (
           <span key={i}>
-            {a.self ? <u className="underline-offset-2">{a.name}</u> : a.name}
+            {a.self ? (
+              <u className="underline-offset-2 decoration-1">{a.name}</u>
+            ) : (
+              a.name
+            )}
             {i < authors.length - 1 ? ", " : ""}
           </span>
         ))}
@@ -104,7 +105,7 @@ function PubItem(item: PubItemProps) {
       <div className="font-medium gap-5 flex">
         {venue}{" "}
         {link && (
-          <MLink className="font-light" href={link} icon>
+          <MLink className="font-light" href={link} icon preview>
             Website
           </MLink>
         )}
@@ -115,7 +116,7 @@ function PubItem(item: PubItemProps) {
         )}
       </div>
       {video && (
-        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-3 mb-1.5">
+        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-2.5 mb-1.5">
           <VideoPlayer video={video} cover={cover} />
         </div>
       )}

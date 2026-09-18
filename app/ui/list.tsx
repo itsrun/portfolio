@@ -10,11 +10,11 @@ export default function List({
           key={index}
           className="hover:bg-[#f3f3f3] transition-colors duration-200 pl-0.5"
         >
-          <h4 className={`font-semibold text-stone-900 leading-tight mb-0.5`}>
+          <h4 className={`font-semibold text-stone-900 leading-tight mb-0.25`}>
             {item.title}
           </h4>
           {item.note && (
-            <p className={`text-sm text-stone-800 mb-1 font-light`}>
+            <p className={`text-sm text-stone-800 mb-0.25 font-light`}>
               {item.note}
             </p>
           )}
