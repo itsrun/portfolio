@@ -6,6 +6,7 @@ type LinkProps = {
   className?: string;
   inplace?: boolean;
   preview?: boolean;
+  icon?: boolean;
 };
 
 export default function MLink({
@@ -14,15 +15,17 @@ export default function MLink({
   className,
   inplace,
   preview = false,
+  icon = false,
 }: LinkProps) {
   return (
     <span className="relative group">
       <Link
         href={href}
-        className={`text-[#00275c] underline hover:text-pink-800 underline-offset-2 decoration-blue-400 hover:decoration-pink-400 decoration-1 ${className} transition-colors duration-200`}
+        className={`text-[#474E22] underline hover:text-[#BC1833] underline-offset-2 decoration-[#474E22] hover:decoration-[#BC1833] decoration-1 ${className} transition-colors duration-200`}
         target={inplace ? "_self" : "_blank"}
         rel="noopener noreferrer"
       >
+        {icon && "↗"}
         {children}
       </Link>
 

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
 
 html {
@@ -35,17 +34,4 @@ a:hover {
   html {
     font-size: 18px;
   }
-}
-
-body {
-  font-family: "Alegreya", "Noto Serif SC", "Alegreya Fallback",
-    "Noto Serif SC Fallback";
-}
-
-.text-primary {
-  color: #111;
-}
-
-.text-secondary {
-  color: #00275c;
 }

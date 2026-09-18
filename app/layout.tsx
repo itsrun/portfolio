@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Alegreya, Noto_Serif_SC } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const alegreya = Alegreya({
-  variable: "--font-alegreya",
-  subsets: ["latin"],
+export const inter = Inter({
+  variable: "--font-inter",
 });
 
-const notoSerifSC = Noto_Serif_SC({
-  variable: "--font-noto-serif-sc",
-  subsets: ["latin"],
-  weight: ["400", "700"],
+export const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
 });
 
 export const metadata: Metadata = {
@@ -38,11 +35,7 @@ export default function RootLayout({
           data-cf-beacon='{"token": "db45a1317af24187b1f85d7450e8c149"}'
         ></Script>
       </head>
-      <body
-        className={`${alegreya.variable} ${notoSerifSC.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }

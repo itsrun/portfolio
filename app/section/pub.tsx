@@ -4,7 +4,6 @@ import { useState } from "react";
 import Section from "../ui/section";
 import data from "../../public/publications.json";
 import Separator from "../ui/separator";
-import MLink from "../ui/mlink";
 
 interface PubItemProps {
   title: string;
@@ -19,7 +18,15 @@ interface PubItemProps {
   note?: string;
 }
 
-function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
+function VideoPlayer({
+  video,
+  cover,
+  title = "Publication video",
+}: {
+  video: string;
+  cover?: string;
+  title?: string;
+}) {
   const [playing, setPlaying] = useState(false);
 
   if (playing || !cover) {
@@ -27,7 +34,7 @@ function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
       <iframe
         className="absolute inset-0 w-full h-full"
         src={`https://www.youtube.com/embed/${video}?loop=1&rel=0${playing ? "&autoplay=1" : ""}`}
-        title="YouTube video player"
+        title={title}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
@@ -39,13 +46,15 @@ function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
 
   return (
     <button
-      className="absolute inset-0 w-full h-full cursor-pointer group/play"
+      type="button"
+      aria-label={`Play video: ${title}`}
+      className="absolute inset-0 w-full h-full cursor-pointer group/play focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-500"
       onClick={() => setPlaying(true)}
     >
       <img
         src={cover}
         alt="Video thumbnail"
-        className="w-full h-full object-cover grayscale opacity-75 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+        className="w-full h-full object-contain grayscale opacity-75 group-hover/play:grayscale-0 group-hover/play:opacity-100 transition-all duration-300"
       />
       <div className="absolute inset-0 bg-black/10 group-hover/play:bg-black/20 transition-colors duration-200" />
       <div className="absolute inset-0 flex items-center justify-center">
@@ -64,12 +73,14 @@ function VideoPlayer({ video, cover }: { video: string; cover?: string }) {
   );
 }
 
+import MLink from "../ui/mlink";
+
 function PubItem(item: PubItemProps) {
   const { title, authors, link, venue, award, id, video, paper, cover, note } =
     item;
   return (
     <div
-      className="my-auto px-1 hover:bg-blue-50 transition-all duration-200 max-w-[64rem] group relative"
+      className="my-auto px-1 hover:bg-[#f3f3f3] transition-all duration-200 group relative tracking-[-0.008em]"
       id={id}
     >
       <a
@@ -78,8 +89,9 @@ function PubItem(item: PubItemProps) {
         rel="noopener noreferrer"
         className="absolute inset-0 opacity-0"
       />
-      <h3 className="font-semibold leading-6 text-xl">{title}</h3>
-      <p className="mt-1 mb-1.5 text-gray-600 leading-5 italic">
+      <h3 className="font-medium leading-tight sm:leading-snug">{title}</h3>
+      {award && <p className="text-amber-700 mt-0.5 text-sm">{award}</p>}
+      <p className="mt-1.5 mb-2 text-gray-600 leading-tight italic text-sm font-light">
         {authors.map((a, i) => (
           <span key={i}>
             {a.self ? <u className="underline-offset-2">{a.name}</u> : a.name}
@@ -87,102 +99,38 @@ function PubItem(item: PubItemProps) {
           </span>
         ))}
       </p>
-      <p className="leading-5">{venue}</p>
-      {award && (
-        <p className="underline text-secondary underline-offset-2 decoration-dotted leading-5 mt-0.5">
-          {award}
-        </p>
-      )}
+      <div className="text-sm font-medium gap-5 flex">
+        {venue}{" "}
+        {link && (
+          <MLink className="font-light" href={link} icon>
+            Website
+          </MLink>
+        )}
+        {paper && (
+          <MLink className="font-light" href={paper} icon>
+            Paper
+          </MLink>
+        )}
+      </div>
       {video && (
-        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-2.5 mb-1.5">
+        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-3 mb-1.5">
           <VideoPlayer video={video} cover={cover} />
         </div>
       )}
-      {
-        <div>
-          {link && (
-            <MLink href={link} className="mr-3">
-              [Website]
-            </MLink>
-          )}
-          {paper && (
-            <MLink href={paper} className="mr-2.5">
-              [Paper]
-            </MLink>
-          )}
-          {note && <span className="text-sm text-gray-500">{note}</span>}
-        </div>
-      }
     </div>
   );
-}
-
-{
-  /* <div className="max-w-[64rem] group">
-  <input id={`toggle-${id}`} type="checkbox" className="peer sr-only" />
-
-  <label
-    htmlFor={`toggle-${id}`}
-    id={id}
-    className="
-      my-auto px-1 block cursor-pointer
-      hover:bg-blue-50
-      peer-checked:bg-blue-50
-      transition-colors duration-200
-    "
-  >
-    <h3 className="font-semibold leading-6 text-xl">{title}</h3>
-    <p className="mt-1 mb-1.5 text-gray-600 leading-5 italic">
-      {authors.map((a, i) => (
-        <span key={i}>
-          {a.self ? <u className="underline-offset-2">{a.name}</u> : a.name}
-          {i < authors.length - 1 ? ", " : ""}
-        </span>
-      ))}
-    </p>
-    <p className="leading-5">{venue}</p>
-    {award && (
-      <p className="underline text-secondary underline-offset-2 decoration-dotted leading-5 mt-0.5">
-        {award}
-      </p>
-    )}
-  </label>
-  {video && (
-    <div
-      className="
-        h-0 overflow-hidden transition-all duration-400
-        group-hover:h-[calc(32vw+2.7rem)]
-        peer-checked:h-[calc(32vw+2.7rem)]
-        px-0.5 bg-blue-50
-      "
-    >
-      <div className="relative h-[32vw] mt-[0.5rem] mb-1 w-full">
-        <iframe
-          className="absolute inset-0 w-full h-full"
-          src={`https://www.youtube.com/embed/${video}`}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        />
-      </div>
-      <MLink href={link} className="text-lg">
-        Read the paper
-      </MLink>
-    </div>
-  )}
-</div>; */
 }
 
 export default function Pub() {
   return (
     <Section id="pub">
-      <Separator name="Publications" className="mt-6 mb-3" />
-      <p className="mb-3 text-gray-700">
-        *J: journal article, *C: conference full paper, *E: extended abstract
-      </p>
-      <div className="border-gray-300 flex flex-col gap-6 cursor-default">
+      <Separator name="Publications" className="mt-5 sm:mt-9 mb-1.5" />
+      <div className="text-stone-500 text-xs gap-3 flex flex-wrap mb-3">
+        <div>*J: Journal</div>
+        <div>C: Conference</div>
+        <div>E: Extended abstract</div>
+      </div>
+      <div className="flex flex-col gap-6 md:gap-8 cursor-default">
         {data.map((item, index) => (
           <PubItem key={index} {...item} />
         ))}

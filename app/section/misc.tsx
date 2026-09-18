@@ -4,16 +4,16 @@ import Separator from "../ui/separator";
 
 export default function Misc() {
   return (
-    <Section id="misc" className="cursor-default">
+    <Section id="misc" className="cursor-default tracking-[-0.01rem]">
       <Separator name="Miscellaneous" className="mt-6 mb-3" />
-      <div>
+      <div className="text-sm">
         Find me on{" "}
         {
           <MLink href="https://splatoon.nintendo.com/" preview>
             Splatsville
           </MLink>
         }
-        ,
+        ,{" "}
         <MLink href="https://zelda.nintendo.com/" preview>
           Hyrule
         </MLink>
@@ -36,9 +36,6 @@ export default function Misc() {
               tier: "S",
               parks: [
                 {
-                  name: "Shanghai",
-                },
-                {
                   name: "Mt. San Jacinto",
                   pic: "/pics/jacinto.jpeg",
                 },
@@ -46,23 +43,20 @@ export default function Misc() {
                 {
                   name: "Red Rock (NV)",
                 },
+                { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
               ],
             },
             {
               tier: "A",
               parks: [
-                {
-                  name: "Xihu",
-                },
                 { name: "Zion" },
+                { name: "Grand Canyon" },
                 { name: "Deer Valley" },
-                { name: "Bryce Canyon", pic: "/pics/bryce.jpeg" },
               ],
             },
             {
               tier: "B",
               parks: [
-                { name: "Grand Canyon" },
                 { name: "Canyonlands" },
                 { name: "Yosemite" },
                 {
@@ -71,16 +65,17 @@ export default function Misc() {
                 },
                 { name: "Arches" },
                 { name: "Mt. Hood", pic: "/pics/mthood.jpeg" },
+                { name: "Mammoth" },
               ],
             },
             {
               tier: "C",
               parks: [
                 { name: "Cannon Beach" },
-                { name: "Mammoth" },
                 { name: "Death Valley" },
                 { name: "Sequoia & Kings Canyon" },
                 { name: "Redwood" },
+                { name: "Lassen Volcanic" },
               ],
             },
             {
@@ -88,7 +83,6 @@ export default function Misc() {
               parks: [
                 { name: "Caddo Lake", pic: "/pics/caddo.jpeg" },
                 { name: "Joshua Tree" },
-                { name: "Lassen Volcanic" },
               ],
             },
             {
@@ -100,8 +94,8 @@ export default function Misc() {
               key={tier}
               className="flex items-center pb-0.5 border-b border-gray-200"
             >
-              <div className={`text-center font-bold text-lg`}>{tier}</div>
-              <div className={`flex-1 flex flex-wrap gap-2 px-3 text-sm`}>
+              <div className={`text-center font-bold text-sm`}>{tier}</div>
+              <div className={`flex-1 flex flex-wrap gap-2 px-3 text-xs`}>
                 {parks.map((park) => (
                   // park.pic ? (
                   //   <span

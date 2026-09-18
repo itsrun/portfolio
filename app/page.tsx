@@ -14,8 +14,8 @@ import Footer from "./section/footer";
 
 export default function Home() {
   return (
-    <main className="mx-auto px-[6%] max-w-[78.5rem] my-[4.2vw] grid grid-cols-3 gap-[3.2vw]">
-      <div className="col-span-2">
+    <main className="mx-auto px-6 sm:px-8 md:px-10 lg:px-12 max-w-[75rem] py-8 md:py-10 xl:py-12 2xl:py-15 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
+      <div className="contents sm:block sm:col-span-2 min-w-0">
         <Bio />
         <Pub />
         <Section id="teaching">
@@ -23,12 +23,14 @@ export default function Home() {
           <List data={teachingData} large />
         </Section>
       </div>
-      <div className="col-span-1 relative">
-        <Profile />
-        <Section id="news">
+      <div className="contents sm:block sm:col-span-1 min-w-0 relative">
+        <div className="row-start-2 sm:row-auto">
+          <Profile />
+        </div>
+        {/* <Section id="news">
           <Separator name="News" className="mt-4 mb-3" />
           <List data={newsData} />
-        </Section>
+        </Section> */}
         <Section id="industry">
           <Separator name="Industry" className="mt-4 mb-3" />
           <List data={jobData} />
@@ -42,7 +44,7 @@ export default function Home() {
           <List data={servicesData} />
         </Section>
         <Misc />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </main>
   );

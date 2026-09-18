@@ -6,15 +6,17 @@ export default function List({
   large?: boolean;
 }) {
   return (
-    <ul className={`cursor-default flex flex-col ${large ? "gap-6" : "gap-4"}`}>
+    <ul
+      className={`cursor-default flex flex-col ${large ? "gap-6" : "gap-4"} tracking-[-0.008rem]`}
+    >
       {data.map((item, index) => (
         <li
           key={index}
-          className="hover:bg-blue-50 transition-colors duration-200 pl-0.5"
+          className="hover:bg-[#f3f3f3] transition-colors duration-200 pl-0.5"
         >
           <h4
-            className={`font-semibold ${
-              large ? "text-xl" : "text-lg"
+            className={`font-semibold text-stone-900 ${
+              large ? "text-base" : "text-sm"
             } leading-tight mb-0.5`}
           >
             {item.title}
@@ -22,15 +24,15 @@ export default function List({
           {item.note && (
             <p
               className={`${
-                large ? "text-base" : "text-sm"
-              } underline decoration-dotted underline-offset-2 text-gray-600 mb-0.5`}
+                large ? "text-sm" : "text-xs"
+              } text-stone-600 mb-1 font-light`}
             >
               {item.note}
             </p>
           )}
           <p
-            className={`text-gray-600 leading-tight text-[0.95rem] ${
-              large ? "text-lg" : "text-base"
+            className={`text-stone-600 leading-snug ${
+              large ? "text-[0.9rem]" : "text-[0.85rem]"
             }`}
           >
             {item.desc}

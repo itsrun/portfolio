@@ -1,31 +1,33 @@
 import MLink from "../ui/mlink";
 import Section from "../ui/section";
 import Contact from "./contact";
+import { clsx } from "clsx";
+import { interTight } from "../layout";
 
 export default function Bio() {
   return (
     <Section id="bio">
-      <h1 className="text-5xl">Run Huang</h1>
-      <h2 className="text-3xl mt-1">黄润</h2>
-      <h3 className="text-2xl">&quot;ruen&quot; (/ru:n/)</h3>
-      <div className="text-lg leading-[1.36] gap-5 flex flex-col mt-6 break-words hyphens-auto cursor-default">
+      <h1 className={clsx(interTight.className, "text-5xl font-semibold mt-2")}>
+        <span className="inline-block underline decoration-2 underline-offset-6 decoration-dotted">
+          Run
+        </span>{" "}
+        Huang
+      </h1>{" "}
+      <h2 className={clsx(interTight.className, "text-2xl font-light mt-0.5")}>
+        &quot;ruen&quot; (/ru:n/)
+      </h2>
+      <div className="text-base gap-6 flex flex-col mt-6 break-words hyphens-auto cursor-default tracking-[-0.016rem] text-neutral-800">
         <div>
-          I am a Ph.D. candidate in Computer Science at the{" "}
-          <MLink href="https://www.cs.usc.edu/" preview>
-            University of Southern California
-          </MLink>
-          , supported by an Annenberg Fellowship. I am fortunate to be advised
-          by{" "}
+          I am a Ph.D. candidate in Computer Science at the University of
+          Southern California, supported by an Annenberg Fellowship. I am
+          fortunate to be advised by{" "}
           <MLink href="https://aceatusc.github.io" preview>
             Prof. Souti Chattopadhyay
           </MLink>
-          . Previously, I earned my Bachelor's degree in Computer Science from{" "}
-          <MLink href="https://en.wikipedia.org/wiki/Fudan_University" preview>
-            Fudan University
-          </MLink>{" "}
-          (<span className="text-base">复旦大学</span>).
+          . Previously, I earned my Bachelor's degree from Fudan University.
         </div>
-        <div>
+        <Contact />
+        {/* <div>
           I'm interested in designing <b>intelligent interfaces</b> that make
           dense and complex information more accessible and digestible to users.
           My recent work has explored how peer discussions on social media can
@@ -54,8 +56,8 @@ export default function Bio() {
             Tencent
           </MLink>
           .
-        </div>
-        <Contact className="flex-row sm:gap-x-3 sm:text-base md:text-lg md:gap-x-6" />
+        </div> */}
+
         {/* <iframe
           data-testid="embed-iframe"
           src="https://open.spotify.com/embed/album/6dVCpQ7oGJD1oYs2fv1t5M?utm_source=generator&theme=0"
