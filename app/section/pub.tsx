@@ -80,7 +80,7 @@ function PubItem(item: PubItemProps) {
     item;
   return (
     <div
-      className="my-auto px-1 hover:bg-[#f3f3f3] transition-all duration-200 group relative tracking-[-0.008em]"
+      className="my-auto px-1 hover:bg-[#f3f3f3] transition-all duration-200 group relative"
       id={id}
     >
       <a
@@ -89,9 +89,11 @@ function PubItem(item: PubItemProps) {
         rel="noopener noreferrer"
         className="absolute inset-0 opacity-0"
       />
-      <h3 className="font-medium leading-tight sm:leading-snug">{title}</h3>
-      {award && <p className="text-amber-700 mt-0.5 text-sm">{award}</p>}
-      <p className="mt-1.5 mb-2 text-gray-600 leading-tight italic text-sm font-light">
+      <h3 className="font-medium leading-tight sm:leading-snug text-lg">
+        {title}
+      </h3>
+      {award && <p className="text-amber-700 mt-0.5">{award}</p>}
+      <p className="mt-1 mb-1.5 text-gray-900 leading-tight font-light">
         {authors.map((a, i) => (
           <span key={i}>
             {a.self ? <u className="underline-offset-2">{a.name}</u> : a.name}
@@ -99,7 +101,7 @@ function PubItem(item: PubItemProps) {
           </span>
         ))}
       </p>
-      <div className="text-sm font-medium gap-5 flex">
+      <div className="font-medium gap-5 flex">
         {venue}{" "}
         {link && (
           <MLink className="font-light" href={link} icon>
@@ -125,12 +127,12 @@ export default function Pub() {
   return (
     <Section id="pub">
       <Separator name="Publications" className="mt-5 sm:mt-9 mb-1.5" />
-      <div className="text-stone-500 text-xs gap-3 flex flex-wrap mb-3">
+      <div className="text-stone-500 text-sm gap-3 flex flex-wrap mb-3">
         <div>*J: Journal</div>
         <div>C: Conference</div>
         <div>E: Extended abstract</div>
       </div>
-      <div className="flex flex-col gap-6 md:gap-8 cursor-default">
+      <div className="flex flex-col gap-6 cursor-default">
         {data.map((item, index) => (
           <PubItem key={index} {...item} />
         ))}

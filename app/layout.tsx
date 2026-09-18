@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Inter_Tight } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-export const inter = Inter({
-  variable: "--font-inter",
-});
-
-export const interTight = Inter_Tight({
-  variable: "--font-inter-tight",
-});
-
+export const ss3 = Source_Sans_3({});
 export const metadata: Metadata = {
   title: "Run Huang",
   description:
@@ -35,7 +28,7 @@ export default function RootLayout({
           data-cf-beacon='{"token": "db45a1317af24187b1f85d7450e8c149"}'
         ></Script>
       </head>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${ss3.className} antialiased`}>{children}</body>
     </html>
   );
 }

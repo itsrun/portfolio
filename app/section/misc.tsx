@@ -4,9 +4,9 @@ import Separator from "../ui/separator";
 
 export default function Misc() {
   return (
-    <Section id="misc" className="cursor-default tracking-[-0.01rem]">
+    <Section id="misc" className="cursor-default">
       <Separator name="Miscellaneous" className="mt-6 mb-3" />
-      <div className="text-sm">
+      <div>
         Find me on{" "}
         {
           <MLink href="https://splatoon.nintendo.com/" preview>
@@ -94,8 +94,8 @@ export default function Misc() {
               key={tier}
               className="flex items-center pb-0.5 border-b border-gray-200"
             >
-              <div className={`text-center font-bold text-sm`}>{tier}</div>
-              <div className={`flex-1 flex flex-wrap gap-2 px-3 text-xs`}>
+              <div className={`text-center font-bold`}>{tier}</div>
+              <div className={`flex-1 flex flex-wrap gap-2 px-3 text-sm`}>
                 {parks.map((park) => (
                   // park.pic ? (
                   //   <span

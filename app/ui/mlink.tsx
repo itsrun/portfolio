@@ -29,7 +29,7 @@ export default function MLink({
           <svg
             aria-hidden="true"
             focusable="false"
-            viewBox="0 0 16 17"
+            viewBox="0 0 16 18"
             fill="none"
             stroke="currentColor"
             strokeWidth="1"

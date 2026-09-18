@@ -1,22 +1,18 @@
 import MLink from "../ui/mlink";
 import Section from "../ui/section";
 import Contact from "./contact";
-import { clsx } from "clsx";
-import { interTight } from "../layout";
 
 export default function Bio() {
   return (
     <Section id="bio">
-      <h1 className={clsx(interTight.className, "text-5xl font-semibold mt-2")}>
+      <h1 className="text-5xl font-semibold mt-2 tracking-tighter">
         <span className="inline-block underline decoration-2 underline-offset-6 decoration-dotted">
           Run
         </span>{" "}
         Huang
       </h1>{" "}
-      <h2 className={clsx(interTight.className, "text-2xl font-light mt-0.5")}>
-        &quot;ruen&quot; (/ru:n/)
-      </h2>
-      <div className="text-base gap-6 flex flex-col mt-6 break-words hyphens-auto cursor-default tracking-[-0.016rem] text-neutral-800">
+      <h2 className="text-2xl font-light mt-0.5">&quot;ruen&quot; (/ru:n/)</h2>
+      <div className="gap-5.5 flex flex-col mt-6 break-words hyphens-auto cursor-default text-neutral-800">
         <div>
           I am a Ph.D. candidate in Computer Science at the University of
           Southern California, supported by an Annenberg Fellowship. I am
