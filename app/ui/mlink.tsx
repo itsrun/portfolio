@@ -21,7 +21,7 @@ export default function MLink({
     <span className="relative group">
       <Link
         href={href}
-        className={`text-[#474E22] underline hover:text-[#BC1833] underline-offset-2 decoration-[#474E22] hover:decoration-[#BC1833] decoration-1 ${className} transition-colors duration-200`}
+        className={`underline hover:text-[#BC1833] underline-offset-2 hover:decoration-[#BC1833] decoration-1 ${className} transition-colors duration-200`}
         target={inplace ? "_self" : "_blank"}
         rel="noopener noreferrer"
       >
