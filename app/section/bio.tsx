@@ -24,7 +24,8 @@ export default function Bio() {
           <MLink href="https://aceatusc.github.io" preview>
             Prof. Souti Chattopadhyay
           </MLink>
-          . Previously, I earned my Bachelor's degree from Fudan University.
+          . Previously, I received my B.S. in Computer Science from Fudan
+          University.
         </div>
         <Contact />
         {/* <div>

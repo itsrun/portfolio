@@ -25,7 +25,21 @@ export default function MLink({
         target={inplace ? "_self" : "_blank"}
         rel="noopener noreferrer"
       >
-        {icon && "↗"}
+        {icon && (
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            viewBox="0 0 16 17"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="inline-block w-[1em] h-[1em] align-[-0.125em]"
+          >
+            <path d="M4 12 12 4M4 4h8v8" />
+          </svg>
+        )}
         {children}
       </Link>
 

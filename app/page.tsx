@@ -20,7 +20,7 @@ export default function Home() {
         <Pub />
         <Section id="teaching">
           <Separator name="Teaching" className="mt-4 mb-3" />
-          <List data={teachingData} large />
+          <List data={teachingData} />
         </Section>
       </div>
       <div className="contents sm:block sm:col-span-1 min-w-0 relative">
