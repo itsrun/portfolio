@@ -5,7 +5,25 @@ import Section from "../ui/section";
 import data from "../../public/publications.json";
 import Separator from "../ui/separator";
 
+const publicationPrefixes = { journal: "J", conference: "C", ea: "E" };
+const remainingByType = new Map<string, number>();
+for (const item of data) {
+  remainingByType.set(item.type, (remainingByType.get(item.type) ?? 0) + 1);
+}
+
+// Count down within each type, following the display order in the JSON.
+const publications = data.map((item) => {
+  const { type } = item;
+  if (type !== "journal" && type !== "conference" && type !== "ea") {
+    throw new Error(`Unknown publication type: ${type}`);
+  }
+  const number = remainingByType.get(type)!;
+  remainingByType.set(type, number - 1);
+  return { ...item, label: `[${publicationPrefixes[type]}.${number}]` };
+});
+
 interface PubItemProps {
+  label: string;
   title: string;
   authors: { name: string; self?: boolean }[];
   link?: string;
@@ -48,13 +66,13 @@ function VideoPlayer({
     <button
       type="button"
       aria-label={`Play video: ${title}`}
-      className="absolute inset-0 w-full h-full cursor-pointer group/play focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-500"
+      className="absolute inset-0 w-full h-full overflow-hidden cursor-pointer group/play focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-500"
       onClick={() => setPlaying(true)}
     >
       <img
         src={cover}
         alt="Video thumbnail"
-        className="w-full h-full object-contain grayscale opacity-75 group-hover/play:grayscale-0 group-hover/play:opacity-100 transition-all duration-300"
+        className="w-full h-full object-contain grayscale opacity-75 group-hover/play:grayscale-0 group-hover/play:opacity-100 transition-all duration-300 ease-out motion-reduce:transition-none"
       />
       <div className="absolute inset-0 bg-black/10 group-hover/play:bg-black/20 transition-colors duration-200" />
       <div className="absolute inset-0 flex items-center justify-center">
@@ -76,13 +94,21 @@ function VideoPlayer({
 import MLink from "../ui/mlink";
 
 function PubItem(item: PubItemProps) {
-  const { title, authors, link, venue, award, id, video, paper, cover, note } =
-    item;
+  const {
+    label,
+    title,
+    authors,
+    link,
+    venue,
+    award,
+    id,
+    video,
+    paper,
+    cover,
+    note,
+  } = item;
   return (
-    <div
-      className="my-auto px-1 hover:bg-[#f3f3f3] transition-colors duration-200 relative"
-      id={id}
-    >
+    <div className="group/publication my-auto px-1 relative" id={id}>
       <a
         href={link || paper || video}
         target="_blank"
@@ -90,6 +116,9 @@ function PubItem(item: PubItemProps) {
         className="absolute inset-0 opacity-0"
       />
       <h3 className="font-medium leading-tight sm:leading-snug text-lg">
+        <span className="whitespace-nowrap box-decoration-clone bg-[linear-gradient(black,black)] bg-center bg-no-repeat bg-[length:100%_0] group-hover/publication:bg-[length:100%_1em] group-hover/publication:text-white duration-0">
+          {label}
+        </span>{" "}
         {title}
       </h3>
       {award && <p className="text-amber-700 mt-0.25">{award}</p>}
@@ -105,15 +134,15 @@ function PubItem(item: PubItemProps) {
           </span>
         ))}
       </p>
-      <div className="font-medium gap-5 flex">
-        {venue}{" "}
+      <div className="font-light flex gap-5">
+        <span className="font-medium">{venue}</span>{" "}
         {link && (
-          <MLink className="font-light" href={link} icon preview>
+          <MLink href={link} icon preview>
             Website
           </MLink>
         )}
         {paper && (
-          <MLink className="font-light" href={paper} icon>
+          <MLink href={paper} icon>
             Paper
           </MLink>
         )}
@@ -137,7 +166,7 @@ export default function Pub() {
         <div>E: Extended abstract</div>
       </div>
       <div className="flex flex-col gap-6 cursor-default">
-        {data.map((item, index) => (
+        {publications.map((item, index) => (
           <PubItem key={index} {...item} />
         ))}
       </div>

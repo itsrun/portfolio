@@ -1,6 +1,14 @@
 [
     {
-        "title": "Reviewer",
-        "desc": "CHI {2027, 2026}; IUI {2027, 2026}; UIST 2026"
+        "title": "CHI",
+        "desc": "Reviewer: 2026, 2027"
+    },
+    {
+        "title": "UIST",
+        "desc": "Reviewer: 2026"
+    },
+    {
+        "title": "IUI",
+        "desc": "Reviewer: 2026, 2027"
     }
 ]

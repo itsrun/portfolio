@@ -1,6 +1,7 @@
 [
     {
-        "title": "[C.1] Beyond the Page: Enriching Academic Paper Reading with Social Media Discussions",
+        "type": "conference",
+        "title": "Beyond the Page: Enriching Academic Paper Reading with Social Media Discussions",
         "authors": [
             {
                 "name": "Run Huang",
@@ -24,10 +25,12 @@
         "id": "surf",
         "video": "kMw4qqfSzWU",
         "cover": "/pics/surf-cover.png",
-        "link": "https://aceatusc.github.io/surf"
+        "link": "https://aceatusc.github.io/surf",
+        "note": "CCF-A, Acceptance Rate: 22%"
     },
     {
-        "title": "[J.1] Factors Shaping Trust and Satisfaction with AI Medical Chatbots: A Mixed-Methods Vignette Survey of Caregivers Seeking Guidance on Pediatric Infectious Diseases",
+        "type": "journal",
+        "title": "Factors Shaping Trust and Satisfaction with AI Medical Chatbots: A Mixed-Methods Vignette Survey of Caregivers Seeking Guidance on Pediatric Infectious Diseases",
         "authors": [
             {
                 "name": "Run Huang",
@@ -45,10 +48,12 @@
         ],
         "venue": "JMIR 2026",
         "id": "alice",
-        "paper": "https://www.jmir.org/2026/1/e88126"
+        "paper": "https://www.jmir.org/2026/1/e88126",
+        "note": "Q1, IF: 8.2, Acceptance Rate: 25%"
     },
     {
-        "title": "[E.2] A Tale of Two Communities: Exploring Academic References on Stack Overflow",
+        "type": "ea",
+        "title": "A Tale of Two Communities: Exploring Academic References on Stack Overflow",
         "authors": [
             {
                 "name": "Run Huang",
@@ -67,7 +72,8 @@
         "note": "Short Paper"
     },
     {
-        "title": "[E.1] Locating CDN Edge Servers with HTTP Responses",
+        "type": "ea",
+        "title": "Locating CDN Edge Servers with HTTP Responses",
         "award": "Gold Medal in ACM Student Research Competition (1/62)",
         "authors": [
             {

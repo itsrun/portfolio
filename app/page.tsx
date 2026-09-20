@@ -18,10 +18,10 @@ export default function Home() {
       <div className="contents sm:block sm:col-span-2 min-w-0">
         <Bio />
         <Pub />
-        <Section id="teaching">
+        {/* <Section id="teaching">
           <Separator name="Teaching" className="mt-4 mb-3" />
           <List data={teachingData} />
-        </Section>
+        </Section> */}
       </div>
       <div className="contents sm:block sm:col-span-1 min-w-0 relative">
         <div className="row-start-2 sm:row-auto">
@@ -32,18 +32,22 @@ export default function Home() {
           <List data={newsData} />
         </Section> */}
         <Section id="industry">
-          <Separator name="Industry" className="mt-4 mb-3" />
+          <Separator name="Industry" className="mt-5 mb-2.5" />
           <List data={jobData} />
         </Section>
         <Section id="awards">
-          <Separator name="Awards" className="mt-4 mb-3" />
+          <Separator name="Awards" className="mt-6 mb-2.5" />
           <List data={awardData} />
         </Section>
         <Section id="services">
-          <Separator name="Services" className="mt-4 mb-3" />
+          <Separator name="Services" className="mt-6 mb-2.5" />
           <List data={servicesData} />
         </Section>
-        <Misc />
+        <Section id="teaching">
+          <Separator name="Teaching" className="mt-6 mb-2.5" />
+          <List data={teachingData} />
+        </Section>
+        {/* <Misc /> */}
         {/* <Footer /> */}
       </div>
     </main>

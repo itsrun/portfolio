@@ -8,7 +8,10 @@ interface SectionProps {
 
 export default function Section({ children, id, className }: SectionProps) {
   return (
-    <section id={id} className={`break-inside-avoid ${className}`}>
+    <section
+      id={id}
+      className={`break-inside-avoid cursor-default ${className}`}
+    >
       {children}
     </section>
   );

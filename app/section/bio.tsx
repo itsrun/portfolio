@@ -12,7 +12,7 @@ export default function Bio() {
         Huang
       </h1>{" "}
       <h2 className="text-2xl font-light mt-0.5">&quot;ruen&quot; (/ru:n/)</h2>
-      <div className="gap-5.5 flex flex-col mt-6 break-words hyphens-auto cursor-default text-neutral-800">
+      <div className="flex flex-col mt-6 break-words hyphens-auto cursor-default text-neutral-800">
         <div>
           I am a Ph.D. candidate in Computer Science at the University of
           Southern California, supported by an Annenberg Fellowship. I am
@@ -22,6 +22,11 @@ export default function Bio() {
           </MLink>
           . Previously, I received my B.S. in Computer Science from Fudan
           University.
+        </div>
+        <div className="mt-4 mb-5.5">
+          My research focuses on Human-AI Interaction. I design intelligent
+          interfaces that help knowledge workers (e.g., researchers, developers)
+          make sense of and make use of complex information.
         </div>
         <Contact />
         {/* <div>

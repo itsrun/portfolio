@@ -1,12 +1,12 @@
 [
     {
         "title": "Siemens",
-        "desc": "Worked on the 3D coordinate system web component for Siemens NX CAD",
+        "desc": "Developed a 3D coordinate system web component for Siemens NX CAD",
         "note": "Software Engineer Intern"
     },
     {
         "title": "Tencent",
-        "desc": "Contributed to a multipath transport protocol for large-scale data center networks",
+        "desc": "Worked on a multipath transport protocol for large-scale data center networks",
         "note": "Research Intern"
     }
 ]

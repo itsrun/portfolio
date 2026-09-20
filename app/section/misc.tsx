@@ -135,8 +135,8 @@ export default function Misc() {
         </div>
         <div className="mt-3 text-xs text-stone-600 leading-snug">
           Shoutout to my friends who've joined me on these trips.{" "}
-          <MLink href="mailto:runhuang@usc.edu">Hit me up</MLink> if have a hike
-          or ski trip in mind—or, of course, talk research :)
+          <MLink href="mailto:runhuang@usc.edu">Hit me up</MLink> if you have a
+          hike or ski trip in mind—or, of course, talk research :)
         </div>
       </div>
       {/* <details>
