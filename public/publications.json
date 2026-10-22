@@ -4,49 +4,76 @@
         "title": "Beyond the Page: Enriching Academic Paper Reading with Social Media Discussions",
         "authors": [
             {
-                "name": "Run Huang",
+                "name": "R. Huang",
                 "self": true
             },
             {
-                "name": "Anna Katherine Zhao"
+                "name": "A. K. Zhao"
             },
             {
-                "name": "Zeinabsadat Saghi"
+                "name": "Z. Saghi"
             },
             {
-                "name": "Sadra Sabouri"
+                "name": "S. Sabouri"
             },
             {
-                "name": "Souti Chattopadhyay"
+                "name": "S. Chattopadhyay"
             }
         ],
-        "venue": "UIST 2025",
+        "venue": {
+            "abbr": "UIST '25",
+            "full": "ACM Symposium on User Interface Software and Technology"
+        },
         "paper": "/papers/surf.pdf",
         "id": "surf",
         "video": "kMw4qqfSzWU",
         "cover": "/pics/surf-cover.png",
-        "link": "https://aceatusc.github.io/surf",
-        "note": "CCF-A, Acceptance Rate: 22%"
+        "link": "https://aceatusc.github.io/surf"
+    },
+    {
+        "type": "journal",
+        "title": "\"Like Taking the Path of Least Resistance\": Exploring the Impact of LLM Interaction on the Creative Process of Programming",
+        "authors": [
+            {
+                "name": "Z. Saghi"
+            },
+            {
+                "name": "R. Huang",
+                "self": true
+            },
+            {
+                "name": "S. Chattopadhyay"
+            }
+        ],
+        "venue": {
+            "abbr": "TOSEM '26",
+            "full": "ACM Transactions on Software Engineering and Methodology"
+        },
+        "paper": "https://arxiv.org/abs/2605.13776",
+        "id": "creativity"
     },
     {
         "type": "journal",
         "title": "Factors Shaping Trust and Satisfaction with AI Medical Chatbots: A Mixed-Methods Vignette Survey of Caregivers Seeking Guidance on Pediatric Infectious Diseases",
         "authors": [
             {
-                "name": "Run Huang",
+                "name": "R. Huang",
                 "self": true
             },
             {
-                "name": "Joseph Cecil"
+                "name": "J. Cecil"
             },
             {
-                "name": "Marjorie Freedman"
+                "name": "M. Freedman"
             },
             {
-                "name": "Souti Chattopadhyay"
+                "name": "S. Chattopadhyay"
             }
         ],
-        "venue": "JMIR 2026",
+        "venue": {
+            "abbr": "JMIR '26",
+            "full": "Journal of Medical Internet Research, Vol. 28"
+        },
         "id": "alice",
         "paper": "https://www.jmir.org/2026/1/e88126",
         "note": "Q1, IF: 8.2, Acceptance Rate: 25%"
@@ -56,14 +83,17 @@
         "title": "A Tale of Two Communities: Exploring Academic References on Stack Overflow",
         "authors": [
             {
-                "name": "Run Huang",
+                "name": "R. Huang",
                 "self": true
             },
             {
-                "name": "Souti Chattopadhyay"
+                "name": "S. Chattopadhyay"
             }
         ],
-        "venue": "WWW 2024",
+        "venue": {
+            "abbr": "WWW '24",
+            "full": "The ACM Web Conference, Short Paper"
+        },
         "paper": "https://dl.acm.org/doi/10.1145/3589335.3651464",
         "id": "sciso",
         "video": "vp57dFmh4Ik",
@@ -77,20 +107,23 @@
         "award": "Gold Medal in ACM Student Research Competition (1/62)",
         "authors": [
             {
-                "name": "Run Huang",
+                "name": "R. Huang",
                 "self": true
             },
             {
-                "name": "Mengying Zhou"
+                "name": "M. Zhou"
             },
             {
-                "name": "Tiancheng Guo"
+                "name": "T. Guo"
             },
             {
-                "name": "Yang Chen"
+                "name": "Y. Chen"
             }
         ],
-        "venue": "SIGCOMM 2022",
+        "venue": {
+            "abbr": "SIGCOMM '22",
+            "full": "ACM SIGCOMM, Demo Paper"
+        },
         "paper": "https://dl.acm.org/doi/abs/10.1145/3546037.3546051",
         "video": "KJSj_DCQ1bI",
         "cover": "/pics/sigcomm-cover.png",

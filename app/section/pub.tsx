@@ -27,7 +27,7 @@ interface PubItemProps {
   title: string;
   authors: { name: string; self?: boolean }[];
   link?: string;
-  venue: string;
+  venue: { abbr: string; full: string };
   award?: string;
   id?: string;
   video?: string;
@@ -116,26 +116,23 @@ function PubItem(item: PubItemProps) {
         className="absolute inset-0 opacity-0"
       />
       <h3 className="font-medium leading-tight sm:leading-snug text-lg">
-        <span className="whitespace-nowrap box-decoration-clone bg-[linear-gradient(black,black)] bg-center bg-no-repeat bg-[length:100%_0] group-hover/publication:bg-[length:100%_1em] group-hover/publication:text-white duration-0">
+        <span className="text-base font-normal mr-2">[{venue.abbr}]</span>
+        {/* <span className="whitespace-nowrap box-decoration-clone bg-[linear-gradient(black,black)] bg-center bg-no-repeat bg-[length:100%_0] group-hover/publication:bg-[length:100%_1em] group-hover/publication:text-white duration-0">
           {label}
-        </span>{" "}
+        </span>{" "} */}
         {title}
       </h3>
-      {award && <p className="text-amber-700 mt-0.25">{award}</p>}
-      <p className="mt-0.75 mb-1.5 text-gray-900 leading-tight font-light">
+      <div className="font-light">{venue.full}</div>
+      {award && <p className="text-amber-700">{award}</p>}
+      <p className="mt-0.5 leading-tight text-sm">
         {authors.map((a, i) => (
           <span key={i}>
-            {a.self ? (
-              <u className="underline-offset-2 decoration-1">{a.name}</u>
-            ) : (
-              a.name
-            )}
+            {a.self ? <u className="italic">{a.name}</u> : a.name}
             {i < authors.length - 1 ? ", " : ""}
           </span>
         ))}
       </p>
-      <div className="font-light flex gap-5">
-        <span className="font-medium">{venue}</span>{" "}
+      {/* <div className="flex gap-2 text-sm font-light mt-1.25">
         {link && (
           <MLink href={link} icon preview>
             Website
@@ -146,9 +143,9 @@ function PubItem(item: PubItemProps) {
             Paper
           </MLink>
         )}
-      </div>
+      </div> */}
       {video && (
-        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-2.5 mb-1.5">
+        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-2.5">
           <VideoPlayer video={video} cover={cover} />
         </div>
       )}
@@ -160,12 +157,12 @@ export default function Pub() {
   return (
     <Section id="pub">
       <Separator name="Publications" className="mt-5 sm:mt-9 mb-1.5" />
-      <div className="text-stone-500 text-sm gap-3 flex flex-wrap mb-3">
+      {/* <div className="text-stone-500 text-sm gap-3 flex flex-wrap mb-3">
         <div>*J: Journal</div>
         <div>C: Conference</div>
         <div>E: Extended abstract</div>
-      </div>
-      <div className="flex flex-col gap-6 cursor-default">
+      </div> */}
+      <div className="mt-3 flex flex-col gap-6 cursor-default">
         {publications.map((item, index) => (
           <PubItem key={index} {...item} />
         ))}
