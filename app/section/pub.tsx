@@ -1,170 +1,115 @@
-"use client";
-
-import { useState } from "react";
 import Section from "../ui/section";
-import data from "../../public/publications.json";
-import Separator from "../ui/separator";
+import publications from "../../public/publications.json";
 
-const publicationPrefixes = { journal: "J", conference: "C", ea: "E" };
-const remainingByType = new Map<string, number>();
-for (const item of data) {
-  remainingByType.set(item.type, (remainingByType.get(item.type) ?? 0) + 1);
-}
-
-// Count down within each type, following the display order in the JSON.
-const publications = data.map((item) => {
-  const { type } = item;
-  if (type !== "journal" && type !== "conference" && type !== "ea") {
-    throw new Error(`Unknown publication type: ${type}`);
-  }
-  const number = remainingByType.get(type)!;
-  remainingByType.set(type, number - 1);
-  return { ...item, label: `[${publicationPrefixes[type]}.${number}]` };
-});
-
-interface PubItemProps {
-  label: string;
+type PubItemProps = {
   title: string;
   authors: { name: string; self?: boolean }[];
-  link?: string;
   venue: { abbr: string; full: string };
-  award?: string;
   id?: string;
-  video?: string;
+  cover?: string;
+  link?: string;
   paper?: string;
-  cover?: string;
-  note?: string;
-}
+  video?: string;
+  award?: string;
+};
 
-function VideoPlayer({
-  video,
-  cover,
-  title = "Publication video",
-}: {
-  video: string;
-  cover?: string;
-  title?: string;
-}) {
-  const [playing, setPlaying] = useState(false);
-
-  if (playing || !cover) {
-    return (
-      <iframe
-        className="absolute inset-0 w-full h-full"
-        src={`https://www.youtube.com/embed/${video}?loop=1&rel=0${playing ? "&autoplay=1" : ""}`}
-        title={title}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        loading="lazy"
-        allowFullScreen
-      />
-    );
-  }
-
+function PubItem({ item, index }: { item: PubItemProps; index: number }) {
+  const videoUrl = item.video
+    ? `https://www.youtube.com/watch?v=${item.video}`
+    : undefined;
+  const primaryUrl = item.link || item.paper || videoUrl;
+  const titleId = `publication-title-${index}`;
+  const resources = [
+    { label: "Paper", href: item.paper },
+    { label: "Website", href: item.link },
+    { label: "Video", href: videoUrl },
+  ].filter((resource) => resource.href);
   return (
-    <button
-      type="button"
-      aria-label={`Play video: ${title}`}
-      className="absolute inset-0 w-full h-full overflow-hidden cursor-pointer group/play focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neutral-500"
-      onClick={() => setPlaying(true)}
-    >
-      <img
-        src={cover}
-        alt="Video thumbnail"
-        className="w-full h-full object-contain grayscale opacity-75 group-hover/play:grayscale-0 group-hover/play:opacity-100 transition-all duration-300 ease-out motion-reduce:transition-none"
-      />
-      <div className="absolute inset-0 bg-black/10 group-hover/play:bg-black/20 transition-colors duration-200" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <svg
-          viewBox="0 0 68 48"
-          className="w-16 h-11 opacity-80 group-hover/play:opacity-100 transition-opacity duration-200"
-        >
-          <path
-            d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z"
-            fill="red"
-          />
-          <path d="M45 24 27 14v20" fill="white" />
-        </svg>
-      </div>
-    </button>
-  );
-}
-
-import MLink from "../ui/mlink";
-
-function PubItem(item: PubItemProps) {
-  const {
-    label,
-    title,
-    authors,
-    link,
-    venue,
-    award,
-    id,
-    video,
-    paper,
-    cover,
-    note,
-  } = item;
-  return (
-    <div className="group/publication my-auto px-1 relative" id={id}>
-      <a
-        href={link || paper || video}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute inset-0 opacity-0"
-      />
-      <h3 className="font-medium leading-tight sm:leading-snug text-lg">
-        <span className="text-base font-normal mr-2">[{venue.abbr}]</span>
-        {/* <span className="whitespace-nowrap box-decoration-clone bg-[linear-gradient(black,black)] bg-center bg-no-repeat bg-[length:100%_0] group-hover/publication:bg-[length:100%_1em] group-hover/publication:text-white duration-0">
-          {label}
-        </span>{" "} */}
-        {title}
+    <article className="group min-w-0" id={item.id} aria-labelledby={titleId}>
+      {item.cover ? (
+        <img
+          src={item.cover}
+          alt={`Cover for ${item.title}`}
+          className="block aspect-video w-[80%] object-contain object-center grayscale group-hover:grayscale-0"
+          loading={index === 0 ? "eager" : "lazy"}
+          decoding="async"
+        />
+      ) : (
+        <div className="aspect-video bg-transparent" aria-hidden="true" />
+      )}
+      <p className="w-fit text-sm font-medium mt-2.5 tracking-tight mb-1 group-hover:bg-black group-hover:text-white">
+        {item.venue.abbr}
+      </p>
+      <h3 id={titleId} className="leading-[1.2rem] tracking-[-0.01rem] text-sm">
+        {primaryUrl ? (
+          <a href={primaryUrl} target="_blank" rel="noopener noreferrer">
+            {item.title}
+          </a>
+        ) : (
+          item.title
+        )}
       </h3>
-      <div className="font-light">{venue.full}</div>
-      {award && <p className="text-amber-700">{award}</p>}
-      <p className="mt-0.5 leading-tight text-sm">
-        {authors.map((a, i) => (
-          <span key={i}>
-            {a.self ? <u className="italic">{a.name}</u> : a.name}
-            {i < authors.length - 1 ? ", " : ""}
+      <p className="mt-1.5 text-xs leading-tight text-[#666]">
+        {item.authors.map((author, authorIndex) => (
+          <span key={author.name}>
+            {authorIndex > 0 && ", "}
+            {author.self ? (
+              <span className="text-neutral-900 underline underline-offset-[2px]">
+                {author.name}
+              </span>
+            ) : (
+              author.name
+            )}
           </span>
         ))}
       </p>
-      {/* <div className="flex gap-2 text-sm font-light mt-1.25">
-        {link && (
-          <MLink href={link} icon preview>
-            Website
-          </MLink>
-        )}
-        {paper && (
-          <MLink href={paper} icon>
-            Paper
-          </MLink>
-        )}
-      </div> */}
-      {video && (
-        <div className="relative h-[min(30vw,14.4rem)] w-[min(25.6rem,53.33vw)] -m-[1px] mt-2.5">
-          <VideoPlayer video={video} cover={cover} />
-        </div>
+      {item.award && (
+        <p className="mt-2 text-xs text-amber-700 leading-[1.5]">
+          {item.award}
+        </p>
       )}
-    </div>
+      {resources.length > 0 && (
+        <nav
+          className="mt-2.25 flex flex-wrap justify-start gap-x-4 gap-y-2 text-[10px]"
+          aria-label={`Resources for ${item.title}`}
+        >
+          {resources.map(({ label, href }) => (
+            <a
+              key={label}
+              href={href}
+              className="underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {label} <span aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </nav>
+      )}
+    </article>
   );
 }
 
 export default function Pub() {
   return (
-    <Section id="pub">
-      <Separator name="Publications" className="mt-5 sm:mt-9 mb-1.5" />
-      {/* <div className="text-stone-500 text-sm gap-3 flex flex-wrap mb-3">
-        <div>*J: Journal</div>
-        <div>C: Conference</div>
-        <div>E: Extended abstract</div>
-      </div> */}
-      <div className="mt-3 flex flex-col gap-6 cursor-default">
+    <Section
+      id="pub"
+      className="min-w-0 focus-visible:outline-1 focus-visible:outline-offset-[5px] focus-visible:outline-[#161616]"
+      aria-labelledby="publications-heading"
+      tabIndex={-1}
+    >
+      <header className="flex min-h-[39px] items-baseline justify-start gap-[12px] text-[11px] leading-[1.4] font-normal">
+        <h2 id="publications-heading">Publications</h2>
+        <span
+          className="text-[#666] tabular-nums"
+          aria-label={`${publications.length} publications`}
+        >
+          ({String(publications.length).padStart(2, "0")})
+        </span>
+      </header>
+      <div className="grid grid-cols-1 gap-x-[20px] gap-y-[38px] min-[560px]:grid-cols-2 min-[560px]:gap-y-[54px] lg:gap-x-[24px]">
         {publications.map((item, index) => (
-          <PubItem key={index} {...item} />
+          <PubItem key={item.title} item={item} index={index} />
         ))}
       </div>
     </Section>
