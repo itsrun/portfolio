@@ -24,10 +24,10 @@
             "abbr": "UIST '25",
             "full": "ACM Symposium on User Interface Software and Technology"
         },
-        "paper": "/papers/surf.pdf",
+        "paper": "https://dl.acm.org/doi/full/10.1145/3746059.3747647",
         "id": "surf",
         "video": "kMw4qqfSzWU",
-        "cover": "/pics/surf-cover.png",
+        "cover": "/pics/surf-cover3.png",
         "link": "https://aceatusc.github.io/surf"
     },
     {
@@ -50,7 +50,8 @@
             "full": "ACM Transactions on Software Engineering and Methodology"
         },
         "paper": "https://arxiv.org/abs/2605.13776",
-        "id": "creativity"
+        "id": "creativity",
+        "cover": "/pics/tosem26_cover.png"
     },
     {
         "type": "journal",
@@ -76,7 +77,8 @@
         },
         "id": "alice",
         "paper": "https://www.jmir.org/2026/1/e88126",
-        "note": "Q1, IF: 8.2, Acceptance Rate: 25%"
+        "note": "Q1, IF: 8.2, Acceptance Rate: 25%",
+        "cover": "/pics/jmir_cover.png"
     },
     {
         "type": "ea",
@@ -97,7 +99,7 @@
         "paper": "https://dl.acm.org/doi/10.1145/3589335.3651464",
         "id": "sciso",
         "video": "vp57dFmh4Ik",
-        "cover": "/pics/sciso-cover.png",
+        "cover": "/pics/sciso_cover.png",
         "link": "https://sciso.vercel.app/",
         "note": "Short Paper"
     },

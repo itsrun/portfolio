@@ -4,20 +4,14 @@ export default function List({
   data: { title: string; desc: string; note?: string }[];
 }) {
   return (
-    <ul className={`flex flex-col gap-4`}>
+    <ul className="grid list-none gap-[18px]">
       {data.map((item, index) => (
-        <li key={index} className="pl-0.5">
-          <h4
-            className={`font-semibold text-stone-900 leading-tight mb-0.25`}
-          >
-            {item.title}
-          </h4>
+        <li key={index}>
+          <h4 className="text-[12px] leading-[1.4] font-medium">{item.title}</h4>
           {item.note && (
-            <p className={`text-sm text-stone-800 mb-0.25 font-light`}>
-              {item.note}
-            </p>
+            <p className="mt-[4px] text-[11px] leading-[1.5]">{item.note}</p>
           )}
-          <p className={`text-stone-600 leading-snug text-sm`}>{item.desc}</p>
+          <p className="mt-[4px] text-[11px] leading-[1.5] text-[#666]">{item.desc}</p>
         </li>
       ))}
     </ul>

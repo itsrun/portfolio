@@ -1,55 +1,63 @@
 import Bio from "./section/bio";
-import Profile from "./section/profile";
 import Pub from "./section/pub";
-import newsData from "../public/news.json";
-import teachingData from "../public/teaching.json";
-import jobData from "../public/job.json";
-import awardData from "../public/award.json";
-import servicesData from "../public/services.json";
-import List from "./ui/list";
 import Section from "./ui/section";
-import Separator from "./ui/separator";
-import Misc from "./section/misc";
-import Footer from "./section/footer";
+import List from "./ui/list";
+import jobs from "../public/job.json";
+import awards from "../public/award.json";
+import services from "../public/services.json";
+import teaching from "../public/teaching.json";
+
+const informationSections = [
+  { id: "industry", title: "Experience", items: jobs },
+  { id: "awards", title: "Awards & Fellowships", items: awards },
+  { id: "services", title: "Academic Service", items: services },
+  { id: "teaching", title: "Teaching", items: teaching },
+];
 
 export default function Home() {
   return (
-    <main className="mx-auto px-6 sm:px-8 md:px-10 lg:px-12 max-w-[75rem] py-8 md:py-10 xl:py-12 2xl:py-15 grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
-      <div className="contents sm:block sm:col-span-2 min-w-0">
-        <Bio />
+    <>
+      <a
+        className="fixed top-[12px] left-[12px] z-10 -translate-y-[160%] bg-[#161616] px-[16px] py-[12px] text-white focus:translate-y-0"
+        href="#pub"
+      >
+        Skip to publications
+      </a>
+      <main
+        className="
+          mx-auto grid max-w-[1700px] grid-cols-1 items-start gap-8 xl:gap-12 2xl:gap-16 px-6 py-10 md:px-8
+          md:grid-cols-[200px_minmax(0,1fr)]
+          lg:grid-cols-[200px_minmax(0,1fr)_200px]
+          xl:grid-cols-[240px_minmax(0,1fr)_240px]
+          2xl:grid-cols-[280px_minmax(0,1fr)_280px]
+        "
+      >
+        <aside
+          className="min-w-0 md:top-10 md:row-span-2 lg:row-span-1 [@media(max-height:700px)]:static"
+          aria-label="About Run Huang"
+        >
+          <Bio />
+        </aside>
         <Pub />
-        {/* <Section id="teaching">
-          <Separator name="Teaching" className="mt-4 mb-3" />
-          <List data={teachingData} />
-        </Section> */}
-      </div>
-      <div className="contents sm:block sm:col-span-1 min-w-0 relative">
-        <div className="row-start-2 sm:row-auto">
-          <Profile />
-        </div>
-        {/* <Section id="news">
-          <Separator name="News" className="mt-4 mb-3" />
-          <List data={newsData} />
-        </Section> */}
-        <Section id="industry">
-          <Separator name="Industry" className="mt-5 mb-2.5" />
-          <List data={jobData} />
-        </Section>
-        <Section id="awards">
-          <Separator name="Awards" className="mt-6 mb-2.5" />
-          <List data={awardData} />
-        </Section>
-        <Section id="services">
-          <Separator name="Services" className="mt-6 mb-2.5" />
-          <List data={servicesData} />
-        </Section>
-        <Section id="teaching">
-          <Separator name="Teaching" className="mt-6 mb-2.5" />
-          <List data={teachingData} />
-        </Section>
-        {/* <Misc /> */}
-        {/* <Footer /> */}
-      </div>
-    </main>
+        <aside
+          className="min-w-0 md:col-start-2 lg:col-start-3"
+          aria-label="Information"
+        >
+          <div className="grid grid-cols-1 gap-[30px] min-[560px]:grid-cols-2 min-[560px]:gap-x-[24px] lg:grid-cols-1">
+            {informationSections.map(({ id, title, items }) => (
+              <Section key={id} id={id} aria-labelledby={`${id}-heading`}>
+                <h3
+                  id={`${id}-heading`}
+                  className="mb-[17px] border-t border-[#dedede] pt-[10px] text-[11px] leading-[1.4] font-normal"
+                >
+                  {title}
+                </h3>
+                <List data={items} />
+              </Section>
+            ))}
+          </div>
+        </aside>
+      </main>
+    </>
   );
 }

@@ -1,15 +1,11 @@
-import { ReactNode } from "react";
+import type { ComponentPropsWithoutRef } from "react";
 
-interface SectionProps {
-  children: ReactNode;
-  id?: string;
-  className?: string;
-}
+type SectionProps = ComponentPropsWithoutRef<"section">;
 
-export default function Section({ children, id, className }: SectionProps) {
+export default function Section({ children, className = "", ...props }: SectionProps) {
   return (
     <section
-      id={id}
+      {...props}
       className={`break-inside-avoid cursor-default ${className}`}
     >
       {children}

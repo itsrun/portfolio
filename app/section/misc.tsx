@@ -94,7 +94,7 @@ export default function Misc() {
               key={tier}
               className="flex items-center pb-0.5 border-b border-gray-200"
             >
-              <div className={`text-center font-semibold`}>{tier}</div>
+              <div className={`text-left font-semibold`}>{tier}</div>
               <div
                 className={`flex-1 flex flex-wrap gap-x-2 gap-y-1 px-3 text-sm`}
               >

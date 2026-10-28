@@ -1,23 +1,31 @@
-import MLink from "../ui/mlink";
+const links = [
+  { label: "Email", href: "mailto:runhuang@usc.edu" },
+  {
+    label: "Google Scholar",
+    href: "https://scholar.google.com/citations?user=v9vsJ64AAAAJ&hl=en",
+  },
+  { label: "Curriculum Vitae", href: "/cv.pdf" },
+];
 
-export default function Contact({ className }: { className?: string }) {
+export default function Contact() {
   return (
-    <div className={`flex flex-wrap gap-y-1 gap-x-4 ${className} sm:gap-x-6`}>
-      <MLink
-        href="https://scholar.google.com/citations?user=v9vsJ64AAAAJ&hl=en"
-        className="block underline-offset-3"
-      >
-        Scholar
-      </MLink>
-      <MLink
-        href="https://www.linkedin.com/in/runhuangii/"
-        className="block underline-offset-3"
-      >
-        LinkedIn
-      </MLink>
-      <MLink href="/cv.pdf" className="block underline-offset-3">
-        Curriculum Vitae
-      </MLink>
-    </div>
+    <nav
+      className="mt-4 flex flex-wrap items-start gap-x-[22px] gap-y-[12px] text-[11px] leading-[1.4] md:flex-col md:gap-2.75"
+      aria-label="Contact and external profiles"
+    >
+      {links.map(({ label, href }) => (
+        <a
+          key={label}
+          href={href}
+          target={href.startsWith("mailto:") ? undefined : "_blank"}
+          rel={href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+        >
+          {label}{" "}
+          <span className="ml-[5px] inline-block" aria-hidden="true">
+            ↗
+          </span>
+        </a>
+      ))}
+    </nav>
   );
 }
